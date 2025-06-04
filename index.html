@@ -25,7 +25,8 @@
 
     <h2>اختر نوع ملف الـ CONFIG:</h2>
 
-    <div class="main-options-grid"> <a href="inwi-configs.html" class="config-group-card">
+    <div class="main-options-grid">
+        <a href="inwi-configs.html" class="config-group-card">
             <img src="images/config_icon.png" alt="أيقونة كونفيج" class="card-icon">
             <h3>Config inwi ⭐ 6</h3>
             <p>جميع روابط Inwi المحدثة</p>
@@ -56,10 +57,8 @@
     </div>
 
 </div> <script>
-// لا يوجد زر نسخ في الصفحة الرئيسية الجديدة، لذا يمكن إزالة كود JavaScript هذا أو تركه ولن يؤثر
-// إذا أردت إزالته، فامسح كل ما بين <script> و </script>
 document.addEventListener('DOMContentLoaded', () => {
-    const copyButtons = document.querySelectorAll('.copy-button'); // سيصبح هذا فارغًا الآن
+    const copyButtons = document.querySelectorAll('.copy-button');
 
     copyButtons.forEach(button => {
         button.addEventListener('click', () => {
