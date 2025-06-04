@@ -118,16 +118,20 @@ p {
     text-align: right;
     margin-right: 10px;
     flex-wrap: wrap;
+    /* لإزالة المسافة الفارغة فوق الصورة وتجميع العناصر */
+    padding-top: 0;
+    margin-top: 0;
 }
 
-.config-details img {
+/* تم إزالة .config-details img لأننا سنحذف الأيقونة من HTML */
+/* .config-details img {
     width: 30px;
     height: auto;
     margin-left: 10px;
-}
+} */
 
 .config-details .flag-icon {
-    width: 60px; /* تم التعديل هنا: زيادة حجم العلم */
+    width: 80px; /* تم التعديل هنا: لزيادة حجم العلم أكثر */
     height: auto;
     border: 1px solid #eee;
     border-radius: 3px;
@@ -139,6 +143,9 @@ p {
     color: #555;
     margin-top: 5px;
     display: block;
+    text-align: right;
+    /* لجعل العلم والنصوص تظهر بجانب بعضها البعض بشكل أفضل */
+    flex-grow: 1; /* للسماح للعناصر بشغل المساحة المتاحة */
     text-align: right;
 }
 
@@ -197,7 +204,9 @@ p {
         align-items: flex-start;
         width: 100%;
     }
-    .config-details img, .config-details .flag-icon {
+    /* إزالة هذا الجزء لأننا أزلنا الأيقونة من HTML */
+    /* .config-details img, */
+    .config-details .flag-icon {
         margin-left: 0;
         margin-right: 10px;
     }
