@@ -103,8 +103,8 @@ p {
 }
 
 /* يمكنك إضافة هذا التعديل إذا كنت تريد صورًا مختلفة الحجم لـ Config inwi فقط
-   إذا كان هذا الكود موجودًا بالفعل، فاستبدله بالكامل.
-   إذا لم يكن موجودًا، أضفه بعد `.config-group-card .card-icon`
+    إذا كان هذا الكود موجودًا بالفعل، فاستبدله بالكامل.
+    إذا لم يكن موجودًا، أضفه بعد `.config-group-card .card-icon`
 */
 .main-options-grid a:first-child .card-icon {
     width: 100%; /* اجعل الصورة تأخذ العرض الكامل للبطاقة */
@@ -226,4 +226,108 @@ p {
         width: 100%;
         margin-top: 15px;
     }
+}
+
+/* تنسيقات زر الوضع الليلي */
+.dark-mode-toggle {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 50%; /* لجعل الزر دائرياً */
+    width: 40px; /* حجم الزر */
+    height: 40px; /* حجم الزر */
+    font-size: 1.5em; /* حجم رمز الإيموجي */
+    cursor: pointer;
+    position: absolute; /* تحديد الموضع بالنسبة لأقرب عنصر أب ذي موقع (container) */
+    top: 20px; /* مسافة من الأعلى */
+    right: 20px; /* مسافة من اليمين */
+    z-index: 1000; /* للتأكد من أنه يظهر فوق العناصر الأخرى */
+    display: flex; /* لتوسيط الأيقونة */
+    justify-content: center; /* لتوسيط الأيقونة */
+    align-items: center; /* لتوسيط الأيقونة */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* إضافة ظل خفيف */
+    transition: background-color 0.3s ease, color 0.3s ease; /* لتأثير انتقال سلس */
+}
+
+.dark-mode-toggle:hover {
+    background-color: #e0e0e0; /* تغيير لون الخلفية عند التمرير */
+}
+
+/* تنسيقات الوضع الليلي - سيتم تفعيلها عند وجود الكلاس dark-mode على body */
+body.dark-mode {
+    background-color: #1a1a1a; /* خلفية داكنة جداً للصفحة بالكامل */
+    color: #f0f0f0; /* لون نص فاتح جداً */
+    background-image: none; /* إزالة صورة الخلفية في الوضع الليلي إذا كانت تزعج العين */
+}
+
+body.dark-mode .container {
+    background-color: rgba(30, 30, 30, 0.95); /* خلفية الحاوية داكنة أكثر */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); /* ظل أبيض خفيف للحاوية */
+}
+
+body.dark-mode h1,
+body.dark-mode h2 {
+    color: #4CAF50; /* لون مميز للعناوين في الوضع الليلي (يمكنك تغييره) */
+}
+
+body.dark-mode p {
+    color: #cccccc; /* لون أغمق قليلاً للنصوص العادية */
+}
+
+body.dark-mode .ad-space {
+    background-color: #282828; /* خلفية داكنة للمساحات الإعلانية */
+    border: 1px dashed #444; /* حدود داكنة للمساحات الإعلانية */
+    color: #aaaaaa; /* لون نص المساحات الإعلانية */
+}
+
+/* تنسيقات بطاقات الخيارات الرئيسية (index.html) */
+body.dark-mode .config-group-card {
+    background-color: #333333; /* خلفية داكنة للبطاقات */
+    border: 1px solid #555555; /* حدود داكنة للبطاقات */
+    color: #f0f0f0; /* لون نص البطاقات */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* ظل أغمق */
+}
+
+body.dark-mode .config-group-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.7); /* ظل أغمق عند التمرير */
+}
+
+/* تنسيقات عناصر قائمة الكونفيج (في صفحات الكونفيج) */
+body.dark-mode .config-list-item {
+    background-color: #2b2b2b; /* خلفية داكنة لعناصر القائمة */
+    border: 1px solid #444444; /* حدود داكنة لعناصر القائمة */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* ظل أغمق */
+}
+
+body.dark-mode .config-details span {
+    color: #dddddd; /* لون نصوص التفاصيل داخل القائمة */
+}
+
+/* تنسيقات الأزرار (نسخ الرابط، العودة) */
+body.dark-mode .copy-button {
+    background-color: #007bff; /* لون أزرق للزر في الوضع الليلي (يمكنك تغييره) */
+    color: white;
+}
+
+body.dark-mode .copy-button:hover {
+    background-color: #0056b3;
+}
+
+body.dark-mode .back-button {
+    background-color: #555555; /* لون رمادي لزر العودة في الوضع الليلي */
+    color: white;
+}
+
+body.dark-mode .back-button:hover {
+    background-color: #666666;
+}
+
+/* تنسيقات زر التبديل في الوضع الليلي نفسه */
+body.dark-mode .dark-mode-toggle {
+    background-color: #333; /* خلفية داكنة لزر التبديل في الوضع الليلي */
+    color: #f0f0f0; /* لون أيقونة القمر/الشمس في الوضع الليلي */
+    border-color: #555; /* حدود أغمق */
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background-color: #444;
 }
