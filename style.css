@@ -105,47 +105,38 @@ p {
     padding: 15px;
     margin-bottom: 15px;
     display: flex;
-    flex-direction: column; /* جعل العناصر تتكدس رأسياً */
-    align-items: flex-end; /* محاذاة كل شيء إلى اليمين */
-    justify-content: space-between;
+    flex-direction: row; /* عرض العناصر بجانب بعضها */
+    align-items: center; /* محاذاة عمودية في المنتصف */
+    justify-content: space-between; /* توزيع العناصر على طول الخط */
     flex-wrap: wrap;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .config-details {
     display: flex;
-    flex-direction: column; /* جعل العلم والنصوص تظهر بشكل عمودي */
-    align-items: flex-end; /* محاذاة المحتوى إلى اليمين */
-    flex-grow: 1;
+    flex-direction: row; /* عرض العناصر بجانب بعضها */
+    align-items: center; /* محاذاة عمودية في المنتصف */
+    flex-grow: 1; /* للسماح لها بأخذ المساحة المتبقية */
     text-align: right;
-    width: 100%; /* تأكد من أن التفاصيل تأخذ العرض الكامل */
-    margin-bottom: 10px; /* مسافة بين التفاصيل وزر النسخ */
+    margin-right: 10px;
+    flex-wrap: wrap;
 }
 
-/* تم إزالة .config-details img لأننا سنحذف الأيقونة من HTML */
-/* .config-details img {
-    width: 30px;
-    height: auto;
-    margin-left: 10px;
-} */
-
 .config-details .flag-icon {
-    width: 100px; /* تم التعديل هنا: لزيادة حجم العلم بشكل كبير */
+    width: 70px; /* حجم أكبر للأعلام */
     height: auto;
     border: 1px solid #eee;
-    border-radius: 5px; /* يمكن زيادة نصف القطر لجعل الزوايا أكثر دائرية */
-    margin-bottom: 10px; /* مسافة بين العلم والنصوص التي تليه */
-    margin-right: 0; /* إزالة الهامش الأيسر إن وجد */
-    margin-left: 0; /* إزالة الهامش الأيسر إن وجد */
+    border-radius: 5px;
+    margin-left: 0; /* إزالة الهامش الأيسر */
+    margin-right: 10px; /* إضافة هامش أيمن بسيط */
 }
 
 .config-details span {
-    font-size: 1em; /* زيادة حجم الخط قليلاً للنصوص */
+    font-size: 1em;
     color: #555;
-    margin-top: 5px;
-    display: block;
-    text-align: right;
-    width: 100%; /* لضمان أن النصوص تأخذ العرض الكامل وتظهر بشكل مرتب */
+    margin-top: 0; /* إزالة الهامش العلوي */
+    display: inline; /* عرض العناصر في نفس السطر */
+    margin-left: 5px; /* مسافة بين العناصر */
 }
 
 .copy-button {
@@ -157,8 +148,7 @@ p {
     cursor: pointer;
     font-size: 0.9em;
     flex-shrink: 0;
-    margin-top: 10px;
-    width: 100%; /* اجعل الزر يأخذ العرض الكامل */
+    margin-top: 0; /* إزالة الهامش العلوي */
 }
 
 .copy-button:hover {
@@ -195,20 +185,18 @@ p {
     }
     .config-list-item {
         flex-direction: column;
-        align-items: flex-end; /* محاذاة لليمين في الشاشات الصغيرة */
+        align-items: flex-start;
     }
     .config-details {
         margin-right: 0;
         margin-bottom: 10px;
         flex-direction: column;
-        align-items: flex-end; /* محاذاة لليمين في الشاشات الصغيرة */
+        align-items: flex-start;
         width: 100%;
     }
-    .config-details .flag-icon { /* لا داعي لتكرار .config-details img لأنها محذوفة */
+    .config-details .flag-icon {
         margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 10px; /* مسافة تحت العلم */
-        width: 100px; /* يمكن تعديل هذا إذا كان الحجم كبير جدًا على الجوال */
+        margin-right: 10px;
     }
     .config-details span {
         text-align: right;
