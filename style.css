@@ -156,39 +156,78 @@ p {
     width: 100%; /* لضمان أن النصوص تأخذ العرض الكامل وتظهر بشكل مرتب */
 }
 
+/* ************************************** */
+/* أنماط الأزرار الحديثة الجديدة والمعدلة */
+/* ************************************** */
+
+/* تحسينات عامة لجميع الأزرار المستهدفة */
+.copy-button,
+.back-button,
+.dark-mode-toggle { /* تم تغيير #darkModeToggle إلى .dark-mode-toggle هنا */
+    padding: 0.75em 1.5em; /* مساحة داخلية */
+    border: none; /* إزالة الحدود */
+    border-radius: 0.5em; /* حواف مستديرة */
+    font-size: 1em; /* حجم الخط */
+    cursor: pointer; /* مؤشر الفأرة */
+    transition: all 0.3s ease; /* انتقال سلس للتأثيرات */
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    display: inline-flex; /* لتمكين توسيط الأيقونة/النص */
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* للروابط التي تعمل كأزرار */
+}
+
+/* تحسينات زر "نسخ الرابط" */
 .copy-button {
-    background-color: #28a745;
+    background-color: #4CAF50; /* أخضر */
     color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9em;
-    flex-shrink: 0;
-    margin-top: 10px;
     width: 100%; /* اجعل الزر يأخذ العرض الكامل */
+    margin-top: 10px; /* مسافة من الأعلى */
 }
 
 .copy-button:hover {
-    background-color: #218838;
+    background-color: #388E3C; /* أخضر أغمق */
+    box-shadow: 0 0.3em 0.7em rgba(0, 0, 0, 0.3);
 }
 
+/* تحسينات زر "العودة للصفحة الرئيسية" */
 .back-button {
-    background-color: #6c757d;
+    background-color: #2196F3; /* أزرق */
     color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    margin-top: 20px;
-    text-decoration: none;
-    display: inline-block;
+    margin-top: 20px; /* مسافة من الأعلى */
+    display: inline-block; /* لاستخدامه كرابط مع الحفاظ على خصائص الزر */
 }
 
 .back-button:hover {
-    background-color: #5a6268;
+    background-color: #1976D2; /* أزرق أغمق */
+    box-shadow: 0 0.3em 0.7em rgba(0, 0, 0, 0.3);
 }
+
+/* تحسينات زر الوضع الليلي (فقط للأيقونة والحجم والموقع) */
+.dark-mode-toggle {
+    background-color: #673AB7; /* بنفسجي */
+    color: white;
+    font-size: 1.5em; /* حجم أكبر للأيقونة */
+    border-radius: 50%; /* لجعل الزر دائرياً */
+    width: 40px; /* حجم الزر */
+    height: 40px; /* حجم الزر */
+    padding: 0; /* إزالة البادينج الإضافي الذي تم تعريفه في الأنماط العامة */
+    position: absolute;
+    top: 20px; /* مسافة من الأعلى */
+    right: 20px; /* مسافة من اليمين */
+    z-index: 1000; /* للتأكد من أنه يظهر فوق العناصر الأخرى */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* إضافة ظل خفيف */
+}
+
+.dark-mode-toggle:hover {
+    background-color: #512DA8; /* بنفسجي أغمق */
+    box-shadow: 0 0.3em 0.7em rgba(0, 0, 0, 0.3);
+}
+
+/* ************************************** */
+/* نهاية أنماط الأزرار الحديثة الجديدة */
+/* ************************************** */
+
 
 @media (max-width: 600px) {
     .container {
@@ -222,34 +261,11 @@ p {
         text-align: right;
         width: 100%;
     }
+    /* الأزرار في الجوال ستحتفظ بأنماطها الحديثة */
     .copy-button {
         width: 100%;
         margin-top: 15px;
     }
-}
-
-/* تنسيقات زر الوضع الليلي */
-.dark-mode-toggle {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 50%; /* لجعل الزر دائرياً */
-    width: 40px; /* حجم الزر */
-    height: 40px; /* حجم الزر */
-    font-size: 1.5em; /* حجم رمز الإيموجي */
-    cursor: pointer;
-    position: absolute; /* تحديد الموضع بالنسبة لأقرب عنصر أب ذي موقع (container) */
-    top: 20px; /* مسافة من الأعلى */
-    right: 20px; /* مسافة من اليمين */
-    z-index: 1000; /* للتأكد من أنه يظهر فوق العناصر الأخرى */
-    display: flex; /* لتوسيط الأيقونة */
-    justify-content: center; /* لتوسيط الأيقونة */
-    align-items: center; /* لتوسيط الأيقونة */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* إضافة ظل خفيف */
-    transition: background-color 0.3s ease, color 0.3s ease; /* لتأثير انتقال سلس */
-}
-
-.dark-mode-toggle:hover {
-    background-color: #e0e0e0; /* تغيير لون الخلفية عند التمرير */
 }
 
 /* تنسيقات الوضع الليلي - سيتم تفعيلها عند وجود الكلاس dark-mode على body */
@@ -302,7 +318,7 @@ body.dark-mode .config-details span {
     color: #dddddd; /* لون نصوص التفاصيل داخل القائمة */
 }
 
-/* تنسيقات الأزرار (نسخ الرابط، العودة) */
+/* تنسيقات الأزرار (نسخ الرابط، العودة) في الوضع الليلي */
 body.dark-mode .copy-button {
     background-color: #007bff; /* لون أزرق للزر في الوضع الليلي (يمكنك تغييره) */
     color: white;
