@@ -105,38 +105,36 @@ p {
     padding: 15px;
     margin-bottom: 15px;
     display: flex;
-    flex-direction: row; /* عرض العناصر بجانب بعضها */
-    align-items: center; /* محاذاة عمودية في المنتصف */
-    justify-content: space-between; /* توزيع العناصر على طول الخط */
-    flex-wrap: wrap;
+    flex-direction: column; /* جعل العناصر تتكدس رأسياً */
+    align-items: flex-start; /* محاذاة كل شيء إلى اليسار */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .config-details {
     display: flex;
-    flex-direction: row; /* عرض العناصر بجانب بعضها */
-    align-items: center; /* محاذاة عمودية في المنتصف */
-    flex-grow: 1; /* للسماح لها بأخذ المساحة المتبقية */
-    text-align: right;
-    margin-right: 10px;
-    flex-wrap: wrap;
+    flex-direction: column; /* جعل العلم والنصوص تظهر بشكل عمودي */
+    align-items: flex-start; /* محاذاة المحتوى إلى اليسار */
+    width: 100%; /* تأكد من أن التفاصيل تأخذ العرض الكامل */
+    margin-bottom: 10px; /* مسافة بين التفاصيل وزر النسخ */
+    text-align: right; /* لمحاذاة النص داخل التفاصيل إلى اليمين */
 }
 
 .config-details .flag-icon {
-    width: 70px; /* حجم أكبر للأعلام */
-    height: auto;
+    width: 100%; /* اجعل العلم يأخذ العرض الكامل للبطاقة */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
     border: 1px solid #eee;
     border-radius: 5px;
-    margin-left: 0; /* إزالة الهامش الأيسر */
-    margin-right: 10px; /* إضافة هامش أيمن بسيط */
+    margin-bottom: 10px; /* مسافة بين العلم والنصوص التي تليه */
+    object-fit: cover; /* لضمان تغطية الصورة للمساحة مع الحفاظ على الأبعاد */
 }
 
 .config-details span {
-    font-size: 1em;
+    font-size: 1em; /* زيادة حجم الخط قليلاً للنصوص */
     color: #555;
-    margin-top: 0; /* إزالة الهامش العلوي */
-    display: inline; /* عرض العناصر في نفس السطر */
-    margin-left: 5px; /* مسافة بين العناصر */
+    margin-top: 5px;
+    display: block; /* لجعل كل سطر نصي يظهر في سطر منفصل */
+    text-align: right; /* محاذاة النص إلى اليمين */
+    width: 100%; /* لضمان أن النصوص تأخذ العرض الكامل وتظهر بشكل مرتب */
 }
 
 .copy-button {
@@ -148,7 +146,8 @@ p {
     cursor: pointer;
     font-size: 0.9em;
     flex-shrink: 0;
-    margin-top: 0; /* إزالة الهامش العلوي */
+    margin-top: 10px;
+    width: 100%; /* اجعل الزر يأخذ العرض الكامل */
 }
 
 .copy-button:hover {
@@ -195,8 +194,10 @@ p {
         width: 100%;
     }
     .config-details .flag-icon {
+        width: 100%; /* تأكد من أنها لا تزال 100% على الجوال */
         margin-left: 0;
-        margin-right: 10px;
+        margin-right: 0;
+        margin-bottom: 10px;
     }
     .config-details span {
         text-align: right;
