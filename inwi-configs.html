@@ -129,8 +129,10 @@
 
     <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
 
-</div> <script>
+</div> 
+<script>
 document.addEventListener('DOMContentLoaded', () => {
+    // كود النسخ الحالي (لا تزال وظيفته كما هي)
     const copyButtons = document.querySelectorAll('.copy-button');
 
     copyButtons.forEach(button => {
@@ -146,6 +148,35 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('حدث خطأ أثناء النسخ، يرجى المحاولة يدويًا.');
             });
         });
+    });
+
+    // كود الوضع الليلي الجديد
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // 1. التحقق من الوضع المحفوظ في Local Storage عند تحميل الصفحة
+    // إذا كان 'darkMode' مضبوطاً على 'enabled' في ذاكرة المتصفح، قم بتفعيل الوضع الليلي
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('dark-mode'); // إضافة كلاس 'dark-mode' إلى <body>
+        darkModeToggle.textContent = '☀️'; // تغيير أيقونة الزر للشمس (للدلالة على أنه لتفعيل الوضع الفاتح)
+    } else {
+        // إذا لم يكن الوضع الليلي مفعلاً أو لم يتم حفظ تفضيل، اجعله قمرًا (للدلالة على تفعيل الوضع الليلي)
+        darkModeToggle.textContent = '🌙';
+    }
+
+    // 2. إضافة مستمع حدث (event listener) للزر عند النقر عليه
+    darkModeToggle.addEventListener('click', () => {
+        if (body.classList.contains('dark-mode')) {
+            // إذا كان الوضع الليلي مفعلاً حالياً، قم بإلغاء تفعيله
+            body.classList.remove('dark-mode'); // إزالة الكلاس 'dark-mode' من <body>
+            localStorage.setItem('darkMode', 'disabled'); // حفظ التفضيل في ذاكرة المتصفح (معطل)
+            darkModeToggle.textContent = '🌙'; // تغيير أيقونة الزر للقمر
+        } else {
+            // إذا كان الوضع الفاتح حالياً، قم بتفعيل الوضع الليلي
+            body.classList.add('dark-mode'); // إضافة الكلاس 'dark-mode' إلى <body>
+            localStorage.setItem('darkMode', 'enabled'); // حفظ التفضيل في ذاكرة المتصفح (مفعّل)
+            darkModeToggle.textContent = '☀️'; // تغيير أيقونة الزر للشمس
+        }
     });
 });
 </script>
