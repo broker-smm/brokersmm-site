@@ -127,7 +127,7 @@ p {
 }
 
 .config-details .flag-icon {
-    width: 30px;
+    width: 60px; /* تم التعديل هنا: زيادة حجم العلم */
     height: auto;
     border: 1px solid #eee;
     border-radius: 3px;
