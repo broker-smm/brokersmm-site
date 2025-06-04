@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>روابط تحديث HTTP Custom CONFIG</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <img src="images/my_logo.png" alt="شعار موقعك" class="logo">
+
+    <div class="ad-space" style="margin-bottom: 20px;">
+        <br>
+        <small>مساحة إعلانية (أعلى الصفحة)</small>
+    </div>
+
+    <h1>روابط تحديث ملفات HTTP Custom CONFIG</h1>
+    <p>مرحبًا بك في موقعنا! هنا ستجد جميع أنواع ملفات CONFIG لتطبيق HTTP Custom. اختر النوع الذي يناسبك وتصفح أحدث الروابط المتاحة.</p>
+
+    <div class="ad-space">
+        <br>
+        <small>مساحة إعلانية (تحت الوصف)</small>
+    </div>
+
+    <h2>اختر نوع ملف الـ CONFIG:</h2>
+
+    <div class="main-options-grid"> <a href="inwi-configs.html" class="config-group-card">
+            <img src="images/config_icon.png" alt="أيقونة كونفيج" class="card-icon">
+            <h3>Config inwi ⭐ 6</h3>
+            <p>جميع روابط Inwi المحدثة</p>
+        </a>
+
+        <div class="ad-space" style="grid-column: 1 / -1; margin-top: 20px;">
+            <br>
+            <small>مساحة إعلانية (بين الأزرار الرئيسية)</small>
+        </div>
+
+        <a href="win-configs.html" class="config-group-card">
+            <img src="images/config_icon.png" alt="أيقونة كونفيج" class="card-icon">
+            <h3>Config win by inwi</h3>
+            <p>روابط Win By Inwi</p>
+        </a>
+
+        <a href="iam-configs.html" class="config-group-card">
+            <img src="images/config_icon.png" alt="أيقونة كونفيج" class="card-icon">
+            <h3>iam ⭐ 6</h3>
+            <p>روابط IAM المحدثة</p>
+        </a>
+
+    </div> <p>تأكد من زيارتنا بانتظام للحصول على أحدث التحديثات!</p>
+
+    <div class="ad-space" style="margin-top: 30px; border-top: 1px dashed #cce5ff; padding-top: 20px;">
+        <br>
+        <small>مساحة إعلانية (أسفل الصفحة)</small>
+    </div>
+
+</div> <script>
+// لا يوجد زر نسخ في الصفحة الرئيسية الجديدة، لذا يمكن إزالة كود JavaScript هذا أو تركه ولن يؤثر
+// إذا أردت إزالته، فامسح كل ما بين <script> و </script>
+document.addEventListener('DOMContentLoaded', () => {
+    const copyButtons = document.querySelectorAll('.copy-button'); // سيصبح هذا فارغًا الآن
+
+    copyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const linkToCopy = button.parentElement.dataset.link;
+            navigator.clipboard.writeText(linkToCopy).then(() => {
+                button.textContent = 'تم النسخ!';
+                setTimeout(() => {
+                    button.textContent = 'نسخ الرابط';
+                }, 1500);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                alert('حدث خطأ أثناء النسخ، يرجى المحاولة يدويًا.');
+            });
+        });
+    });
+});
+</script>
+</body>
+</html>
