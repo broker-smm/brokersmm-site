@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>روابط تحديث HTTP Custom CONFIG</title>
+<link rel="stylesheet" href="style.css"> </head>
+<body>
+<div class="container">
+    <img src="images/my_logo.png" alt="شعار موقعك" class="logo"> <h1>روابط تحديث ملفات HTTP Custom CONFIG</h1>
+    <p>مرحبًا بك في موقعنا! هنا ستجد أحدث روابط تحديث ملفات CONFIG لتطبيق HTTP Custom. قم بتنزيلها أو نسخها واستمتع باتصال مستقر.</p>
+
+    <div class="ad-space">
+        مساحة الإعلان هنا (ستضع كود Google AdSense هنا لاحقًا)
+        <br>
+        <small>هذه المساحة ستظهر فيها الإعلانات بعد الموافقة عليها من مزود الإعلانات</small>
+    </div>
+
+    <h2>أحدث الروابط المتاحة:</h2>
+
+    <div class="config-item" data-link="https://eprdv.link/qDPlYtujE"> <img src="images/config_icon.png" alt="أيقونة كونفيج" class="config-icon"> <h3>Config inwi ⭐ 6</h3> <button class="copy-button">نسخ الرابط</button>
+    </div>
+
+    <div class="config-item" data-link="https://eprdv.link/CGXPRTH16">
+        <img src="images/config_icon.png" alt="أيقونة كونفيج" class="config-icon">
+        <h3>Config win by inwi</h3>
+        <button class="copy-button">نسخ الرابط</button>
+    </div>
+
+    <div class="config-item" data-link="https://eprdv.link/CGXPRTH16">
+        <img src="images/config_icon.png" alt="أيقونة كونفيج" class="config-icon">
+        <h3>iam ⭐ 6</h3>
+        <button class="copy-button">نسخ الرابط</button>
+    </div>
+
+    <p>تأكد من زيارتنا بانتظام كل 3 أيام للحصول على أحدث التحديثات!</p>
+</div>
+
+<script>
+// كود JavaScript لزر النسخ
+document.addEventListener('DOMContentLoaded', () => {
+    const copyButtons = document.querySelectorAll('.copy-button');
+
+    copyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const linkToCopy = button.parentElement.dataset.link;
+            navigator.clipboard.writeText(linkToCopy).then(() => {
+                button.textContent = 'تم النسخ!';
+                setTimeout(() => {
+                    button.textContent = 'نسخ الرابط';
+                }, 1500); // يعود الزر لحالته الأصلية بعد 1.5 ثانية
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+                alert('حدث خطأ أثناء النسخ، يرجى المحاولة يدويًا.');
+            });
+        });
+    });
+});
+</script>
+</body>
+</html>
