@@ -1,114 +1,110 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>روابط تحديث HTTP Custom CONFIG</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق HTTP Custom - ملفات الكونفيج</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <img src="images/my_logo.png" alt="شعار موقعك" class="logo">
-    
-    <button id="darkModeToggle" class="dark-mode-toggle">
-        🌙
-    </button>
-    <div class="ad-space" style="margin-bottom: 20px;">
-        <br>
-        <small>مساحة إعلانية (أعلى الصفحة)</small>
-    </div>
+    <div class="container">
+        <img src="images/my_logo.png" alt="شعار موقعك" class="logo">
+        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
 
-    <h1>روابط تحديث ملفات HTTP Custom CONFIG</h1>
-    <p>مرحبًا بك في موقعنا! هنا ستجد جميع أنواع ملفات CONFIG لتطبيق HTTP Custom. اختر النوع الذي يناسبك وتصفح أحدث الروابط المتاحة.</p>
-
-    <div class="ad-space">
-        <br>
-        <small>مساحة إعلانية (تحت الوصف)</small>
-    </div>
-
-    <h2>اختر نوع ملف الـ CONFIG:</h2>
-
-    <div class="main-options-grid">
-        <a href="inwi-configs.html" class="config-group-card">
-            <img src="images/inwi_logo.png" alt="شعار Inwi" class="card-icon">
-            <h3>Config inwi ⭐ 6</h3>
-            <p>جميع روابط Inwi المحدثة</p>
-        </a>
-
-        <div class="ad-space" style="grid-column: 1 / -1; margin-top: 20px;">
+        <div class="ad-space" style="margin-bottom: 20px;">
             <br>
-            <small>مساحة إعلانية (بين الأزرار الرئيسية)</small>
+            <small>مساحة إعلانية (أعلى الصفحة الرئيسية)</small>
         </div>
 
-        <a href="win-configs.html" class="config-group-card">
-            <img src="images/win_logo.png" alt="شعار Win By Inwi" class="card-icon">
-            <h3>Config win by inwi</h3>
-            <p>روابط Win By Inwi</p>
-        </a>
+        <h1>ملفات Config لتطبيق HTTP Custom</h1>
+        <p>مرحبًا بك في مركز ملفات الكونفيج! اضغط على أيقونة HTTP Custom لعرض الخيارات المتاحة.</p>
 
-        <a href="iam-configs.html" class="config-group-card">
-            <img src="images/iam_logo.png" alt="شعار IAM" class="card-icon">
-            <h3>iam ⭐ 6</h3>
-            <p>روابط IAM المحدثة</p>
-        </a>
+        <div class="http-custom-icon-container">
+            <img src="images/http_custom_app_icon.png" alt="أيقونة تطبيق HTTP Custom" class="http-custom-main-icon" id="httpCustomMainIcon">
+            <p class="icon-label">اضغط هنا لعرض الخيارات</p>
+        </div>
 
-    </div> <p>تأكد من زيارتنا بانتظام للحصول على أحدث التحديثات!</p>
+        <div class="main-options-grid hidden" id="configOptionsGrid">
+            <a href="inwi-configs.html" class="config-group-card">
+                <img src="images/inwi_logo.png" alt="شعار Inwi" class="card-icon">
+                <h3>INWI ⭐ 6</h3>
+                <p>ملفات Config خاصة بشبكة Inwi</p>
+            </a>
 
-    <div class="ad-space" style="margin-top: 30px; border-top: 1px dashed #cce5ff; padding-top: 20px;">
-        <br>
-        <small>مساحة إعلانية (أسفل الصفحة)</small>
+            <a href="win-configs.html" class="config-group-card">
+                <img src="images/win_by_inwi_logo.png" alt="شعار Win by Inwi" class="card-icon">
+                <h3>WIN BY inwi</h3>
+                <p>ملفات Config خاصة بشبكة Win by Inwi</p>
+            </a>
+
+            <a href="iam-configs.html" class="config-group-card">
+                <img src="images/iam_logo.png" alt="شعار IAM" class="card-icon">
+                <h3>IAM ⭐ 6</h3>
+                <p>ملفات Config خاصة بشبكة IAM</p>
+            </a>
+        </div>
+
+        <div class="ad-space" style="margin-top: 30px;">
+            <br>
+            <small>مساحة إعلانية (أسفل الصفحة الرئيسية)</small>
+        </div>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 موقعك. جميع الحقوق محفوظة.</p>
+            <nav class="footer-nav">
+                <a href="about.html">عنا</a>
+                <span class="separator">|</span>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <span class="separator">|</span>
+                <a href="terms.html">شروط الاستخدام</a>
+                <span class="separator">|</span>
+                <a href="contact.html">تواصل معنا</a>
+                <span class="separator">|</span>
+                <a href="blog.html">المدونة</a>
+            </nav>
+        </footer>
+
     </div>
 
-</div> 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    // كود النسخ الحالي (لا تزال وظيفته كما هي)
-    const copyButtons = document.querySelectorAll('.copy-button');
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // كود الوضع الليلي
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
 
-    copyButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const linkToCopy = button.parentElement.dataset.link;
-            navigator.clipboard.writeText(linkToCopy).then(() => {
-                button.textContent = 'تم النسخ!';
-                setTimeout(() => {
-                    button.textContent = 'نسخ الرابط';
-                }, 1500);
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-                alert('حدث خطأ أثناء النسخ، يرجى المحاولة يدويًا.');
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                darkModeToggle.textContent = '🌙';
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('darkMode', 'disabled');
+                    darkModeToggle.textContent = '🌙';
+                } else {
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('darkMode', 'enabled');
+                    darkModeToggle.textContent = '☀️';
+                }
+            });
+
+            // كود إظهار/إخفاء الخيارات عند النقر على أيقونة HTTP Custom
+            const httpCustomMainIcon = document.getElementById('httpCustomMainIcon');
+            const configOptionsGrid = document.getElementById('configOptionsGrid');
+            const iconLabel = document.querySelector('.icon-label');
+
+            httpCustomMainIcon.addEventListener('click', () => {
+                configOptionsGrid.classList.toggle('hidden'); // تبديل كلاس 'hidden'
+                if (configOptionsGrid.classList.contains('hidden')) {
+                    iconLabel.textContent = 'اضغط هنا لعرض الخيارات';
+                } else {
+                    iconLabel.textContent = 'اضغط مرة أخرى لإخفاء الخيارات';
+                }
             });
         });
-    });
-
-    // كود الوضع الليلي الجديد
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-
-    // 1. التحقق من الوضع المحفوظ في Local Storage عند تحميل الصفحة
-    // إذا كان 'darkMode' مضبوطاً على 'enabled' في ذاكرة المتصفح، قم بتفعيل الوضع الليلي
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode'); // إضافة كلاس 'dark-mode' إلى <body>
-        darkModeToggle.textContent = '☀️'; // تغيير أيقونة الزر للشمس (للدلالة على أنه لتفعيل الوضع الفاتح)
-    } else {
-        // إذا لم يكن الوضع الليلي مفعلاً أو لم يتم حفظ تفضيل، اجعله قمرًا (للدلالة على تفعيل الوضع الليلي)
-        darkModeToggle.textContent = '🌙';
-    }
-
-    // 2. إضافة مستمع حدث (event listener) للزر عند النقر عليه
-    darkModeToggle.addEventListener('click', () => {
-        if (body.classList.contains('dark-mode')) {
-            // إذا كان الوضع الليلي مفعلاً حالياً، قم بإلغاء تفعيله
-            body.classList.remove('dark-mode'); // إزالة الكلاس 'dark-mode' من <body>
-            localStorage.setItem('darkMode', 'disabled'); // حفظ التفضيل في ذاكرة المتصفح (معطل)
-            darkModeToggle.textContent = '🌙'; // تغيير أيقونة الزر للقمر
-        } else {
-            // إذا كان الوضع الفاتح حالياً، قم بتفعيل الوضع الليلي
-            body.classList.add('dark-mode'); // إضافة الكلاس 'dark-mode' إلى <body>
-            localStorage.setItem('darkMode', 'enabled'); // حفظ التفضيل في ذاكرة المتصفح (مفعّل)
-            darkModeToggle.textContent = '☀️'; // تغيير أيقونة الزر للشمس
-        }
-    });
-});
-</script>
+    </script>
 </body>
 </html>
