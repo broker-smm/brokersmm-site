@@ -25,7 +25,7 @@
                 <span>الخادم: Win Canada 🇨🇦</span>
                 <span>تاريخ التحديث: 2025-06-04</span>
             </div>
-            <button class="copy-button">نسخ الرابط</button>
+            <button class="copy-button">انشاء رابط</button>
         </div>
 
         <div class="config-list-item" data-link="https://your_win_finland_config_link.ehi">
@@ -35,7 +35,7 @@
                 <span>الخادم: Win Finlande 🇫🇮</span>
                 <span>تاريخ التحديث: 2025-06-04</span>
             </div>
-            <button class="copy-button">نسخ الرابط</button>
+            <button class="copy-button">انشاء رابط</button>
         </div>
 
         <div class="config-list-item" data-link="https://your_win_singapore_config_link.ehi">
@@ -45,7 +45,7 @@
                 <span>الخادم: Win Singapore 🇸🇬</span>
                 <span>تاريخ التحديث: 2025-06-04</span>
             </div>
-            <button class="copy-button">نسخ الرابط</button>
+            <button class="copy-button">انشاء رابط</button>
         </div>
 
         <div class="config-list-item" data-link="https://your_win_belgium_config_link.ehi">
@@ -55,7 +55,7 @@
                 <span>الخادم: Win Belgium 🇧🇪</span>
                 <span>تاريخ التحديث: 2025-06-04</span>
             </div>
-            <button class="copy-button">نسخ الرابط</button>
+            <button class="copy-button">انشاء رابط</button>
         </div>
 
         </div> 
@@ -70,50 +70,66 @@
 </div> 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    // كود النسخ الحالي (لا تزال وظيفته كما هي)
     const copyButtons = document.querySelectorAll('.copy-button');
 
     copyButtons.forEach(button => {
         button.addEventListener('click', () => {
+            // تعطيل الزر لمنع النقرات المتعددة أثناء العد التنازلي
+            button.disabled = true;
+            const originalButtonText = "انشاء رابط"; // النص الأصلي للزر
             const linkToCopy = button.parentElement.dataset.link;
-            navigator.clipboard.writeText(linkToCopy).then(() => {
-                button.textContent = 'تم النسخ!';
-                setTimeout(() => {
-                    button.textContent = 'نسخ الرابط';
-                }, 1500);
-            }).catch(err => {
-                console.error('Failed to copy text: ', err);
-                alert('حدث خطأ أثناء النسخ، يرجى المحاولة يدويًا.');
-            });
+            let countdown = 5; // بدء العد التنازلي من 5
+
+            // تحديث نص الزر فورًا ليبدأ العد
+            button.textContent = `انتظر ${countdown}...`;
+
+            const intervalId = setInterval(() => {
+                countdown--;
+                if (countdown > 0) {
+                    button.textContent = `انتظر ${countdown}...`;
+                } else {
+                    clearInterval(intervalId); // إيقاف العد التنازلي
+                    
+                    // محاولة نسخ الرابط
+                    navigator.clipboard.writeText(linkToCopy).then(() => {
+                        button.textContent = 'تم النسخ!';
+                        setTimeout(() => {
+                            button.textContent = originalButtonText; // إعادة النص الأصلي
+                            button.disabled = false; // إعادة تفعيل الزر
+                        }, 2000); // عرض "تم النسخ!" لمدة ثانيتين
+                    }).catch(err => {
+                        console.error('فشل نسخ الرابط: ', err);
+                        button.textContent = 'فشل النسخ'; // رسالة خطأ على الزر
+                        setTimeout(() => {
+                            button.textContent = originalButtonText;
+                            button.disabled = false;
+                        }, 2000);
+                    });
+                }
+            }, 1000); // كل ثانية
         });
     });
 
-    // كود الوضع الليلي الجديد
+    // كود الوضع الليلي (يبقى كما هو)
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
-    // 1. التحقق من الوضع المحفوظ في Local Storage عند تحميل الصفحة
-    // إذا كان 'darkMode' مضبوطاً على 'enabled' في ذاكرة المتصفح، قم بتفعيل الوضع الليلي
     if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode'); // إضافة كلاس 'dark-mode' إلى <body>
-        darkModeToggle.textContent = '☀️'; // تغيير أيقونة الزر للشمس (للدلالة على أنه لتفعيل الوضع الفاتح)
+        body.classList.add('dark-mode');
+        darkModeToggle.textContent = '☀️';
     } else {
-        // إذا لم يكن الوضع الليلي مفعلاً أو لم يتم حفظ تفضيل، اجعله قمرًا (للدلالة على تفعيل الوضع الليلي)
         darkModeToggle.textContent = '🌙';
     }
 
-    // 2. إضافة مستمع حدث (event listener) للزر عند النقر عليه
     darkModeToggle.addEventListener('click', () => {
         if (body.classList.contains('dark-mode')) {
-            // إذا كان الوضع الليلي مفعلاً حالياً، قم بإلغاء تفعيله
-            body.classList.remove('dark-mode'); // إزالة الكلاس 'dark-mode' من <body>
-            localStorage.setItem('darkMode', 'disabled'); // حفظ التفضيل في ذاكرة المتصفح (معطل)
-            darkModeToggle.textContent = '🌙'; // تغيير أيقونة الزر للقمر
+            body.classList.remove('dark-mode');
+            localStorage.setItem('darkMode', 'disabled');
+            darkModeToggle.textContent = '🌙';
         } else {
-            // إذا كان الوضع الفاتح حالياً، قم بتفعيل الوضع الليلي
-            body.classList.add('dark-mode'); // إضافة الكلاس 'dark-mode' إلى <body>
-            localStorage.setItem('darkMode', 'enabled'); // حفظ التفضيل في ذاكرة المتصفح (مفعّل)
-            darkModeToggle.textContent = '☀️'; // تغيير أيقونة الزر للشمس
+            body.classList.add('dark-mode');
+            localStorage.setItem('darkMode', 'enabled');
+            darkModeToggle.textContent = '☀️';
         }
     });
 });
