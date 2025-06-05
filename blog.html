@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة موقعك - مقالات مفيدة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/my_logo.png" alt="شعار موقعك" class="logo">
+        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+
+        <h1>مدونة موقعك</h1>
+        <p>اكتشف مقالاتنا المتخصصة حول HTTP Custom، أمان الإنترنت، ونصائح الاتصال.</p>
+
+        <div class="ad-space" style="margin-bottom: 20px;">
+            <br>
+            <small>مساحة إعلانية (أعلى صفحة المدونة)</small>
+        </div>
+
+        <div class="articles-grid">
+            <div class="article-card">
+                <img src="images/article_placeholder.jpg" alt="صورة المقال" class="article-image">
+                <h2>عنوان المقال الأول: ما هو HTTP Custom؟</h2>
+                <p>مقدمة قصيرة ومثيرة للاهتمام حول ما سيتعلمه القارئ في المقال. هذا المقال يشرح الأساسيات...</p>
+                <a href="article1.html" class="read-more-button">قراءة المزيد</a>
+            </div>
+
+            <div class="article-card">
+                <img src="images/article_placeholder.jpg" alt="صورة المقال" class="article-image">
+                <h2>عنوان المقال الثاني: دليل أمان الإنترنت للمستخدمين</h2>
+                <p>في هذا المقال، سنستعرض أهم النصائح والإرشادات لحماية خصوصيتك وبياناتك عند تصفح الإنترنت...</p>
+                <a href="article2.html" class="read-more-button">قراءة المزيد</a>
+            </div>
+
+            </div>
+
+        <div class="ad-space" style="margin-top: 30px;">
+            <br>
+            <small>مساحة إعلانية (أسفل صفحة المدونة)</small>
+        </div>
+
+        <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 موقعك. جميع الحقوق محفوظة.</p>
+            <nav class="footer-nav">
+                <a href="about.html">عنا</a>
+                <span class="separator">|</span>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <span class="separator">|</span>
+                <a href="terms.html">شروط الاستخدام</a>
+                <span class="separator">|</span>
+                <a href="contact.html">تواصل معنا</a>
+                <span class="separator">|</span>
+                <a href="blog.html">المدونة</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script>
+        // كود الوضع الليلي (يجب أن يكون موجوداً في كل الصفحات)
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                darkModeToggle.textContent = '🌙';
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('darkMode', 'disabled');
+                    darkModeToggle.textContent = '🌙';
+                } else {
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('darkMode', 'enabled');
+                    darkModeToggle.textContent = '☀️';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
