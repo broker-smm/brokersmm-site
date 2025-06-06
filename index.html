@@ -24,6 +24,15 @@
             <p class="icon-label">اضغط هنا لعرض الخيارات</p>
         </div>
 
+        <div class="whatsapp-main-page-link">
+            <a href="https://whatsapp.com/channel/0029VbAXGHGA89MZXbyGZ645" target="_blank" rel="noopener noreferrer" title="تابع قناتنا على واتساب لتلقي الإشعارات والتحديثات" id="whatsappChannelLink">
+                <img src="images/whatsapp.png" alt="أيقونة واتساب" class="whatsapp-promo-icon">
+            </a>
+            <p class="whatsapp-promo-text">
+                تابعنا على واتساب لتصلك آخر التحديثات!
+            </p>
+            <p id="whatsappRedirectMessage" style="display: none; color: #007bff; font-weight: bold; margin-top: 10px;"></p> 
+        </div>
         <div class="main-options-grid hidden" id="configOptionsGrid">
             <a href="inwi-configs.html" class="config-group-card">
                 <img src="images/inwi_logo.png" alt="شعار Inwi" class="card-icon">
@@ -96,14 +105,39 @@
             const configOptionsGrid = document.getElementById('configOptionsGrid');
             const iconLabel = document.querySelector('.icon-label');
 
-            httpCustomMainIcon.addEventListener('click', () => {
-                configOptionsGrid.classList.toggle('hidden'); // تبديل كلاس 'hidden'
-                if (configOptionsGrid.classList.contains('hidden')) {
-                    iconLabel.textContent = 'اضغط هنا لعرض الخيارات';
-                } else {
-                    iconLabel.textContent = 'اضغط مرة أخرى لإخفاء الخيارات';
-                }
-            });
+            if (httpCustomMainIcon && configOptionsGrid && iconLabel) { // التأكد من وجود العناصر
+                httpCustomMainIcon.addEventListener('click', () => {
+                    configOptionsGrid.classList.toggle('hidden'); // تبديل كلاس 'hidden'
+                    if (configOptionsGrid.classList.contains('hidden')) {
+                        iconLabel.textContent = 'اضغط هنا لعرض الخيارات';
+                    } else {
+                        iconLabel.textContent = 'اضغط مرة أخرى لإخفاء الخيارات';
+                    }
+                });
+            }
+
+            // كود رسالة التحويل لقناة واتساب - START NEW CODE
+            const whatsappLink = document.getElementById('whatsappChannelLink');
+            const whatsappMessage = document.getElementById('whatsappRedirectMessage');
+
+            if (whatsappLink && whatsappMessage) { // التأكد من وجود العناصر
+                whatsappLink.addEventListener('click', function(event) {
+                    // إظهار الرسالة
+                    whatsappMessage.textContent = 'جاري تحويلك للقناة...';
+                    whatsappMessage.style.display = 'block';
+
+                    // لا نمنع السلوك الافتراضي للرابط (event.preventDefault())
+                    // حتى يتم فتح الرابط بشكل طبيعي.
+                    // الرسالة ستظهر للحظات قليلة قبل أن يبدأ المتصفح بالتحويل.
+
+                    // يمكنك اختيار إخفاء الرسالة بعد فترة إذا لم يتم التحويل بسرعة
+                    // ولكن عادة المتصفح سيبدأ التحويل مباشرة
+                    setTimeout(() => {
+                        whatsappMessage.style.display = 'none';
+                    }, 3000); // إخفاء الرسالة بعد 3 ثوانٍ كإجراء احتياطي
+                });
+            }
+            // كود رسالة التحويل لقناة واتساب - END NEW CODE
         });
     </script>
 </body>

@@ -256,6 +256,50 @@ p {
     box-shadow: 0 0.3em 0.7em rgba(0, 0, 0, 0.3);
 }
 
+/* =========================================== */
+/* == WhatsApp Link on Main Page (index.html) == */ /* <-- تم إضافة الكود الجديد هنا */
+/* =========================================== */
+
+.whatsapp-main-page-link {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px; /* مسافة قبل شبكة الخيارات */
+    padding: 15px;
+    background-color: rgba(230, 245, 255, 0.75); /* خلفية فاتحة مميزة قليلاً */
+    border: 1px solid rgba(0, 123, 255, 0.25); /* حدود ناعمة بلون أزرق فاتح */
+    border-radius: 8px; /* نفس دائرية الحاوية الرئيسية */
+}
+
+.whatsapp-promo-icon {
+    width: 300px;  /* جرب هذا العرض الجديد، أو أي قيمة تراها مناسبة */
+    height: auto; /* هذا سيجعل الارتفاع يتناسب تلقائيًا مع العرض الجديد */
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-promo-icon:hover {
+    transform: scale(1.1); /* تكبير بسيط عند التمرير */
+}
+
+.whatsapp-promo-text {
+    font-size: 0.95em; /* حجم النص */
+    color: #0056b3;    /* لون متناسق مع عنوان h1 */
+    margin-top: 8px;   /* مسافة فوق النص */
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Dark Mode for WhatsApp Link on Main Page */
+body.dark-mode .whatsapp-main-page-link {
+    background-color: rgba(45, 45, 45, 0.8); /* خلفية أغمق للوضع الليلي */
+    border-color: rgba(76, 175, 80, 0.3); /* حدود بلون أخضر متناسق مع عناوين الوضع الليلي */
+}
+
+body.dark-mode .whatsapp-promo-text {
+    color: #4CAF50; /* لون متناسق مع عناوين الوضع الليلي */
+}
+
+
 @media (max-width: 600px) {
     .container {
         margin: 10px;
@@ -432,7 +476,7 @@ body.dark-mode .footer-nav a:hover {
 
 body.dark-mode .footer-nav .separator {
     color: #777;
-} /* <-- القوس الناقص تم إضافته هنا لإغلاق القاعدة السابقة بشكل صحيح */
+}
 
 /* =================================== */
 /* == أنماط صفحة المدونة (blog.html) == */
