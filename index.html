@@ -1,157 +1,131 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق HTTP Custom - ملفات الكونفيج</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق HTTP Custom - ملفات الكونفيج</title>
+    <link rel="stylesheet" href="style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
 </head>
 <body>
-    <div class="container">
-        <img src="images/my_logo.png" alt="شعار موقعك" class="logo">
-        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
-
-        <div class="ad-space" style="margin-bottom: 20px;">
-            <br>
-            <small>عليك تحديث الروابط كل 3 ايام</small>
-        </div>
-
-        <h1>روابط كونفينكات تطبيق  HTTP CUSTOM</h1>
-        <p>مرحبًا بك في مركز الروابط اضغط على الايقونة لعرض  الخيارات</p>
-
-        <div class="http-custom-icon-container">
-            <img src="images/http_custom_app_icon.png" alt="أيقونة تطبيق HTTP Custom" class="http-custom-main-icon" id="httpCustomMainIcon">
-            <p class="icon-label">اضغط هنا لعرض الخيارات</p>
-        </div>
-
-        <div class="whatsapp-main-page-link" id="whatsappSection"> 
-            <a href="https://whatsapp.com/channel/0029VbAXGHGA89MZXbyGZ645" target="_blank" rel="noopener noreferrer" title="تابع قناتنا على واتساب لتلقي الإشعارات والتحديثات" id="whatsappChannelLink">
-                <img src="images/whatsapp.png" alt="أيقونة واتساب" class="whatsapp-promo-icon">
-            </a>
-            <p class="whatsapp-promo-text">
-                تابعنا على واتساب لتصلك آخر التحديثات!
-            </p>
-            <p id="whatsappRedirectMessage" style="display: none; color: #007bff; font-weight: bold; margin-top: 10px;"></p>
-        </div>
-
-        <div class="main-options-grid hidden" id="configOptionsGrid">
-            <a href="inwi-configs.html" class="config-group-card">
-                <img src="images/inwi_logo.png" alt="شعار Inwi" class="card-icon">
-                <h3>INWI ⭐ 6</h3>
-                <p>ملفات Config خاصة بشبكة Inwi</p>
-            </a>
-
-            <a href="win-configs.html" class="config-group-card">
-                <img src="images/win_by_inwi_logo.png" alt="شعار Win by Inwi" class="card-icon">
-                <h3>WIN BY inwi</h3>
-                <p>ملفات Config خاصة بشبكة Win by Inwi</p>
-            </a>
-
-            <a href="iam-configs.html" class="config-group-card">
-                <img src="images/iam_logo.png" alt="شعار IAM" class="card-icon">
-                <h3>IAM ⭐ 6</h3>
-                <p>ملفات Config خاصة بشبكة IAM</p>
-            </a>
-        </div>
-
-        <div class="ad-space" style="margin-top: 30px;">
-            <br>
-            <small>عليك تحديث الرابط كل 3 ايام</small>
-        </div>
-
-        <footer class="main-footer">
-            <p>&copy; 2025 . جميع الحقوق محفوظة.</p>
-            <nav class="footer-nav">
-                <a href="about.html">عنا</a>
-                <span class="separator">|</span>
-                <a href="privacy.html">سياسة الخصوصية</a>
-                <span class="separator">|</span>
-                <a href="terms.html">شروط الاستخدام</a>
-                <span class="separator">|</span>
-                <a href="contact.html">تواصل معنا</a>
-                <span class="separator">|</span>
-                <a href="blog.html">المدونة</a>
-            </nav>
-        </footer>
-
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // كود الوضع الليلي
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                body.classList.add('dark-mode');
-                darkModeToggle.textContent = '☀️';
-            } else {
-                darkModeToggle.textContent = '🌙';
-            }
-
-            darkModeToggle.addEventListener('click', () => {
-                if (body.classList.contains('dark-mode')) {
-                    body.classList.remove('dark-mode');
-                    localStorage.setItem('darkMode', 'disabled');
-                    darkModeToggle.textContent = '🌙';
-                } else {
-                    body.classList.add('dark-mode');
-                    localStorage.setItem('darkMode', 'enabled');
-                    darkModeToggle.textContent = '☀️';
-                }
-            });
-
-            // كود إظهار/إخفاء الخيارات وقسم الواتساب عند النقر على أيقونة HTTP Custom
-            const httpCustomMainIcon = document.getElementById('httpCustomMainIcon');
-            const configOptionsGrid = document.getElementById('configOptionsGrid');
-            const iconLabel = document.querySelector('.icon-label');
-            const whatsappSection = document.getElementById('whatsappSection'); // استخدام id الذي أضفناه
-
-            if (httpCustomMainIcon && configOptionsGrid && iconLabel && whatsappSection) { // التأكد من وجود جميع العناصر
-                // التأكد من أن قسم الواتساب ظاهر مبدئيًا إذا كانت الخيارات مخفية
-                if (configOptionsGrid.classList.contains('hidden')) {
-                    whatsappSection.classList.remove('hidden');
-                } else {
-                    whatsappSection.classList.add('hidden');
-                }
-
-                httpCustomMainIcon.addEventListener('click', () => {
-                    configOptionsGrid.classList.toggle('hidden'); // إظهار أو إخفاء شبكة الخيارات
-                    
-                    if (configOptionsGrid.classList.contains('hidden')) {
-                        // شبكة الخيارات مخفية الآن، قم بإظهار قسم الواتساب
-                        whatsappSection.classList.remove('hidden'); 
-                        iconLabel.textContent = 'اضغط هنا لعرض الخيارات';
-                    } else {
-                        // شبكة الخيارات ظاهرة الآن، قم بإخفاء قسم الواتساب
-                        whatsappSection.classList.add('hidden'); 
-                        iconLabel.textContent = 'اضغط مرة أخرى لإخفاء الخيارات';
-                    }
-                });
-            }
-
-            // كود رسالة التحويل لقناة واتساب
-            const whatsappLink = document.getElementById('whatsappChannelLink');
-            const whatsappMessage = document.getElementById('whatsappRedirectMessage');
-
-            if (whatsappLink && whatsappMessage) { 
-                whatsappLink.addEventListener('click', function(event) {
-                    whatsappMessage.textContent = 'جاري تحويلك للقناة...';
-                    whatsappMessage.style.display = 'block';
-                    setTimeout(() => {
-                        whatsappMessage.style.display = 'none';
-                    }, 3000);
-                });
-            }
-        });
-    </script>
+    <div class="container">
+        <img src="images/my_logo.png" alt="شعار موقعك" class="logo">
+        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+        <div class="ad-space" style="margin-bottom: 20px;">
+            <br>
+            <small>عليك تحديث الروابط كل 3 ايام</small>
+        </div>
+        <h1>روابط كونفينكات تطبيق HTTP CUSTOM</h1>
+        <p>مرحبًا بك في مركز الروابط اضغط على الايقونة لعرض  الخيارات</p>
+        <div class="http-custom-icon-container">
+            <img src="images/http_custom_app_icon.png" alt="أيقونة تطبيق HTTP Custom" class="http-custom-main-icon" id="httpCustomMainIcon">
+            <p class="icon-label">اضغط هنا لعرض الخيارات</p>
+        </div>
+        <div class="whatsapp-main-page-link" id="whatsappSection"> 
+            <a href="https://whatsapp.com/channel/0029VbAXGHGA89MZXbyGZ645" target="_blank" rel="noopener noreferrer" title="تابع قناتنا على واتساب لتلقي الإشعارات والتحديثات" id="whatsappChannelLink">
+                <img src="images/whatsapp.png" alt="أيقونة واتساب" class="whatsapp-promo-icon">
+            </a>
+            <p class="whatsapp-promo-text">
+                تابعنا على واتساب لتصلك آخر التحديثات!
+            </p>
+            <p id="whatsappRedirectMessage" style="display: none; color: #007bff; font-weight: bold; margin-top: 10px;"></p>
+        </div>
+        <div class="main-options-grid hidden" id="configOptionsGrid">
+            <a href="inwi-configs.html" class="config-group-card">
+                <img src="images/inwi_logo.png" alt="شعار Inwi" class="card-icon">
+                <h3>INWI ⭐ 6</h3>
+                <p>ملفات Config خاصة بشبكة Inwi</p>
+            </a>
+            <a href="win-configs.html" class="config-group-card">
+                <img src="images/win_by_inwi_logo.png" alt="شعار Win by Inwi" class="card-icon">
+                <h3>WIN BY inwi</h3>
+                <p>ملفات Config خاصة بشبكة Win by Inwi</p>
+            </a>
+            <a href="iam-configs.html" class="config-group-card">
+                <img src="images/iam_logo.png" alt="شعار IAM" class="card-icon">
+                <h3>IAM ⭐ 6</h3>
+                <p>ملفات Config خاصة بشبكة IAM</p>
+            </a>
+        </div>
+        <div class="ad-space" style="margin-top: 30px;">
+            <br>
+            <small>عليك تحديث الرابط كل 3 ايام</small>
+        </div>
+        <footer class="main-footer">
+            <p>&copy; 2025 . جميع الحقوق محفوظة.</p>
+            <nav class="footer-nav">
+                <a href="about.html">عنا</a>
+                <span class="separator">|</span>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <span class="separator">|</span>
+                <a href="terms.html">شروط الاستخدام</a>
+                <span class="separator">|</span>
+                <a href="contact.html">تواصل معنا</a>
+                <span class="separator">|</span>
+                <a href="blog.html">المدونة</a>
+            </nav>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                darkModeToggle.textContent = '🌙';
+            }
+            darkModeToggle.addEventListener('click', () => {
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('darkMode', 'disabled');
+                    darkModeToggle.textContent = '🌙';
+                } else {
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('darkMode', 'enabled');
+                    darkModeToggle.textContent = '☀️';
+                }
+            });
+            const httpCustomMainIcon = document.getElementById('httpCustomMainIcon');
+            const configOptionsGrid = document.getElementById('configOptionsGrid');
+            const iconLabel = document.querySelector('.icon-label');
+            const whatsappSection = document.getElementById('whatsappSection');
+            if (httpCustomMainIcon && configOptionsGrid && iconLabel && whatsappSection) {
+                if (configOptionsGrid.classList.contains('hidden')) {
+                    whatsappSection.classList.remove('hidden');
+                } else {
+                    whatsappSection.classList.add('hidden');
+                }
+                httpCustomMainIcon.addEventListener('click', () => {
+                    configOptionsGrid.classList.toggle('hidden');
+                    if (configOptionsGrid.classList.contains('hidden')) {
+                        whatsappSection.classList.remove('hidden'); 
+                        iconLabel.textContent = 'اضغط هنا لعرض الخيارات';
+                    } else {
+                        whatsappSection.classList.add('hidden'); 
+                        iconLabel.textContent = 'اضغط مرة أخرى لإخفاء الخيارات';
+                    }
+                });
+            }
+            const whatsappLink = document.getElementById('whatsappChannelLink');
+            const whatsappMessage = document.getElementById('whatsappRedirectMessage');
+            if (whatsappLink && whatsappMessage) { 
+                whatsappLink.addEventListener('click', function(event) {
+                    whatsappMessage.textContent = 'جاري تحويلك للقناة...';
+                    whatsappMessage.style.display = 'block';
+                    setTimeout(() => {
+                        whatsappMessage.style.display = 'none';
+                    }, 3000);
+                });
+            }
+        });
+    </script>
 </body>
 </html>
