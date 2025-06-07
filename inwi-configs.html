@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>روابط Config inwi ⭐ 6</title>
 <link rel="stylesheet" href="style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HTYEW9YJ5L');
+</script>
 </head>
 <body>
 <div class="container">
@@ -25,7 +32,7 @@
         <div class="config-list-item" data-link="https://tinyurl.com/broker-SMM-2">
             <div class="config-details">
                 <img src="images/canada_flag.png" alt="علم كندا" class="flag-icon">
-                <span>HTTP CUSTOM    :التطبيق</span>
+                <span>HTTP CUSTOM:التطبيق</span>
                 <span>CANADA:الخادم</span>
                 <span>تاريخ التحديث: 2025-06-07</span>
             </div>
@@ -55,7 +62,7 @@
         <div class="config-list-item" data-link="https://tinyurl.com/Broker-SMM-5">
             <div class="config-details">
                 <img src="images/belgium_flag.png" alt="علم بلجيكا" class="flag-icon">
-                <span>HTTP CUSTOM :التطبيق</span>
+                <span>HTTP CUSTOM:التطبيق</span>
                 <span>belgium :الخادم</span>
                 <span>تاريخ التحديث: 2025-06-07</span>
             </div>
@@ -136,13 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     copyButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // تعطيل الزر لمنع النقرات المتعددة أثناء العد التنازلي
             button.disabled = true;
-            const originalButtonText = "انشاء رابط"; // النص الأصلي للزر
+            const originalButtonText = "انشاء رابط";
             const linkToCopy = button.parentElement.dataset.link;
-            let countdown = 5; // بدء العد التنازلي من 5
-
-            // تحديث نص الزر فورًا ليبدأ العد
+            let countdown = 5;
             button.textContent = `انتظر ${countdown}...`;
 
             const intervalId = setInterval(() => {
@@ -150,29 +154,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (countdown > 0) {
                     button.textContent = `انتظر ${countdown}...`;
                 } else {
-                    clearInterval(intervalId); // إيقاف العد التنازلي
-                    
-                    // محاولة نسخ الرابط
+                    clearInterval(intervalId);
                     navigator.clipboard.writeText(linkToCopy).then(() => {
                         button.textContent = 'تم النسخ!';
                         setTimeout(() => {
-                            button.textContent = originalButtonText; // إعادة النص الأصلي
-                            button.disabled = false; // إعادة تفعيل الزر
-                        }, 2000); // عرض "تم النسخ!" لمدة ثانيتين
+                            button.textContent = originalButtonText;
+                            button.disabled = false;
+                        }, 2000);
                     }).catch(err => {
                         console.error('فشل نسخ الرابط: ', err);
-                        button.textContent = 'فشل النسخ'; // رسالة خطأ على الزر
+                        button.textContent = 'فشل النسخ';
                         setTimeout(() => {
                             button.textContent = originalButtonText;
                             button.disabled = false;
                         }, 2000);
                     });
                 }
-            }, 1000); // كل ثانية
+            }, 1000);
         });
     });
 
-    // كود الوضع الليلي (يبقى كما هو)
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
 
