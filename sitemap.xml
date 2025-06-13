@@ -17,6 +17,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://www.brokersmm.com/article3.html</loc> <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.brokersmm.com/article4.html</loc> <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://www.brokersmm.com/inwi-configs.html</loc>
     <priority>0.60</priority>
   </url>
