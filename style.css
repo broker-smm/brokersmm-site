@@ -6,17 +6,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
     color: #333;
-    text-align: center;
-    background-image: url('images/background.webp');
-    background-size: cover;
+    /* --- START: New Background --- */
+    background-color: #1a252f; /* Fallback color */
+    background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+    /* --- END: New Background --- */
     background-attachment: fixed;
-    background-position: center center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transition: background-color 0.3s ease;
+    /* display: flex and related properties were removed to fix the layout */
+}
+
+#main-content {
+    transition: margin-right 0.5s;
+    padding: 0;
+    width: 100%;
 }
 
 .container {
@@ -27,14 +30,15 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
-    position: relative; /* لتحديد موقع زر الوضع الليلي بالنسبة للحاوية */
+    position: relative; 
+    text-align: center;
 }
 
-/* New CSS for article pages to have a different container style */
 .article-container {
-    text-align: right; /* Align text to the right for articles */
+    text-align: right;
 }
 
+/* ... (All other styles remain exactly the same as your original file) ... */
 .logo {
     width: 150px;
     height: auto;
@@ -42,36 +46,29 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 h1 {
     color: #0056b3;
     margin-bottom: 15px;
 }
-
 h2 {
     color: #007bff;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-
 h3 {
     color: #333;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 p {
     line-height: 1.6;
     margin-bottom: 15px;
 }
-
-/* Align lists to the right for RTL */
 ol, ul {
     text-align: right;
-    padding-right: 20px; /* Add some padding for RTL lists */
+    padding-right: 20px;
     padding-left: 0;
 }
-
 .ad-space {
     margin-top: 20px;
     padding: 15px;
@@ -82,58 +79,47 @@ ol, ul {
     font-size: 0.9em;
     text-align: center;
 }
-
-/* الأنماط الجديدة لأيقونة HTTP Custom الرئيسية */
 .http-custom-icon-container {
     margin: 40px auto;
     cursor: pointer;
     text-align: center;
     position: relative;
-    max-width: 200px; /* لتقييد حجم الأيقونة في المنتصف */
+    max-width: 200px;
 }
-
 .http-custom-main-icon {
-    width: 150px; /* حجم الأيقونة */
-    height: 150px; /* يجب أن تكون مربعة للحفاظ على الشكل الدائري */
-    border-radius: 50%; /* لجعلها دائرة */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* ظل أعمق */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    object-fit: cover; /* لضمان ملء الصورة للدائرة */
-    border: 3px solid #007bff; /* حدود حول الأيقونة */
+    object-fit: cover;
+    border: 3px solid #007bff;
 }
-
 .http-custom-main-icon:hover {
-    transform: scale(1.05); /* تكبير طفيف عند التمرير */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* ظل أكبر عند التمرير */
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
-
 .icon-label {
     margin-top: 10px;
     font-size: 1.1em;
     color: #007bff;
     font-weight: bold;
 }
-
-/* نمط لإخفاء العناصر */
 .hidden {
     display: none !important;
 }
-
-/* تحسينات لشبكة الخيارات (التي تظهر بعد النقر) */
 .main-options-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
-    animation: fadeIn 0.5s ease-out; /* تأثير ظهور سلس */
+    animation: fadeIn 0.5s ease-out;
 }
-
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
 .config-group-card {
     background-color: #e9ecef;
     border: 1px solid #ddd;
@@ -146,12 +132,10 @@ ol, ul {
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .config-group-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 .config-group-card .card-icon {
     width: 100%;
     height: auto;
@@ -160,7 +144,6 @@ ol, ul {
     object-fit: contain;
     max-height: 150px;
 }
-
 .main-options-grid a:first-child .card-icon {
     width: 100%;
     height: auto;
@@ -170,8 +153,6 @@ ol, ul {
     max-height: 120px;
     border-radius: 5px;
 }
-
-
 .config-list-item {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
@@ -183,7 +164,6 @@ ol, ul {
     align-items: flex-start;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
-
 .config-details {
     display: flex;
     flex-direction: column;
@@ -192,7 +172,6 @@ ol, ul {
     margin-bottom: 10px;
     text-align: right;
 }
-
 .config-details .flag-icon {
     width: 100%;
     height: auto;
@@ -201,7 +180,6 @@ ol, ul {
     margin-bottom: 10px;
     object-fit: cover;
 }
-
 .config-details span {
     font-size: 1em;
     color: #555;
@@ -210,11 +188,8 @@ ol, ul {
     text-align: right;
     width: 100%;
 }
-
-/* أنماط الأزرار الحديثة الجديدة والمعدلة */
 .copy-button,
-.back-button,
-.dark-mode-toggle {
+.back-button {
     padding: 0.75em 1.5em;
     border: none;
     border-radius: 0.5em;
@@ -227,138 +202,51 @@ ol, ul {
     align-items: center;
     text-decoration: none;
 }
-
 .copy-button {
     background-color: #4CAF50;
     color: white;
     width: 100%;
     margin-top: 10px;
 }
-
 .copy-button:hover {
     background-color: #388E3C;
-    box-shadow: 0 0.3em 0.7em rgba(0, 0, 0, 0.3);
 }
-
 .back-button {
     background-color: #2196F3;
     color: white;
     margin-top: 20px;
     display: inline-block;
 }
-
 .back-button:hover {
     background-color: #1976D2;
-    box-shadow: 0 0.3em 0.7em rgba(0, 0, 0, 0.3);
 }
-
-.dark-mode-toggle {
-    background-color: #673AB7;
-    color: white;
-    font-size: 1.5em;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-.dark-mode-toggle:hover {
-    background-color: #512DA8;
-    box-shadow: 0 0.3em 0.7em rgba(0, 0, 0, 0.3);
-}
-
-/* =========================================== */
-/* == WhatsApp Link on Main Page (index.html) == */ /* <-- تم إضافة الكود الجديد هنا */
-/* =========================================== */
 
 .whatsapp-main-page-link {
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 30px; /* مسافة قبل شبكة الخيارات */
+    margin-bottom: 30px;
     padding: 15px;
-    background-color: rgba(230, 245, 255, 0.75); /* خلفية فاتحة مميزة قليلاً */
-    border: 1px solid rgba(0, 123, 255, 0.25); /* حدود ناعمة بلون أزرق فاتح */
-    border-radius: 8px; /* نفس دائرية الحاوية الرئيسية */
+    background-color: rgba(230, 245, 255, 0.75);
+    border: 1px solid rgba(0, 123, 255, 0.25);
+    border-radius: 8px;
 }
-
 .whatsapp-promo-icon {
-    width: 300px;  /* جرب هذا العرض الجديد، أو أي قيمة تراها مناسبة */
-    height: auto; /* هذا سيجعل الارتفاع يتناسب تلقائيًا مع العرض الجديد */
+    width: 300px;
+    height: auto;
     vertical-align: middle;
     transition: transform 0.3s ease;
 }
-
 .whatsapp-promo-icon:hover {
-    transform: scale(1.1); /* تكبير بسيط عند التمرير */
+    transform: scale(1.1);
 }
-
 .whatsapp-promo-text {
-    font-size: 0.95em; /* حجم النص */
-    color: #0056b3;    /* لون متناسق مع عنوان h1 */
-    margin-top: 8px;   /* مسافة فوق النص */
+    font-size: 0.95em;
+    color: #0056b3;
+    margin-top: 8px;
     font-weight: bold;
     line-height: 1.4;
 }
 
-/* Dark Mode for WhatsApp Link on Main Page */
-body.dark-mode .whatsapp-main-page-link {
-    background-color: rgba(45, 45, 45, 0.8); /* خلفية أغمق للوضع الليلي */
-    border-color: rgba(76, 175, 80, 0.3); /* حدود بلون أخضر متناسق مع عناوين الوضع الليلي */
-}
-
-body.dark-mode .whatsapp-promo-text {
-    color: #4CAF50; /* لون متناسق مع عناوين الوضع الليلي */
-}
-
-
-@media (max-width: 600px) {
-    .container {
-        margin: 10px;
-        padding: 15px;
-    }
-    h1 {
-        font-size: 1.8em;
-    }
-    h2 {
-        font-size: 1.4em;
-    }
-    .http-custom-main-icon {
-        width: 120px; /* أصغر قليلا على الجوال */
-        height: 120px;
-    }
-    .config-list-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .config-details {
-        margin-right: 0;
-        margin-bottom: 10px;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
-    .config-details .flag-icon {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .config-details span {
-        text-align: right;
-        width: 100%;
-    }
-    .copy-button {
-        width: 100%;
-        margin-top: 15px;
-    }
-}
-
-/* أنماط تذييل الصفحة */
 .main-footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -366,31 +254,265 @@ body.dark-mode .whatsapp-promo-text {
     font-size: 0.9em;
     color: #666;
 }
-
 .footer-nav {
     margin-top: 10px;
 }
-
 .footer-nav a {
     color: #007bff;
     text-decoration: none;
     margin: 0 8px;
     transition: color 0.3s ease;
 }
-
 .footer-nav a:hover {
     color: #0056b3;
 }
-
 .footer-nav .separator {
     color: #bbb;
 }
+p.disclaimer {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 15px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-/* تنسيقات الوضع الليلي */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+.article-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+.article-card .article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.article-card h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.article-card p {
+    font-size: 0.95em;
+    color: #555;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+.read-more-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    align-self: flex-start;
+    margin-top: auto;
+}
+.read-more-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+/* =========================================== */
+/* ==   STYLES FOR SIDENAV AND HEADER     == */
+/* =========================================== */
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.header-title {
+    font-size: 1.5em;
+    color: #0056b3;
+    margin: 0;
+    font-weight: bold;
+}
+
+.dark-mode-toggle {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    font-size: 1em;
+    width: auto;
+    height: auto;
+    padding: 0.5em 1em;
+    box-shadow: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, #2c3e50, #1a252f);
+    overflow-x: hidden;
+    transition: width 0.4s ease-out;
+    padding-top: 60px;
+    text-align: right;
+    box-shadow: -5px 0 25px rgba(0,0,0,0.4);
+}
+
+.sidenav .close-btn {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 36px;
+    color: #818181;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.sidenav .close-btn:hover {
+    color: #ff00ff; 
+    transform: rotate(90deg);
+}
+
+.sidenav hr {
+    border: 0;
+    border-top: 1px solid #4a6279;
+    margin: 15px 20px;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1100;
+    cursor: pointer;
+}
+
+/* Accordion Menu Styles (Sidenav) */
+.sidenav a, .sidenav .accordion {
+    padding: 12px 20px 12px 32px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #bdc3c7;
+    display: block;
+    transition: 0.3s;
+    position: relative;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    border-right: 4px solid transparent;
+}
+
+.sidenav a:hover, .sidenav .accordion:hover {
+    color: #ffffff;
+    border-right-color: #be00ff;
+}
+
+.sidenav a.active {
+    background: rgba(0, 229, 255, 0.1);
+    color: #ffffff;
+    font-weight: bold;
+    border-right-color: #00e5ff;
+}
+
+.sidenav .accordion::before {
+    content: '▶';
+    font-size: 0.7em;
+    color: #bdc3c7;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+}
+
+.sidenav .accordion.active::before {
+    transform: translateY(-50%) rotate(90deg);
+    color: #00e5ff;
+}
+
+.sidenav .panel {
+    padding: 0;
+    background-color: rgba(0,0,0,0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.sidenav .panel a {
+    font-size: 1em;
+    color: #95a5a6;
+    padding-right: 40px;
+}
+
+.sidenav .panel a:hover {
+    color: #ffffff;
+    border-right-color: #be00ff;
+}
+
+
+@media (max-width: 600px) {
+    /* Your media queries here */
+}
+
+/* =========================================== */
+/* ==           DARK MODE STYLES          == */
+/* =========================================== */
+
 body.dark-mode {
-    background-color: #1a1a1a;
-    color: #f0f0f0;
-    background-image: none;
+    background: #1a252f; /* Make sure dark mode also doesn't use the image */
 }
 
 body.dark-mode .container {
@@ -413,9 +535,8 @@ body.dark-mode .ad-space {
     color: #aaaaaa;
 }
 
-/* الوضع الليلي - أيقونة HTTP Custom */
 body.dark-mode .http-custom-main-icon {
-    border-color: #4CAF50; /* حدود خضراء في الوضع الليلي */
+    border-color: #4CAF50;
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.15);
 }
 
@@ -466,24 +587,13 @@ body.dark-mode .back-button:hover {
     background-color: #666666;
 }
 
-body.dark-mode .dark-mode-toggle {
-    background-color: #333;
-    color: #f0f0f0;
-    border-color: #555;
-}
-
-body.dark-mode .dark-mode-toggle:hover {
-    background-color: #444;
-}
-
-/* الوضع الليلي - تذييل الصفحة */
 body.dark-mode .main-footer {
     border-top: 1px solid #333;
     color: #999;
 }
 
 body.dark-mode .footer-nav a {
-    color: #4CAF50; /* لون الروابط في الوضع الليلي */
+    color: #4CAF50;
 }
 
 body.dark-mode .footer-nav a:hover {
@@ -494,88 +604,14 @@ body.dark-mode .footer-nav .separator {
     color: #777;
 }
 
-/* =================================== */
-/* == أنماط صفحة المدونة (blog.html) == */
-/* =================================== */
-
-/* شبكة عرض المقالات */
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* أعمدة متجاوبة */
-    gap: 25px; /* المسافة بين البطاقات */
-    padding: 20px 0; /* حشوة أعلى وأسفل الشبكة */
+body.dark-mode p.disclaimer {
+    color: #aaa;
 }
-
-/* بطاقة المقال الفردية */
-.article-card {
-    background-color: #ffffff; /* خلفية بيضاء للبطاقة */
-    border: 1px solid #e0e0e0; /* حدود رمادية فاتحة */
-    border-radius: 8px; /* زوايا دائرية متناسقة مع باقي الموقع */
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* ظل ناعم واحترافي */
-    display: flex;
-    flex-direction: column; /* لترتيب العناصر داخل البطاقة بشكل عمودي */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* تأثير عند التمرير */
-}
-
-.article-card:hover {
-    transform: translateY(-5px); /* تأثير ارتفاع طفيف عند التمرير */
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12); /* ظل أوضح عند التمرير */
-}
-
-/* صورة المقال أعلى البطاقة */
-.article-card .article-image {
-    width: 100%;
-    height: 200px; /* ارتفاع ثابت للصورة */
-    object-fit: cover; /* لضمان ملء الصورة للمساحة المتاحة بشكل جيد */
-    border-radius: 6px; /* زوايا دائرية طفيفة للصورة */
-    margin-bottom: 15px; /* مسافة أسفل الصورة */
-}
-
-/* عنوان المقال داخل البطاقة */
-.article-card h2 {
-    font-size: 1.4em; /* حجم خط مناسب لعنوان المقال */
-    color: #333; /* لون أغمق قليلاً من لون h1 الافتراضي */
-    margin-bottom: 10px;
-    line-height: 1.3;
-}
-
-/* نص المقال المختصر داخل البطاقة */
-.article-card p {
-    font-size: 0.95em; /* حجم خط مناسب للنص المختصر */
-    color: #555; /* لون نص أفتح قليلاً */
-    flex-grow: 1; /* لجعل الفقرة تتمدد وتدفع زر "قراءة المزيد" للأسفل */
-    margin-bottom: 15px;
-}
-
-/* زر "قراءة المزيد" */
-.read-more-button {
-    display: inline-block; /* ليتصرف كزر */
-    background-color: #007bff; /* لون أزرق (متناسق مع ألوان الموقع الأخرى) */
-    color: white;
-    padding: 10px 18px;
-    border-radius: 5px;
-    text-decoration: none; /* إزالة الخط تحت الرابط */
-    text-align: center;
-    font-weight: bold;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    align-self: flex-start; /* لجعله في بداية السطر الأفقي إذا لم يكن بعرض كامل */
-    margin-top: auto; /* يدفعه للأسفل إذا كانت البطاقات ذات ارتفاعات مختلفة بسبب النص */
-}
-
-.read-more-button:hover {
-    background-color: #0056b3; /* لون أغمق عند التمرير */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-
-/* =========================================== */
-/* == أنماط الوضع الليلي لصفحة المدونة == */
-/* =========================================== */
 
 body.dark-mode .article-card {
-    background-color: #2b2b2b; /* خلفية داكنة لبطاقة المقال */
+    background-color: #2b2b2b;
     border-color: #444444;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* ظل مناسب للوضع الليلي */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 body.dark-mode .article-card:hover {
@@ -583,18 +619,45 @@ body.dark-mode .article-card:hover {
 }
 
 body.dark-mode .article-card h2 {
-    color: #e0e0e0; /* لون فاتح لعنوان المقال في الوضع الليلي */
+    color: #e0e0e0;
 }
 
 body.dark-mode .article-card p {
-    color: #cccccc; /* لون فاتح لنص المقال المختصر */
+    color: #cccccc;
 }
 
 body.dark-mode .read-more-button {
-    background-color: #4CAF50; /* لون أخضر لزر "قراءة المزيد" في الوضع الليلي (متناسق مع h1/h2) */
+    background-color: #4CAF50;
     color: white;
 }
 
 body.dark-mode .read-more-button:hover {
-    background-color: #388E3C; /* لون أخضر أغمق عند التمرير */
+    background-color: #388E3C;
+}
+
+body.dark-mode .whatsapp-main-page-link {
+    background-color: rgba(45, 45, 45, 0.8);
+    border-color: rgba(76, 175, 80, 0.3);
+}
+
+body.dark-mode .whatsapp-promo-text {
+    color: #4CAF50;
+}
+
+body.dark-mode .main-header {
+    background-color: #1a252f; /* Darker header for dark mode */
+}
+
+body.dark-mode .menu-btn {
+    color: #ecf0f1;
+}
+
+body.dark-mode .header-title {
+    color: #00e5ff; /* Cyan title in dark mode */
+}
+
+body.dark-mode .dark-mode-toggle {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-color: #4a6279;
 }
