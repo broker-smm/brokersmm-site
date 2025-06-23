@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,134 +14,208 @@
 </script>
 </head>
 <body>
-<div class="container">
-    <img src="images/my_logo.webp" alt="شعار موقعك" class="logo"
-    width="150" height="138">
 
-    <button id="darkModeToggle" class="dark-mode-toggle">
-        🌙
-    </button>
-    <div class="ad-space" style="margin-bottom: 20px;">
-        <br>
-        <small>يتم تحديث الروابط كل 3 ايام</small>
+    <div id="side-nav" class="sidenav">
+        <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
+        
+        <a href="index.html" class="main-nav-link">الصفحة الرئيسية</a>
+        <a href="blog.html" class="main-nav-link">المدونة</a>
+        <a href="faq.html" class="main-nav-link">الأسئلة الشائعة</a>
+
+        <hr>
+
+        <button class="accordion">كونفيجات HTTP Custom</button>
+        <div class="panel">
+            <a href="inwi-configs.html">شبكة Inwi</a>
+            <a href="win-configs.html">شبكة WIN by Inwi</a>
+            <a href="iam-configs.html">شبكة IAM</a>
+        </div>
+
+        <button class="accordion">أدوات (قريبًا)</button>
+        <div class="panel">
+            <a href="#">ما هو IP الخاص بي؟</a>
+            <a href="#">اختبار الاتصال</a>
+        </div>
+
+        <hr>
+
+        <button class="accordion">حول الموقع</button>
+        <div class="panel">
+            <a href="about.html">عنا</a>
+            <a href="contact.html">تواصل معنا</a>
+            <a href="privacy.html">سياسة الخصوصية</a>
+            <a href="terms.html">شروط الاستخدام</a>
+        </div>
     </div>
+    <div id="overlay"></div>
+    <div id="main-content">
+        <header class="main-header">
+            <button id="openNavBtn" class="menu-btn">&#9776;</button>
+            <h1 class="header-title">روابط IAM</h1>
+            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+        </header>
+        <div class="container">
+            <h1>Config IAM ⭐ 6</h1>
+            <p>قامة الروابط يمكنك الان الضغط على  زر انشاء رابط للحصول عليه مباشرة، يمكنك اختيار اي خادم تريد</p>
 
-    <h1>Config IAM ⭐ 6</h1>
-    <p>قامة الروابط يمكنك الان الضغط على  زر انشاء رابط للحصول عليه مباشرة، يمكنك اختيار اي خادم تريد</p>
-    <div class="config-list">
-        <div class="config-list-item" data-link="https://tinyurl.com/Iam-1-broker-SMM">
-            <div class="config-details">
-                <img src="images/canada_flag.webp" alt="علم كندا" class="flag-icon"
-                width="300" height="169">
-                <span>HTTP CUSTOM :التطبيق</span>
-                <span>CANADA :الخادم</span>
-                <span>تاريخ التحديث: 2025-06-20</span>
+            <div class="ad-space" style="margin-bottom: 20px;">
+                <br>
+                <small>يتم تحديث الروابط كل 3 ايام</small>
             </div>
-            <button class="copy-button">انشاء رابط</button>
+
+            <div class="config-list">
+                <div class="config-list-item" data-link="https://tinyurl.com/Broker-SMM-18">
+                    <div class="config-details">
+                        <img src="images/canada_flag.webp" alt="علم كندا" class="flag-icon"
+                        width="300" height="169">
+                        <span>HTTP CUSTOM :التطبيق</span>
+                        <span>CANADA :الخادم</span>
+                        <span>تاريخ التحديث: 2025-06-07</span>
+                    </div>
+                    <button class="copy-button">انشاء رابط</button>
+                </div>
+
+                <div class="config-list-item" data-link="https://tinyurl.com/Broker-SMM-19">
+                    <div class="config-details">
+                        <img src="images/finland_flag.webp" alt="علم فنلندا" class="flag-icon"
+                        width="300" height="169">
+                        <span>HTTP CUSTOM:التطبيق</span>
+                        <span>FINLAND :الخادم</span>
+                        <span>تاريخ التحديث: 2025-06-07</span>
+                    </div>
+                    <button class="copy-button">انشاء رابط</button>
+                </div>
+                </div>
+            
+            <div class="ad-space" style="margin-top: 30px;">
+                <br>
+                <small>يتم تحديث الروابط كل 3 ايام</small>
+            </div>
+
+            <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
+
+            <footer class="main-footer">
+                <p>&copy; 2025 . جميع الحقوق محفوظة.</p>
+                <nav class="footer-nav">
+                    <a href="about.html">عنا</a>
+                    <span class="separator">|</span>
+                    <a href="privacy.html">سياسة الخصوصية</a>
+                    <span class="separator">|</span>
+                    <a href="terms.html">شروط الاستخدام</a>
+                    <span class="separator">|</span>
+                    <a href="contact.html">تواصل معنا</a>
+                    <span class="separator">|</span>
+                    <a href="blog.html">المدونة</a>
+                </nav>
+                <p class="disclaimer">
+                    هذا الموقع هو موقع مستقل ولا ينتمي إلى أو معتمد من قبل أي من شركات الاتصالات المذكورة. جميع الأسماء التجارية والشعارات (مثل Inwi, IAM, win) هي علامات تجارية مسجلة ومملوكة لأصحابها. يتم استخدامها هنا لأغراض التعريف فقط.
+                </p>
+            </footer>
+        </div>
         </div>
 
-        <div class="config-list-item" data-link="https://tinyurl.com/Iam-2-broker-SMM">
-            <div class="config-details">
-                <img src="images/finland_flag.webp" alt="علم فنلندا" class="flag-icon"
-                width="300" height="169">
-                <span>HTTP CUSTOM:التطبيق</span>
-                <span>FINLAND :الخادم</span>
-                <span>تاريخ التحديث: 2025-06-20</span>
-            </div>
-            <button class="copy-button">انشاء رابط</button>
-        </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
 
-        <div class="config-list-item" data-link="https://tinyurl.com/Iam-3-broker-SMM">
-            <div class="config-details">
-                <img src="images/singapore_flag.webp" alt="علم سنغافورة" class="flag-icon"
-                width="300" height="169">
-                <span>HTTP CUSTOM :التطبيق</span>
-                <span>SINGAPORE :الخادم</span>
-                <span>تاريخ التحديث: 2025-06-20</span>
-            </div>
-            <button class="copy-button">انشاء رابط</button>
-        </div>
+        // --- Side Nav, Accordion, Active Link, and Dark Mode Logic ---
+        const openNavBtn = document.getElementById('openNavBtn');
+        const closeNavBtn = document.getElementById('closeNavBtn');
+        const sideNav = document.getElementById('side-nav');
+        const overlay = document.getElementById('overlay');
 
-        <div class="config-list-item" data-link="https://tinyurl.com/Iam-4-broker-SMM">
-            <div class="config-details">
-                <img src="images/belgium_flag.webp" alt="علم بلجيكا" class="flag-icon"
-                width="300" height="169">
-                <span>HTTP CUSTOM :التطبيق</span>
-                <span>BILGIUM :الخادم</span>
-                <span>تاريخ التحديث: 2025-06-20</span>
-            </div>
-            <button class="copy-button">انشاء رابط</button>
-        </div>
+        function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
+        function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
 
-    </div>
-    
-    <div class="ad-space" style="margin-top: 30px;">
-        <br>
-        <small>يتم تحديث الروابط كل 3 ايام</small>
-    </div>
+        if (openNavBtn) openNavBtn.addEventListener('click', openNav);
+        if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
+        if (overlay) overlay.addEventListener('click', closeNav);
 
-    <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
-
-</div>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const copyButtons = document.querySelectorAll('.copy-button');
-
-    copyButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            button.disabled = true;
-            const originalButtonText = "انشاء رابط";
-            const linkToCopy = button.parentElement.dataset.link;
-            let countdown = 5;
-            button.textContent = `انتظر ${countdown}...`;
-
-            const intervalId = setInterval(() => {
-                countdown--;
-                if (countdown > 0) {
-                    button.textContent = `انتظر ${countdown}...`;
-                } else {
-                    clearInterval(intervalId);
-                    navigator.clipboard.writeText(linkToCopy).then(() => {
-                        button.textContent = 'تم النسخ!';
-                        setTimeout(() => {
-                            button.textContent = originalButtonText;
-                            button.disabled = false;
-                        }, 2000);
-                    }).catch(err => {
-                        console.error('فشل نسخ الرابط: ', err);
-                        button.textContent = 'فشل النسخ';
-                        setTimeout(() => {
-                            button.textContent = originalButtonText;
-                            button.disabled = false;
-                        }, 2000);
-                    });
-                }
-            }, 1000);
+        const accordions = document.querySelectorAll('.sidenav .accordion');
+        accordions.forEach(acc => {
+            acc.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
+            });
         });
-    });
 
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
-
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        body.classList.add('dark-mode');
-        darkModeToggle.textContent = '☀️';
-    } else {
-        darkModeToggle.textContent = '🌙';
-    }
-
-    darkModeToggle.addEventListener('click', () => {
-        if (body.classList.contains('dark-mode')) {
-            body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', 'disabled');
-            darkModeToggle.textContent = '🌙';
-        } else {
-            body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'enabled');
-            darkModeToggle.textContent = '☀️';
+        const currentPath = window.location.pathname.split("/").pop() || "index.html";
+        if (sideNav) {
+            const navLinks = sideNav.querySelectorAll('a');
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href');
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                    const parentPanel = link.closest('.panel');
+                    if(parentPanel){
+                        const correspondingAccordion = parentPanel.previousElementSibling;
+                        if(correspondingAccordion && correspondingAccordion.classList.contains('accordion')){
+                            correspondingAccordion.classList.add('active');
+                            parentPanel.style.maxHeight = parentPanel.scrollHeight + "px";
+                        }
+                    }
+                }
+            });
         }
+
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            body.classList.add('dark-mode');
+            if(darkModeToggle) darkModeToggle.textContent = '☀️';
+        } else {
+            if(darkModeToggle) darkModeToggle.textContent = '🌙';
+        }
+
+        if(darkModeToggle) {
+            darkModeToggle.addEventListener('click', () => {
+                body.classList.toggle('dark-mode');
+                if (body.classList.contains('dark-mode')) {
+                    localStorage.setItem('darkMode', 'enabled');
+                    darkModeToggle.textContent = '☀️';
+                } else {
+                    localStorage.setItem('darkMode', 'disabled');
+                    darkModeToggle.textContent = '🌙';
+                }
+            });
+        }
+
+        // --- Page-Specific Logic (Copy Button) ---
+        const copyButtons = document.querySelectorAll('.copy-button');
+        copyButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                button.disabled = true;
+                const originalButtonText = "انشاء رابط";
+                const linkToCopy = button.parentElement.dataset.link;
+                let countdown = 5;
+                button.textContent = `انتظر ${countdown}...`;
+
+                const intervalId = setInterval(() => {
+                    countdown--;
+                    if (countdown > 0) {
+                        button.textContent = `انتظر ${countdown}...`;
+                    } else {
+                        clearInterval(intervalId);
+                        navigator.clipboard.writeText(linkToCopy).then(() => {
+                            button.textContent = 'تم النسخ!';
+                            setTimeout(() => {
+                                button.textContent = originalButtonText;
+                                button.disabled = false;
+                            }, 2000);
+                        }).catch(err => {
+                            console.error('فشل نسخ الرابط: ', err);
+                            button.textContent = 'فشل النسخ';
+                            setTimeout(() => {
+                                button.textContent = originalButtonText;
+                                button.disabled = false;
+                            }, 2000);
+                        });
+                    }
+                }, 1000);
+            });
+        });
+
     });
-});
-</script>
+    </script>
 </body>
 </html>

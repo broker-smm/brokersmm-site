@@ -13,7 +13,6 @@ body {
     /* --- END: New Background --- */
     background-attachment: fixed;
     transition: background-color 0.3s ease;
-    /* display: flex and related properties were removed to fix the layout */
 }
 
 #main-content {
@@ -38,7 +37,6 @@ body {
     text-align: right;
 }
 
-/* ... (All other styles remain exactly the same as your original file) ... */
 .logo {
     width: 150px;
     height: auto;
@@ -46,29 +44,35 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 h1 {
     color: #0056b3;
     margin-bottom: 15px;
 }
+
 h2 {
     color: #007bff;
     margin-top: 30px;
     margin-bottom: 20px;
 }
+
 h3 {
     color: #333;
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
 p {
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
 ol, ul {
     text-align: right;
-    padding-right: 20px;
+    padding-right: 20px; 
     padding-left: 0;
 }
+
 .ad-space {
     margin-top: 20px;
     padding: 15px;
@@ -79,6 +83,7 @@ ol, ul {
     font-size: 0.9em;
     text-align: center;
 }
+
 .http-custom-icon-container {
     margin: 40px auto;
     cursor: pointer;
@@ -86,6 +91,7 @@ ol, ul {
     position: relative;
     max-width: 200px;
 }
+
 .http-custom-main-icon {
     width: 150px;
     height: 150px;
@@ -95,19 +101,23 @@ ol, ul {
     object-fit: cover;
     border: 3px solid #007bff;
 }
+
 .http-custom-main-icon:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
+
 .icon-label {
     margin-top: 10px;
     font-size: 1.1em;
     color: #007bff;
     font-weight: bold;
 }
+
 .hidden {
     display: none !important;
 }
+
 .main-options-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -116,10 +126,12 @@ ol, ul {
     margin-bottom: 30px;
     animation: fadeIn 0.5s ease-out;
 }
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 .config-group-card {
     background-color: #e9ecef;
     border: 1px solid #ddd;
@@ -132,10 +144,12 @@ ol, ul {
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .config-group-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .config-group-card .card-icon {
     width: 100%;
     height: auto;
@@ -144,6 +158,7 @@ ol, ul {
     object-fit: contain;
     max-height: 150px;
 }
+
 .main-options-grid a:first-child .card-icon {
     width: 100%;
     height: auto;
@@ -153,6 +168,7 @@ ol, ul {
     max-height: 120px;
     border-radius: 5px;
 }
+
 .config-list-item {
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
@@ -164,6 +180,7 @@ ol, ul {
     align-items: flex-start;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
+
 .config-details {
     display: flex;
     flex-direction: column;
@@ -172,6 +189,7 @@ ol, ul {
     margin-bottom: 10px;
     text-align: right;
 }
+
 .config-details .flag-icon {
     width: 100%;
     height: auto;
@@ -180,6 +198,7 @@ ol, ul {
     margin-bottom: 10px;
     object-fit: cover;
 }
+
 .config-details span {
     font-size: 1em;
     color: #555;
@@ -188,6 +207,7 @@ ol, ul {
     text-align: right;
     width: 100%;
 }
+
 .copy-button,
 .back-button {
     padding: 0.75em 1.5em;
@@ -202,21 +222,25 @@ ol, ul {
     align-items: center;
     text-decoration: none;
 }
+
 .copy-button {
     background-color: #4CAF50;
     color: white;
     width: 100%;
     margin-top: 10px;
 }
+
 .copy-button:hover {
     background-color: #388E3C;
 }
+
 .back-button {
     background-color: #2196F3;
     color: white;
     margin-top: 20px;
     display: inline-block;
 }
+
 .back-button:hover {
     background-color: #1976D2;
 }
@@ -230,15 +254,18 @@ ol, ul {
     border: 1px solid rgba(0, 123, 255, 0.25);
     border-radius: 8px;
 }
+
 .whatsapp-promo-icon {
     width: 300px;
     height: auto;
     vertical-align: middle;
     transition: transform 0.3s ease;
 }
+
 .whatsapp-promo-icon:hover {
     transform: scale(1.1);
 }
+
 .whatsapp-promo-text {
     font-size: 0.95em;
     color: #0056b3;
@@ -254,21 +281,26 @@ ol, ul {
     font-size: 0.9em;
     color: #666;
 }
+
 .footer-nav {
     margin-top: 10px;
 }
+
 .footer-nav a {
     color: #007bff;
     text-decoration: none;
     margin: 0 8px;
     transition: color 0.3s ease;
 }
+
 .footer-nav a:hover {
     color: #0056b3;
 }
+
 .footer-nav .separator {
     color: #bbb;
 }
+
 p.disclaimer {
     font-size: 0.8em;
     color: #888;
@@ -286,6 +318,7 @@ p.disclaimer {
     gap: 25px;
     padding: 20px 0;
 }
+
 .article-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -296,10 +329,12 @@ p.disclaimer {
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .article-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
+
 .article-card .article-image {
     width: 100%;
     height: 200px;
@@ -307,18 +342,21 @@ p.disclaimer {
     border-radius: 6px;
     margin-bottom: 15px;
 }
+
 .article-card h2 {
     font-size: 1.4em;
     color: #333;
     margin-bottom: 10px;
     line-height: 1.3;
 }
+
 .article-card p {
     font-size: 0.95em;
     color: #555;
     flex-grow: 1;
     margin-bottom: 15px;
 }
+
 .read-more-button {
     display: inline-block;
     background-color: #007bff;
@@ -332,11 +370,49 @@ p.disclaimer {
     align-self: flex-start;
     margin-top: auto;
 }
+
 .read-more-button:hover {
     background-color: #0056b3;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
+/* =========================================== */
+/* ==      Comparison Table Styles        == */ /* <-- تم إضافة الكود الجديد هنا */
+/* =========================================== */
+
+.table-container {
+    margin: 30px 0;
+    overflow-x: auto; /* Add scroll on small screens if needed */
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    overflow: hidden; /* To make border-radius work on table */
+}
+
+.comparison-table th, 
+.comparison-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: right;
+}
+
+.comparison-table th {
+    background-color: #007bff; /* Blue header */
+    color: white;
+    font-size: 1.1em;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa; /* Zebra striping for rows */
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #e9ecef; /* Highlight row on hover */
+}
 
 /* =========================================== */
 /* ==   STYLES FOR SIDENAV AND HEADER     == */
@@ -503,16 +579,95 @@ p.disclaimer {
 }
 
 
-@media (max-width: 600px) {
-    /* Your media queries here */
+/* =========================================== */
+/* ==       Responsive & Dark Mode        == */
+/* =========================================== */
+
+@media (max-width: 768px) {
+    .comparison-table thead {
+        display: none; /* Hide the header on mobile */
+    }
+
+    .comparison-table, .comparison-table tbody, .comparison-table tr, .comparison-table td {
+        display: block; /* Make table elements behave like blocks */
+        width: 100%;
+    }
+
+    .comparison-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .comparison-table td {
+        text-align: right;
+        padding-left: 50%; /* Make space for the label */
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .comparison-table td:last-child {
+        border-bottom: none;
+    }
+
+    .comparison-table td::before {
+        content: attr(data-label); /* Use the data-label as the header */
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
 }
 
-/* =========================================== */
-/* ==           DARK MODE STYLES          == */
-/* =========================================== */
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    .http-custom-main-icon {
+        width: 120px;
+        height: 120px;
+    }
+    .config-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .config-details {
+        margin-right: 0;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .config-details .flag-icon {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .config-details span {
+        text-align: right;
+        width: 100%;
+    }
+    .copy-button {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
 
 body.dark-mode {
-    background: #1a252f; /* Make sure dark mode also doesn't use the image */
+    background: #1a252f;
 }
 
 body.dark-mode .container {
@@ -645,7 +800,7 @@ body.dark-mode .whatsapp-promo-text {
 }
 
 body.dark-mode .main-header {
-    background-color: #1a252f; /* Darker header for dark mode */
+    background-color: #1a252f;
 }
 
 body.dark-mode .menu-btn {
@@ -653,11 +808,37 @@ body.dark-mode .menu-btn {
 }
 
 body.dark-mode .header-title {
-    color: #00e5ff; /* Cyan title in dark mode */
+    color: #00e5ff;
 }
 
 body.dark-mode .dark-mode-toggle {
     background-color: #2c3e50;
     color: #ecf0f1;
     border-color: #4a6279;
+}
+
+/* Dark Mode for Table */
+body.dark-mode .comparison-table td {
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .comparison-table tr {
+    border-color: #444;
+}
+
+body.dark-mode .comparison-table th, 
+body.dark-mode .comparison-table td {
+    border-color: #444;
+}
+
+body.dark-mode .comparison-table th {
+    background-color: #4CAF50;
+}
+
+body.dark-mode .comparison-table tbody tr:nth-child(even) {
+    background-color: #2b2b2b;
+}
+
+body.dark-mode .comparison-table tbody tr:hover {
+    background-color: #333;
 }
