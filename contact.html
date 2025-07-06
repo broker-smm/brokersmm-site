@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - Broker SMM</title>
+    <meta name="description" content="تواصل مع فريق Broker SMM. إذا كان لديك أي أسئلة، استفسارات، أو اقتراحات، يمكنك التواصل معنا عبر واتساب أو البريد الإلكتروني.">
+    <link rel="stylesheet" href="style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HTYEW9YJ5L');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/my_logo.webp" alt="شعار موقعك" class="logo" width="150" height="138">
+        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+
+        <div class="article-container">
+            <h1>اتصل بنا</h1>
+            
+            <p>نسعد دائمًا بتلقي رسائلكم! إذا كان لديك أي سؤال، استفسار، اقتراح لتطوير الموقع، أو تريد الإبلاغ عن مشكلة، فلا تتردد في التواصل معنا عبر إحدى الطرق التالية. فريقنا جاهز لمساعدتك.</p>
+
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <h2>التواصل السريع عبر واتساب</h2>
+                    <p>للحصول على أسرع رد، يمكنك التواصل معنا مباشرة عبر واتساب. اضغط على الرابط أدناه لبدء المحادثة.</p>
+                    <a href="https://wa.me/212632549474" class="contact-button whatsapp-button" target="_blank" rel="noopener noreferrer">
+                        تواصل معنا على واتساب
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <h2>التواصل الرسمي عبر البريد الإلكتروني</h2>
+                    <p>يمكنك أيضًا إرسال رسالة مفصلة إلينا عبر البريد الإلكتروني، وسنقوم بالرد عليك في أقرب وقت ممكن.</p>
+                    <a href="mailto:brokersmm1@gmail.com" class="contact-button email-button">
+                        أرسل بريدًا إلكترونيًا
+                    </a>
+                    <p style="margin-top:10px; font-size: 0.9em;">أو انسخ العنوان: brokersmm1@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        
+        <a href="index.html" class="back-button">العودة إلى الرئيسية</a>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 موقعك. جميع الحقوق محفوظة.</p>
+            <nav class="footer-nav">
+                <a href="about.html">عنا</a>
+                <span class="separator">|</span>
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <span class="separator">|</span>
+                <a href="terms.html">شروط الاستخدام</a>
+                <span class="separator">|</span>
+                <a href="contact.html">تواصل معنا</a>
+                <span class="separator">|</span>
+                <a href="blog.html">المدونة</a>
+            </nav>
+            <p class="disclaimer">
+                هذا الموقع هو موقع مستقل ولا ينتمي إلى أو معتمد من قبل أي من شركات الاتصالات المذكورة. جميع الأسماء التجارية والشعارات (مثل Inwi, IAM, Orange) هي علامات تجارية مسجلة ومملوكة لأصحابها. يتم استخدامها هنا لأغراض التعريف فقط.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // كود الوضع الليلي
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                darkModeToggle.textContent = '☀️';
+            } else {
+                darkModeToggle.textContent = '🌙';
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('darkMode', 'disabled');
+                    darkModeToggle.textContent = '🌙';
+                } else {
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('darkMode', 'enabled');
+                    darkModeToggle.textContent = '☀️';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

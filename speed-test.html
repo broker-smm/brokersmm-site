@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>روابط Config Win By Inwi</title>
+    <title>اختبار سرعة الاتصال - أدوات Broker SMM</title>
+    <meta name="description" content="أداة مجانية لاختبار سرعة اتصالك بالإنترنت. قم بقياس سرعة التنزيل والرفع وزمن الاستجابة (Ping) بسهولة ودقة.">
     <link rel="stylesheet" href="style.css">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
+    <style>
+        /* Styles specific to the speed test iframe */
+        .speedtest-container {
+            position: relative;
+            width: 100%;
+            height: 65vh; /* Set a good height relative to the viewport */
+            margin-top: 30px;
+            border-radius: 8px;
+            overflow: hidden; /* To apply border-radius to the iframe */
+            border: 1px solid #ddd; /* Added a subtle border */
+        }
+        body.dark-mode .speedtest-container {
+            border-color: #444;
+        }
+        .speedtest-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
 
@@ -31,7 +57,7 @@
             <a href="iam-configs.html">شبكة IAM</a>
         </div>
 
-        <button class="accordion">الادوات</button>
+        <button class="accordion">أدوات</button>
         <div class="panel">
             <a href="what-is-my-ip.html">ما هو IP الخاص بي؟</a>
             <a href="speed-test.html">اختبار الاتصال</a>
@@ -51,70 +77,28 @@
     <div id="main-content">
         <header class="main-header">
             <button id="openNavBtn" class="menu-btn">&#9776;</button>
-            <h1 class="header-title">روابط win by inwi</h1>
+            <h1 class="header-title">اختبار سرعة الاتصال</h1>
             <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
         </header>
         <div class="container">
-            <h1>Config Win By Inwi</h1>
-            <p>قائمة الروابط يمكنك الان الضغط على  زر انشاء رابط للحصول عليه مباشرة، يمكنك اختيار اي خادم تريده</p>
-            
-            <div class="ad-space" style="margin-bottom: 20px;">
-                <br>
-                <small>يتم تحديث الروابط كل 3 ايام</small>
-            </div>
+            <div class="article-container">
+                <h1>اختبار سرعة اتصالك بالإنترنت</h1>
+                <p>استخدم هذه الأداة لقياس أداء اتصالك الحالي. ستظهر لك سرعة التنزيل (Download)، وسرعة الرفع (Upload)، وزمن الاستجابة (Ping). اضغط على زر "Start" لبدء الاختبار.</p>
 
-            <div class="config-list">
-                <div class="config-list-item" data-link="https://tinyurl.com/Broker-SMM-17">
-                    <div class="config-details">
-                        <img src="images/canada_flag.webp" alt="علم كندا" class="flag-icon" width="300" height="169">
-                        <span>HTTP CUSTOM:التطبيق</span>
-                        <span>CANADA :الخادم</span>
-                        <span>تاريخ التحديث: 2025-06-07</span>
-                    </div>
-                    <button class="copy-button">انشاء رابط</button>
+                <div class="speedtest-container">
+                    <iframe src="https://librespeed.org/iframe-simple.html"></iframe>
                 </div>
                 
-                            <div class="config-list">
-                <div class="config-list-item" data-link="https://tinyurl.com/Broker-SMM-17">
-                    <div class="config-details">
-                        <img src="images/Poland_flag.webp" alt="علم بلندا" class="flag-icon" width="300" height="169">
-                        <span>HTTP CUSTOM:التطبيق</span>
-                        <span>POLAND:الخادم</span>
-                        <span>تاريخ التحديث: 2025-06-07</span>
-                    </div>
-                    <button class="copy-button">انشاء رابط</button>
-                </div>
-
-                <div class="config-list-item" data-link="https://tinyurl.com/Broker-SMM-19">
-                    <div class="config-details">
-                        <img src="images/usa_flag.webp" alt="علم امريكا" class="flag-icon"
-                        width="300" height="169">
-                        <span>HTTP CUSTOM:التطبيق</span>
-                        <span>USA:الخادم</span>
-                        <span>تاريخ التحديث: 2025-06-07</span>
-                    </div>
-                    <button class="copy-button">انشاء رابط</button>
-                </div>
-                <div class="config-list-item" data-link="https://tinyurl.com/Broker-SMM-16">
-                    <div class="config-details">
-                        <img src="images/finland_flag.webp" alt="علم فنلندا" class="flag-icon" width="300" height="169">
-                        <span>HTTP CUSTOM:التطبيق</span>
-                        <span>FINLANDE :الخادم</span>
-                        <span>تاريخ التحديث: 2025-06-07</span>
-                    </div>
-                    <button class="copy-button">انشاء رابط</button>
-                </div>
-                </div>
-            
-            <div class="ad-space" style="margin-top: 30px;">
-                <br>
-                <small>يتم تحديث الروابط كل 3 ايام</small>
+                <h2>كيف تقرأ النتائج؟</h2>
+                <ul>
+                    <li><strong>Ping (زمن الاستجابة):</strong> هو وقت رد الفعل لاتصالك. كلما كان الرقم أقل، كان اتصالك أفضل للألعاب والمكالمات.</li>
+                    <li><strong>Download (التنزيل):</strong> هي سرعة استقبال البيانات من الإنترنت إلى جهازك. كلما كان الرقم أعلى، كان تصفح المواقع ومشاهدة الفيديوهات أسرع.</li>
+                    <li><strong>Upload (الرفع):</strong> هي سرعة إرسال البيانات من جهازك إلى الإنترنت. كلما كان الرقم أعلى، كان إرسال الملفات الكبيرة أو إجراء بث مباشر أفضل.</li>
+                </ul>
             </div>
-
-            <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
-
+            
             <footer class="main-footer">
-                <p>&copy; 2025 . جميع الحقوق محفوظة.</p>
+                <p>&copy; 2025 موقعك. جميع الحقوق محفوظة.</p>
                 <nav class="footer-nav">
                     <a href="about.html">عنا</a>
                     <span class="separator">|</span>
@@ -126,8 +110,8 @@
                     <span class="separator">|</span>
                     <a href="blog.html">المدونة</a>
                 </nav>
-                <p class="disclaimer">
-                    هذا الموقع هو موقع مستقل ولا ينتمي إلى أو معتمد من قبل أي من شركات الاتصالات المذكورة. جميع الأسماء التجارية والشعارات (مثل Inwi, IAM, WIN) هي علامات تجارية مسجلة ومملوكة لأصحابها. يتم استخدامها هنا لأغراض التعريف فقط.
+                 <p class="disclaimer">
+                    هذا الموقع هو موقع مستقل ولا ينتمي إلى أو معتمد من قبل أي من شركات الاتصالات المذكورة. جميع الأسماء التجارية والشعارات (مثل Inwi, IAM, Orange) هي علامات تجارية مسجلة ومملوكة لأصحابها. يتم استخدامها هنا لأغراض التعريف فقط.
                 </p>
             </footer>
         </div>
@@ -198,42 +182,7 @@
                 }
             });
         }
-
-        // --- Page-Specific Logic (Copy Button) ---
-        const copyButtons = document.querySelectorAll('.copy-button');
-        copyButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                button.disabled = true;
-                const originalButtonText = "انشاء رابط";
-                const linkToCopy = button.parentElement.dataset.link;
-                let countdown = 5;
-                button.textContent = `انتظر ${countdown}...`;
-
-                const intervalId = setInterval(() => {
-                    countdown--;
-                    if (countdown > 0) {
-                        button.textContent = `انتظر ${countdown}...`;
-                    } else {
-                        clearInterval(intervalId);
-                        navigator.clipboard.writeText(linkToCopy).then(() => {
-                            button.textContent = 'تم النسخ!';
-                            setTimeout(() => {
-                                button.textContent = originalButtonText;
-                                button.disabled = false;
-                            }, 2000);
-                        }).catch(err => {
-                            console.error('فشل نسخ الرابط: ', err);
-                            button.textContent = 'فشل النسخ';
-                            setTimeout(() => {
-                                button.textContent = originalButtonText;
-                                button.disabled = false;
-                            }, 2000);
-                        });
-                    }
-                }, 1000);
-            });
-        });
-
+        // --- END: General Scripts ---
     });
     </script>
 </body>
