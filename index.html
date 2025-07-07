@@ -13,7 +13,10 @@
       gtag('js', new Date());
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-</head>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
+         crossorigin="anonymous"></script>
+    </head>
 <body>
 
     <div id="side-nav" class="sidenav">
@@ -133,15 +136,8 @@
         const sideNav = document.getElementById('side-nav');
         const overlay = document.getElementById('overlay');
 
-        function openNav() {
-            if (sideNav) sideNav.style.width = "260px";
-            if (overlay) overlay.style.display = "block";
-        }
-
-        function closeNav() {
-            if (sideNav) sideNav.style.width = "0";
-            if (overlay) overlay.style.display = "none";
-        }
+        function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
+        function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
 
         if (openNavBtn) openNavBtn.addEventListener('click', openNav);
         if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
@@ -150,16 +146,11 @@
 
         // --- START: Accordion Menu Logic ---
         const accordions = document.querySelectorAll('.sidenav .accordion');
-
         accordions.forEach(acc => {
             acc.addEventListener('click', function() {
                 this.classList.toggle('active');
                 const panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
+                if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
             });
         });
         // --- END: Accordion Menu Logic ---
