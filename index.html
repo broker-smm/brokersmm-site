@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق HTTP Custom - ملفات الكونفيج</title>
-    <meta name="description" content="احصل على ملفات كونفيج لتطبيق HTTP Custom لشبكات متعددة. تحديثات دورية ونصائح حول أمان الإنترنت.">
+    <title>Broker SMM - شروحات وأدوات الشبكة</title>
+    <meta name="description" content="مركزك التعليمي لكل ما يخص أمن الشبكات والاتصال الآمن. مقالات، شروحات، وأدوات متقدمة لحماية خصوصيتك الرقمية.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
+    
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,235 +20,94 @@
       gtag('js', new Date());
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
-    </head>
+</head>
 <body>
 
     <div id="side-nav" class="sidenav">
         <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
-        
-        <a href="index.html" class="main-nav-link">الصفحة الرئيسية</a>
-        <a href="blog.html" class="main-nav-link">المدونة</a>
-        <a href="faq.html" class="main-nav-link">الأسئلة الشائعة</a>
-
+        <a href="index.html" class="main-nav-link active"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
+        <a href="blog.html" class="main-nav-link"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
         <hr>
-
-        <button class="accordion">كونفيجات HTTP Custom</button>
-        <div class="panel">
-            <a href="inwi-configs.html">شبكة Inwi</a>
-            <a href="win-configs.html">شبكة WIN by Inwi</a>
-            <a href="iam-configs.html">شبكة IAM</a>
-        </div>
-
-        <button class="accordion">الادوات</button>
-        <div class="panel">
-            <a href="what-is-my-ip.html">ما هو IP الخاص بي؟</a>
-            <a href="speed-test.html">اختبار الاتصال</a>
-        </div>
-
+        <span class="sidenav-title">أدوات الشبكة</span>
+        <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
+        <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
+        <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
         <hr>
-
-        <button class="accordion">حول الموقع</button>
-        <div class="panel">
-            <a href="about.html">عنا</a>
-            <a href="contact.html">تواصل معنا</a>
-            <a href="privacy.html">سياسة الخصوصية</a>
-            <a href="terms.html">شروط الاستخدام</a>
-        </div>
+        <span class="sidenav-title">عن الموقع</span>
+        <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
+        <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
+        <a href="contact.html"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
+        <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
+        <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
     </div>
     <div id="overlay"></div>
+
     <div id="main-content">
         <header class="main-header">
             <button id="openNavBtn" class="menu-btn">&#9776;</button>
-            <h1 class="header-title">Broker SMM</h1>
+            <h1 class="header-title">🦜Broker SMM</h1>
             <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
         </header>
+
         <div class="container">
-            <img src="images/my_logo.webp" alt="شعار موقعك" class="logo" width="150" height="138">
-            
-            <div class="ad-space" style="margin-bottom: 20px;">
-                <br>
-                <small>عليك تحديث الروابط كل 3 ايام</small>
+            <div class="dashboard-intro">
+                <h2>المركز التعليمي للشبكات</h2>
+                <p>شروحات، أدوات، ومقالات لتعزيز أمنك الرقمي</p>
             </div>
-
-            <h1>روابط كونفينكات تطبيق HTTP CUSTOM</h1>
-            <p>مرحبًا بك في مركز الروابط اضغط على الايقونة لعرض  الخيارات</p>
-            
-            <div class="http-custom-icon-container">
-                <img src="images/http_custom_app_icon.webp" alt="أيقونة تطبيق HTTP Custom" class="http-custom-main-icon" id="httpCustomMainIcon" width="150" height="149">
-                <p class="icon-label">اضغط هنا لعرض الخيارات</p>
-            </div>
-
-            <div class="whatsapp-main-page-link" id="whatsappSection"> 
-                <a href="https://whatsapp.com/channel/0029VbAXGHGA89MZXbyGZ645" target="_blank" rel="noopener noreferrer" title="تابع قناتنا على واتساب لتلقي الإشعارات والتحديثات" id="whatsappChannelLink">
-                    <img src="images/whatsapp.webp" alt="أيقونة واتساب" class="whatsapp-promo-icon" width="300" height="159">
-                </a>
-                <p class="whatsapp-promo-text">
-                    تابعنا على واتساب لتصلك آخر التحديثات!
-                </p>
-                <p id="whatsappRedirectMessage" style="display: none; color: #007bff; font-weight: bold; margin-top: 10px;"></p>
-            </div>
-
-            <div class="main-options-grid hidden" id="configOptionsGrid">
-                <a href="inwi-configs.html" class="config-group-card">
-                    <img src="images/inwi_logo.webp" alt="شعار Inwi" class="card-icon" width="250" height="87">
-                    <h3>INWI ⭐ 6</h3>
-                    <p>روابط تحديث خاصة بهذه الباقة</p>
-                </a>
-                <a href="win-configs.html" class="config-group-card">
-                    <img src="images/win_by_inwi_logo.webp" alt="شعار Win by Inwi" class="card-icon" width="250" height="111">
-                    <h3>WIN BY inwi</h3>
-                    <p>روابط تحديث خاصة هذه الباقة</p>
-                </a>
-                <a href="iam-configs.html" class="config-group-card">
-                    <img src="images/iam_logo.webp" alt="شعار IAM" class="card-icon" width="250" height="90">
-                    <h3>IAM ⭐ 6</h3>
-                    <p>روابط تحديث خاصة بهذه الباقة</p>
-                </a>
-            </div>
-
-            <div class="ad-space" style="margin-top: 30px;">
-                <br>
-                <small>عليك تحديث الرابط كل 3 ايام</small>
-            </div>
+            <main class="dashboard-grid">
+                <a href="blog.html" class="dashboard-card card-color-1"><div class="card-icon"><i class="fas fa-newspaper"></i></div><h3>المدونة التعليمية</h3><p>مقالات وشروحات تقنية متجددة</p></a>
+                <a href="faq.html" class="dashboard-card card-color-2"><div class="card-icon"><i class="fas fa-circle-question"></i></div><h3>الأسئلة الشائعة</h3><p>إجابات لأهم استفساراتكم التقنية</p></a>
+                <a href="what-is-my-ip.html" class="dashboard-card card-color-3"><div class="card-icon"><i class="fas fa-location-dot"></i></div><h3>ما هو IP الخاص بي؟</h3><p>أداة بسيطة لمعرفة عنوانك الرقمي</p></a>
+                <a href="speed-test.html" class="dashboard-card card-color-4"><div class="card-icon"><i class="fas fa-gauge-high"></i></div><h3>اختبار السرعة</h3><p>بوابة احترافية لقياس أداء اتصالك</p></a>
+                <a href="dns-leak-test.html" class="dashboard-card card-color-6"><div class="card-icon"><i class="fas fa-user-secret"></i></div><h3>كشف تسريب DNS</h3><p>تأكد من أن اتصالك آمن 100%</p></a>
+                <a href="about.html" class="dashboard-card card-color-5"><div class="card-icon"><i class="fas fa-info-circle"></i></div><h3>عن الموقع</h3><p>تعرف على رؤيتنا وأهدافنا</p></a>
+            </main>
             
             <footer class="main-footer">
-                <p>&copy; 2025 . جميع الحقوق محفوظة.</p>
+<p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
                 <nav class="footer-nav">
-                    <a href="about.html">عنا</a>
-                    <span class="separator">|</span>
-                    <a href="privacy.html">سياسة الخصوصية</a>
-                    <span class="separator">|</span>
-                    <a href="terms.html">شروط الاستخدام</a>
-                    <span class="separator">|</span>
+                    <a href="about.html">عنا</a><span class="separator">|</span>
+                    <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
+                    <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
                     <a href="contact.html">تواصل معنا</a>
-                    <span class="separator">|</span>
-                    <a href="blog.html">المدونة</a>
                 </nav>
-                <p class="disclaimer">
-                    هذا الموقع هو موقع مستقل ولا ينتمي إلى أو معتمد من قبل أي من شركات الاتصالات المذكورة. جميع الأسماء التجارية والشعارات (مثل Inwi, IAM, WIN) هي علامات تجارية مسجلة ومملوكة لأصحابها. يتم استخدامها هنا لأغراض التعريف فقط.
-                </p>
             </footer>
         </div>
-        </div>
+    </div>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-
-        // --- START: Side Navigation Menu Logic ---
-        const openNavBtn = document.getElementById('openNavBtn');
-        const closeNavBtn = document.getElementById('closeNavBtn');
-        const sideNav = document.getElementById('side-nav');
-        const overlay = document.getElementById('overlay');
-
-        function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
-        function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
-
-        if (openNavBtn) openNavBtn.addEventListener('click', openNav);
-        if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
-        if (overlay) overlay.addEventListener('click', closeNav);
-        // --- END: Side Navigation Menu Logic ---
-
-        // --- START: Accordion Menu Logic ---
-        const accordions = document.querySelectorAll('.sidenav .accordion');
-        accordions.forEach(acc => {
-            acc.addEventListener('click', function() {
-                this.classList.toggle('active');
-                const panel = this.nextElementSibling;
-                if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
-            });
-        });
-        // --- END: Accordion Menu Logic ---
-        
-        // --- START: Active Link Highlighter ---
-        const currentPath = window.location.pathname.split("/").pop() || "index.html";
-        if (sideNav) {
-            const navLinks = sideNav.querySelectorAll('a');
-            navLinks.forEach(link => {
-                const linkPath = link.getAttribute('href');
-                if (linkPath === currentPath) {
-                    link.classList.add('active');
-                    const parentPanel = link.closest('.panel');
-                    if(parentPanel){
-                        const correspondingAccordion = parentPanel.previousElementSibling;
-                        if(correspondingAccordion && correspondingAccordion.classList.contains('accordion')){
-                            correspondingAccordion.classList.add('active');
-                            parentPanel.style.maxHeight = parentPanel.scrollHeight + "px";
-                        }
-                    }
-                }
-            });
-        }
-        // --- END: Active Link Highlighter ---
-
-        // --- START: Dark Mode Logic ---
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const body = document.body;
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            body.classList.add('dark-mode');
-            if(darkModeToggle) darkModeToggle.textContent = '☀️';
-        } else {
-            if(darkModeToggle) darkModeToggle.textContent = '🌙';
-        }
-
-        if(darkModeToggle) {
-            darkModeToggle.addEventListener('click', () => {
-                body.classList.toggle('dark-mode');
-                if (body.classList.contains('dark-mode')) {
-                    localStorage.setItem('darkMode', 'enabled');
-                    darkModeToggle.textContent = '☀️';
-                } else {
-                    localStorage.setItem('darkMode', 'disabled');
-                    darkModeToggle.textContent = '🌙';
-                }
-            });
-        }
-        // --- END: Dark Mode Logic ---
-        
-        // --- START: Main Page Specific Logic ---
-        const httpCustomMainIcon = document.getElementById('httpCustomMainIcon');
-        const configOptionsGrid = document.getElementById('configOptionsGrid');
-        const iconLabel = document.querySelector('.icon-label');
-        const whatsappSection = document.getElementById('whatsappSection');
-
-        if (httpCustomMainIcon && configOptionsGrid && iconLabel && whatsappSection) {
-            if (configOptionsGrid.classList.contains('hidden')) {
-                whatsappSection.classList.remove('hidden');
+        // Full JavaScript for Sidenav and Dark Mode
+        document.addEventListener('DOMContentLoaded', () => {
+            const openNavBtn = document.getElementById('openNavBtn');
+            const closeNavBtn = document.getElementById('closeNavBtn');
+            const sideNav = document.getElementById('side-nav');
+            const overlay = document.getElementById('overlay');
+            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
+            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
+            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
+            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
+            if (overlay) overlay.addEventListener('click', closeNav);
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                if(darkModeToggle) darkModeToggle.textContent = '☀️';
             } else {
-                whatsappSection.classList.add('hidden');
+                if(darkModeToggle) darkModeToggle.textContent = '🌙';
             }
-
-            httpCustomMainIcon.addEventListener('click', () => {
-                configOptionsGrid.classList.toggle('hidden');
-                
-                if (configOptionsGrid.classList.contains('hidden')) {
-                    whatsappSection.classList.remove('hidden'); 
-                    iconLabel.textContent = 'اضغط هنا لعرض الخيارات';
-                } else {
-                    whatsappSection.classList.add('hidden'); 
-                    iconLabel.textContent = 'اضغط مرة أخرى لإخفاء الخيارات';
-                }
-            });
-        }
-        // --- END: Main Page Specific Logic ---
-
-        // --- START: WhatsApp Redirect Message Logic ---
-        const whatsappLink = document.getElementById('whatsappChannelLink');
-        const whatsappMessage = document.getElementById('whatsappRedirectMessage');
-        
-        if (whatsappLink && whatsappMessage) { 
-            whatsappLink.addEventListener('click', function(event) {
-                whatsappMessage.textContent = 'جاري تحويلك للقناة...';
-                whatsappMessage.style.display = 'block';
-                setTimeout(() => {
-                    whatsappMessage.style.display = 'none';
-                }, 3000);
-            });
-        }
-        // --- END: WhatsApp Redirect Message Logic ---
-    });
+            if(darkModeToggle) {
+                darkModeToggle.addEventListener('click', () => {
+                    body.classList.toggle('dark-mode');
+                    if (body.classList.contains('dark-mode')) {
+                        localStorage.setItem('darkMode', 'enabled');
+                        darkModeToggle.textContent = '☀️';
+                    } else {
+                        localStorage.setItem('darkMode', 'disabled');
+                        darkModeToggle.textContent = '🌙';
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>

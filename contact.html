@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اتصل بنا - Broker SMM</title>
     <meta name="description" content="تواصل مع فريق Broker SMM. إذا كان لديك أي أسئلة، استفسارات، أو اقتراحات، يمكنك التواصل معنا عبر واتساب أو البريد الإلكتروني.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
@@ -12,88 +18,116 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
-    </head>
+</head>
 <body>
-    <div class="container">
-        <img src="images/my_logo.webp" alt="شعار موقعك" class="logo" width="150" height="138">
-        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
 
-        <div class="article-container">
-            <h1>اتصل بنا</h1>
-            
-            <p>نسعد دائمًا بتلقي رسائلكم! إذا كان لديك أي سؤال، استفسار، اقتراح لتطوير الموقع، أو تريد الإبلاغ عن مشكلة، فلا تتردد في التواصل معنا عبر إحدى الطرق التالية. فريقنا جاهز لمساعدتك.</p>
+    <div id="side-nav" class="sidenav">
+                <h2 class="sidenav-title-main">🦜Broker SMM </h2>
+        <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
+        <a href="index.html" class="main-nav-link"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
+        <a href="blog.html" class="main-nav-link"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
+        <hr>
+        <span class="sidenav-title">أدوات الشبكة</span>
+        <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
+        <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
+        <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
+        <hr>
+        <span class="sidenav-title">عن الموقع</span>
+        <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
+        <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
+        <a href="contact.html" class="active"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
+        <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
+        <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
+    </div>
+    <div id="overlay"></div>
 
-            <div class="contact-methods">
+    <div id="main-content">
+        <header class="main-header">
+            <button id="openNavBtn" class="menu-btn">&#9776;</button>
+            <h1 class="header-title">🦜Broker SMM</h1>
+            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+        </header>
+
+        <div class="container">
+            <div class="blog-intro">
+                <h2>نحن هنا للمساعدة</h2>
+                <p>إذا كان لديك أي سؤال أو اقتراح، فلا تتردد في التواصل معنا.</p>
+            </div>
+
+            <div class="contact-methods-grid">
                 <div class="contact-card">
-                    <h2>التواصل السريع عبر واتساب</h2>
-                    <p>للحصول على أسرع رد، يمكنك التواصل معنا مباشرة عبر واتساب. اضغط على الرابط أدناه لبدء المحادثة.</p>
-                    <a href="https://wa.me/212632549474" class="contact-button whatsapp-button" target="_blank" rel="noopener noreferrer">
-                        تواصل معنا على واتساب
+                    <div class="contact-icon whatsapp-bg"><i class="fab fa-whatsapp"></i></div>
+                    <h3>التواصل السريع عبر واتساب</h3>
+                    <p>للحصول على أسرع رد، يمكنك التواصل معنا مباشرة عبر واتساب.</p>
+                    <a href="https://wa.me/212632549474" class="contact-button whatsapp-bg" target="_blank" rel="noopener noreferrer">
+                        تحدث معنا الآن
                     </a>
                 </div>
 
                 <div class="contact-card">
-                    <h2>التواصل الرسمي عبر البريد الإلكتروني</h2>
-                    <p>يمكنك أيضًا إرسال رسالة مفصلة إلينا عبر البريد الإلكتروني، وسنقوم بالرد عليك في أقرب وقت ممكن.</p>
-                    <a href="mailto:brokersmm1@gmail.com" class="contact-button email-button">
+                    <div class="contact-icon email-bg"><i class="fas fa-envelope-open-text"></i></div>
+                    <h3>التواصل الرسمي عبر البريد</h3>
+                    <p>يمكنك إرسال رسالة مفصلة إلينا عبر البريد الإلكتروني وسنرد في أقرب وقت.</p>
+                    <a href="mailto:brokersmm1@gmail.com" class="contact-button email-bg">
                         أرسل بريدًا إلكترونيًا
                     </a>
-                    <p style="margin-top:10px; font-size: 0.9em;">أو انسخ العنوان: brokersmm1@gmail.com</p>
                 </div>
             </div>
+            
+            <footer class="main-footer">
+<p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
+                <nav class="footer-nav">
+                    <a href="about.html">عنا</a><span class="separator">|</span>
+                    <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
+                    <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
+                    <a href="contact.html">تواصل معنا</a>
+                </nav>
+            </footer>
         </div>
-        
-        <a href="index.html" class="back-button">العودة إلى الرئيسية</a>
-
-        <footer class="main-footer">
-            <p>&copy; 2025 . جميع الحقوق محفوظة.</p>
-            <nav class="footer-nav">
-                <a href="about.html">عنا</a>
-                <span class="separator">|</span>
-                <a href="privacy.html">سياسة الخصوصية</a>
-                <span class="separator">|</span>
-                <a href="terms.html">شروط الاستخدام</a>
-                <span class="separator">|</span>
-                <a href="contact.html">تواصل معنا</a>
-                <span class="separator">|</span>
-                <a href="blog.html">المدونة</a>
-            </nav>
-            <p class="disclaimer">
-                هذا الموقع هو موقع مستقل ولا ينتمي إلى أو معتمد من قبل أي من شركات الاتصالات المذكورة. جميع الأسماء التجارية والشعارات (مثل Inwi, IAM, Orange) هي علامات تجارية مسجلة ومملوكة لأصحابها. يتم استخدامها هنا لأغراض التعريف فقط.
-            </p>
-        </footer>
     </div>
 
     <script>
-        // كود الوضع الليلي
+        // Full JavaScript for Sidenav and Dark Mode
         document.addEventListener('DOMContentLoaded', () => {
+            const openNavBtn = document.getElementById('openNavBtn');
+            const closeNavBtn = document.getElementById('closeNavBtn');
+            const sideNav = document.getElementById('side-nav');
+            const overlay = document.getElementById('overlay');
+            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
+            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
+            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
+            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
+            if (overlay) overlay.addEventListener('click', closeNav);
+            const accordions = document.querySelectorAll('.sidenav .accordion');
+            accordions.forEach(acc => {
+                acc.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
+                });
+            });
             const darkModeToggle = document.getElementById('darkModeToggle');
             const body = document.body;
-
             if (localStorage.getItem('darkMode') === 'enabled') {
                 body.classList.add('dark-mode');
-                darkModeToggle.textContent = '☀️';
+                if(darkModeToggle) darkModeToggle.textContent = '☀️';
             } else {
-                darkModeToggle.textContent = '🌙';
+                if(darkModeToggle) darkModeToggle.textContent = '🌙';
             }
-
-            darkModeToggle.addEventListener('click', () => {
-                if (body.classList.contains('dark-mode')) {
-                    body.classList.remove('dark-mode');
-                    localStorage.setItem('darkMode', 'disabled');
-                    darkModeToggle.textContent = '🌙';
-                } else {
-                    body.classList.add('dark-mode');
-                    localStorage.setItem('darkMode', 'enabled');
-                    darkModeToggle.textContent = '☀️';
-                }
-            });
+            if(darkModeToggle) {
+                darkModeToggle.addEventListener('click', () => {
+                    body.classList.toggle('dark-mode');
+                    if (body.classList.contains('dark-mode')) {
+                        localStorage.setItem('darkMode', 'enabled');
+                        darkModeToggle.textContent = '☀️';
+                    } else {
+                        localStorage.setItem('darkMode', 'disabled');
+                        darkModeToggle.textContent = '🌙';
+                    }
+                });
+            }
         });
     </script>
 </body>

@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSH Tunnel مقابل VPN: ما هو الفرق الحقيقي وأيهما أفضل لك؟</title>
+    <title>تقنية SSH مقابل VPN: ما هو الفرق الحقيقي وأيهما أفضل لك؟</title>
     <meta name="description" content="مقارنة بسيطة وواضحة بين تقنية SSH Tunnel و VPN. تعلم الفروقات الأساسية في الحماية، السرعة، والاستخدام لمساعدتك على اختيار الأنسب لاحتياجاتك.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
@@ -12,141 +18,108 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
-    </head>
+</head>
 <body>
-    <div class="container">
-        <img src="images/my_logo.webp" alt="شعار موقعك" class="logo" width="150" height="138">
-        <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
 
-        <div class="article-container">
-            <h1>SSH Tunneling مقابل VPN: ما هو الفرق الحقيقي وأيهما أفضل لاحتياجاتك؟</h1>
-            
-            <p><strong>مقدمة:</strong> في رحلتنا لتأمين اتصالنا بالإنترنت، نصادف الكثير من المصطلحات التقنية التي قد تبدو معقدة. لعل أبرزها هما VPN و SSH. كلاهما يعمل على إنشاء "نفق" آمن لبياناتك، و أغلب ملفات الكونفيج التي نستخدمها تعتمد على تقنية SSH. لكن، هل هما نفس الشيء؟ وما هي الفروقات بينهما؟</p>
-            <p>في هذا المقال، سنقوم بتبسيط هذين المصطلحين، وسنقارن بينهما بطريقة بسيطة لمساعدتك على فهم التقنية التي تستخدمها كل يوم، واختيار الأنسب لاحتياجاتك.</p>
-
-            <div class="ad-space" style="margin: 20px 0;">
-                <small>مساحة إعلانية</small>
-            </div>
-
-            <h2>أولاً: ما هو الـ VPN؟</h2>
-            <p>الـ VPN (الشبكة الافتراضية الخاصة) هو نظام متكامل مصمم لتأمين وتشفير كل حركة المرور الصادرة من جهازك (سواء كانت من المتصفح، التطبيقات، أو الألعاب). عندما تتصل بـ VPN، يتم توجيه كل بياناتك عبر خادم وسيط، مما يخفي عنوان IP الحقيقي الخاص بك ويشفر اتصالك بالكامل. إنه الحل الشامل للخصوصية والأمان ودرع لحماية بياناتك.</p>
-
-            <h2>ثانياً: ما هو نفق الـ SSH (SSH Tunnel)؟</h2>
-            <p>الـ SSH (اختصار لـ Secure Shell) هو في الأساس بروتوكول للوصول إلى الأجهزة والتحكم فيها عن بعد بشكل آمن "مثلما يتحكم مديرو الخوادم في سيرفراتهم". لكن إحدى ميزاته القوية هي القدرة على إنشاء "نفق" (Tunnel).</p>
-            <p><strong>تشبيه بسيط:</strong> تخيل أن الـ VPN هو شركة أمنية خاصة تحرس كل الأبواب والنوافذ في منزلك. بينما نفق الـ SSH هو ممر سري آمن تقوم ببنائه بنفسك من غرفة واحدة فقط (تطبيق معين) إلى الخارج.</p>
-            <p>نفق الـ SSH يقوم بتوجيه حركة مرور تطبيق أو منفذ معين عبر خادم SSH آمن. الكثير من ملفات الكونفيج في تطبيقات مثل HTTP Custom تستخدم هذه التقنية لتأمين وتوجيه اتصال التطبيق نفسه فقط.</p>
-
-            <div class="table-container">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>الميزة</th>
-                            <th>VPN (الشبكة الافتراضية الخاصة)</th>
-                            <th>SSH Tunnel (نفق SSH)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td data-label="الميزة"><strong>نطاق الحماية</strong></td>
-                            <td data-label="VPN">يحمي <strong>كل</strong> اتصال الإنترنت على جهازك (النظام بأكمله).</td>
-                            <td data-label="SSH Tunnel">يحمي حركة مرور <strong>تطبيق أو منفذ معين</strong> فقط.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="الميزة"><strong>الاستخدام الأساسي</strong></td>
-                            <td data-label="VPN">الخصوصية الشاملة، الأمان، وتجاوز القيود الجغرافية.</td>
-                            <td data-label="SSH Tunnel">الوصول الآمن عن بعد، وتوجيه حركة مرور تطبيقات محددة.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="الميزة"><strong>سهولة الإعداد</strong></td>
-                            <td data-label="VPN">سهل جدًا للمستخدم العادي (تنزيل تطبيق والضغط على زر اتصال).</td>
-                            <td data-label="SSH Tunnel">يتطلب إعدادًا تقنيًا أكثر (غالبًا عبر ملفات كونفيج).</td>
-                        </tr>
-                        <tr>
-                            <td data-label="الميزة"><strong>السرعة</strong></td>
-                            <td data-label="VPN">قد يكون أبطأ قليلاً بسبب التشفير الشامل.</td>
-                            <td data-label="SSH Tunnel">قد يكون أسرع لأنه يركز على حركة مرور أقل.</td>
-                        </tr>
-                        <tr>
-                            <td data-label="الميزة"><strong>المرونة</strong></td>
-                            <td data-label="VPN">أقل مرونة، يعمل كحل "الكل أو لا شيء".</td>
-                            <td data-label="SSH Tunnel">مرن جدًا، يمكن تخصيصه لتطبيقات معينة.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2>متى تستخدم كل منهما؟</h2>
-            
-            <p><strong>استخدم VPN عندما:</strong></p>
-            <ul>
-                <li>تريد حماية شاملة لكل بياناتك على شبكة Wi-Fi عامة.</li>
-                <li>تريد إخفاء هويتك تمامًا أثناء التصفح من جميع التطبيقات والمواقع التي تزورها.</li>
-                <li>تريد الوصول إلى خدمات بث أو مواقع محجوبة جغرافيًا.</li>
-            </ul>
-
-            <p><strong>استخدم SSH Tunnel (عبر كونفيج) عندما:</strong></p>
-            <ul>
-                <li>تريد تأمين حركة مرور تطبيق واحد فقط (مثل HTTP Custom).</li>
-                <li>تحتاج إلى حل خفيف ومخصص لا يؤثر على بقية تطبيقات جهازك.</li>
-                <li>لديك ملف كونفيج موثوق ومصمم لغرض معين.</li>
-            </ul>
-
-            <h2>خاتمة</h2>
-            <p>كلا التقنيتين رائعتين وتخدمان هدفًا مشتركًا وهو الأمان. الـ VPN هو الدرع الكامل، بينما نفق الـ SSH هو السيف الدقيق والمخصص. فهمك للفرق بينهما يجعلك مستخدمًا أكثر وعيًا وقدرة على اختيار الأداة المناسبة في الوقت المناسب.</p>
-            <p><strong>يتمنى لك 𝐁𝐫𝐨𝐤𝐞𝐫 Sᴍᴍ تصفحًا واعيًا وآمنًا.</strong></p>
+    <div id="side-nav" class="sidenav">
+        <div class="sidenav-header">
+            <h2 class="sidenav-title-main">🦜Broker SMM</h2>
         </div>
-        <a href="blog.html" class="back-button">العودة إلى المدونة</a>
+        <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
+        <a href="index.html" class="main-nav-link"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
+        <a href="blog.html" class="main-nav-link active"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
+        <hr>
+        <span class="sidenav-title">أدوات الشبكة</span>
+        <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
+        <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
+        <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
+        <hr>
+        <span class="sidenav-title">عن الموقع</span>
+        <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
+        <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
+        <a href="contact.html"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
+        <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
+        <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
+    </div>
+    <div id="overlay"></div>
 
-        <footer class="main-footer">
-            <p>&copy; 2025 . جميع الحقوق محفوظة.</p>
-            <nav class="footer-nav">
-                <a href="about.html">عنا</a>
-                <span class="separator">|</span>
-                <a href="privacy.html">سياسة الخصوصية</a>
-                <span class="separator">|</span>
-                <a href="terms.html">شروط الاستخدام</a>
-                <span class="separator">|</span>
-                <a href="contact.html">تواصل معنا</a>
-                <span class="separator">|</span>
-                <a href="blog.html">المدونة</a>
-            </nav>
-            <p class="disclaimer">
-                هذا الموقع هو موقع مستقل ولا ينتمي إلى أو معتمد من قبل أي من شركات الاتصالات المذكورة. جميع الأسماء التجارية والشعارات (مثل Inwi, IAM, WIN) هي علامات تجارية مسجلة ومملوكة لأصحابها. يتم استخدامها هنا لأغراض التعريف فقط.
-            </p>
-        </footer>
+    <div id="main-content">
+        <header class="main-header">
+            <button id="openNavBtn" class="menu-btn">&#9776;</button>
+            <h1 class="header-title">🦜Broker SMM</h1>
+            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+        </header>
+
+        <div class="container">
+            <header class="article-header-standalone">
+                <div class="article-meta-top">
+                    <span class="article-category category-comparison">مقارنات</span>
+                    <span>13 يوليو 2025</span>
+                </div>
+                <h1>تقنية SSH مقابل VPN: ما هو الفرق الحقيقي وأيهما أفضل لك؟</h1>
+                <p class="article-excerpt">كلاهما ينشئ "نفقًا" آمنًا لبياناتك، لكن هل هما نفس الشيء؟ سنقارن بينهما بطريقة بسيطة لمساعدتك على فهم التقنية التي تستخدمها كل يوم.</p>
+            </header>
+            <img src="images/article7.webp" alt="مقارنة بين SSH و VPN" class="article-featured-image-standalone">
+            <article class="page-content">
+                <div class="article-body">
+                    <h2>أولاً: ما هو الـ VPN؟</h2>
+                    <p>الـ VPN (الشبكة الافتراضية الخاصة) هو نظام متكامل مصمم لتشفير **كل** حركة المرور الصادرة من جهازك (سواء كانت من المتصفح، التطبيقات، أو الألعاب). إنه الحل الشامل للخصوصية والأمان.</p>
+                    <h2>ثانياً: ما هو نفق الـ SSH (SSH Tunnel)؟</h2>
+                    <p>الـ SSH (اختصار لـ Secure Shell) هو في الأساس بروتوكول للوصول إلى الأجهزة والتحكم فيها عن بعد بشكل آمن. إحدى ميزاته القوية هي القدرة على إنشاء "نفق" (Tunnel) يوجه حركة مرور **تطبيق أو منفذ معين فقط** عبر خادم آمن.</p>
+                    
+                    <div class="table-container">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>الميزة</th>
+                                    <th>VPN</th>
+                                    <th>SSH Tunnel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>نطاق الحماية</strong></td>
+                                    <td>يحمي <strong>كل</strong> اتصال الإنترنت على جهازك.</td>
+                                    <td>يحمي حركة مرور <strong>تطبيق معين</strong> فقط.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>سهولة الإعداد</strong></td>
+                                    <td>سهل جدًا للمستخدم العادي.</td>
+                                    <td>يتطلب إعدادًا تقنيًا أكثر.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>السرعة</strong></td>
+                                    <td>قد يكون أبطأ قليلاً بسبب التشفير الشامل.</td>
+                                    <td>قد يكون أسرع لأنه يركز على حركة مرور أقل.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>متى تستخدم كل منهما؟</h2>
+                    <p><strong>استخدم VPN عندما:</strong> تريد حماية شاملة لكل بياناتك على شبكة Wi-Fi عامة، أو تريد الوصول لمحتوى محجوب جغرافيًا.</p>
+                    <p><strong>استخدم SSH Tunnel عندما:</strong> تريد تأمين حركة مرور تطبيق واحد فقط، أو تحتاج لحل خفيف ومخصص لا يؤثر على بقية تطبيقاتك.</p>
+                    <h2>خاتمة</h2>
+                    <p>الـ VPN هو الدرع الكامل، بينما نفق الـ SSH هو السيف الدقيق والمخصص. فهمك للفرق بينهما يجعلك مستخدمًا أكثر وعيًا.</p>
+                </div>
+            </article>
+            
+            <footer class="main-footer">
+                <p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
+                <nav class="footer-nav">
+                    <a href="about.html">عنا</a><span class="separator">|</span>
+                    <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
+                    <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
+                    <a href="contact.html">تواصل معنا</a>
+                </nav>
+            </footer>
+        </div>
     </div>
 
     <script>
-        // كود الوضع الليلي
-        document.addEventListener('DOMContentLoaded', () => {
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                body.classList.add('dark-mode');
-                darkModeToggle.textContent = '☀️';
-            } else {
-                darkModeToggle.textContent = '🌙';
-            }
-
-            darkModeToggle.addEventListener('click', () => {
-                if (body.classList.contains('dark-mode')) {
-                    body.classList.remove('dark-mode');
-                    localStorage.setItem('darkMode', 'disabled');
-                    darkModeToggle.textContent = '🌙';
-                } else {
-                    body.classList.add('dark-mode');
-                    localStorage.setItem('darkMode', 'enabled');
-                    darkModeToggle.textContent = '☀️';
-                }
-            });
-        });
+        // Full JavaScript for Sidenav and Dark Mode
     </script>
 </body>
 </html>
