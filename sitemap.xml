@@ -2,140 +2,140 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.brokersmm.com/</loc>
+    <loc>https://www.yourwebsite.com/index.html</loc>
     <lastmod>2025-07-22</lastmod>
     <changefreq>daily</changefreq>
-    <priority>1.00</priority>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.yourwebsite.com/blog.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.yourwebsite.com/what-is-my-ip.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/blog.html</loc>
+    <loc>https://www.yourwebsite.com/speed-test.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/dns-leak-test.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.yourwebsite.com/article1.html</loc>
     <lastmod>2025-07-22</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article2.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article3.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article4.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article5.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article6.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article7.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article8.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article9.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article10.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article11.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yourwebsite.com/article12.html</loc>
+    <lastmod>2025-07-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.brokersmm.com/article1.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article2.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article3.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article4.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article5.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article6.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article7.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article8.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article9.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article10.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article11.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article12.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://www.brokersmm.com/what-is-my-ip.html</loc>
+    <loc>https://www.yourwebsite.com/about.html</loc>
     <lastmod>2025-07-22</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/speed-test.html</loc>
+    <loc>https://www.yourwebsite.com/contact.html</loc>
     <lastmod>2025-07-22</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/dns-leak-test.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.70</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.brokersmm.com/faq.html</loc>
+    <loc>https://www.yourwebsite.com/faq.html</loc>
     <lastmod>2025-07-22</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/about.html</loc>
+    <loc>https://www.yourwebsite.com/privacy.html</loc>
     <lastmod>2025-07-22</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/contact.html</loc>
+    <loc>https://www.yourwebsite.com/terms.html</loc>
     <lastmod>2025-07-22</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.50</priority>
-  </url>
-
-  <url>
-    <loc>https://www.brokersmm.com/privacy.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/terms.html</loc>
-    <lastmod>2025-07-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.30</priority>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
