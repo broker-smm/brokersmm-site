@@ -20,10 +20,16 @@
       gtag('js', new Date());
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
+         crossorigin="anonymous"></script>
 </head>
 <body>
 
     <div id="side-nav" class="sidenav">
+        <div class="sidenav-header">
+            <h2 class="sidenav-title-main">🦜Broker SMM</h2>
+        </div>
         <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
         <a href="index.html" class="main-nav-link active"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
         <a href="blog.html" class="main-nav-link"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
@@ -64,7 +70,7 @@
             </main>
             
             <footer class="main-footer">
-<p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
                 <nav class="footer-nav">
                     <a href="about.html">عنا</a><span class="separator">|</span>
                     <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
@@ -76,7 +82,6 @@
     </div>
 
     <script>
-        // Full JavaScript for Sidenav and Dark Mode
         document.addEventListener('DOMContentLoaded', () => {
             const openNavBtn = document.getElementById('openNavBtn');
             const closeNavBtn = document.getElementById('closeNavBtn');
@@ -87,6 +92,16 @@
             if (openNavBtn) openNavBtn.addEventListener('click', openNav);
             if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
             if (overlay) overlay.addEventListener('click', closeNav);
+            
+            const accordions = document.querySelectorAll('.sidenav .accordion');
+            accordions.forEach(acc => {
+                acc.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
+                });
+            });
+
             const darkModeToggle = document.getElementById('darkModeToggle');
             const body = document.body;
             if (localStorage.getItem('darkMode') === 'enabled') {

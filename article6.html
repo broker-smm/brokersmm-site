@@ -18,8 +18,12 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+    
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
+         crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -65,9 +69,9 @@
             <article class="page-content">
                 <div class="article-body">
                     <h2>أولاً: ما هو الـ VPN؟</h2>
-                    <p>الـ VPN (الشبكة الافتراضية الخاصة) هو نظام متكامل مصمم لتشفير **كل** حركة المرور الصادرة من جهازك (سواء كانت من المتصفح، التطبيقات، أو الألعاب). إنه الحل الشامل للخصوصية والأمان.</p>
+                    <p>الـ VPN (الشبكة الافتراضية الخاصة) هو نظام متكامل مصمم لتشفير <strong>كل</strong> حركة المرور الصادرة من جهازك (سواء كانت من المتصفح، التطبيقات، أو الألعاب). إنه الحل الشامل للخصوصية والأمان.</p>
                     <h2>ثانياً: ما هو نفق الـ SSH (SSH Tunnel)؟</h2>
-                    <p>الـ SSH (اختصار لـ Secure Shell) هو في الأساس بروتوكول للوصول إلى الأجهزة والتحكم فيها عن بعد بشكل آمن. إحدى ميزاته القوية هي القدرة على إنشاء "نفق" (Tunnel) يوجه حركة مرور **تطبيق أو منفذ معين فقط** عبر خادم آمن.</p>
+                    <p>الـ SSH (اختصار لـ Secure Shell) هو في الأساس بروتوكول للوصول إلى الأجهزة والتحكم فيها عن بعد بشكل آمن. إحدى ميزاته القوية هي القدرة على إنشاء "نفق" (Tunnel) يوجه حركة مرور <strong>تطبيق أو منفذ معين فقط</strong> عبر خادم آمن.</p>
                     
                     <div class="table-container">
                         <table class="comparison-table">
@@ -120,6 +124,45 @@
 
     <script>
         // Full JavaScript for Sidenav and Dark Mode
+        document.addEventListener('DOMContentLoaded', () => {
+            const openNavBtn = document.getElementById('openNavBtn');
+            const closeNavBtn = document.getElementById('closeNavBtn');
+            const sideNav = document.getElementById('side-nav');
+            const overlay = document.getElementById('overlay');
+            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
+            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
+            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
+            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
+            if (overlay) overlay.addEventListener('click', closeNav);
+            const accordions = document.querySelectorAll('.sidenav .accordion');
+            accordions.forEach(acc => {
+                acc.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    const panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
+                });
+            });
+            const darkModeToggle = document.getElementById('darkModeToggle');
+            const body = document.body;
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                body.classList.add('dark-mode');
+                if(darkModeToggle) darkModeToggle.textContent = '☀️';
+            } else {
+                if(darkModeToggle) darkModeToggle.textContent = '🌙';
+            }
+            if(darkModeToggle) {
+                darkModeToggle.addEventListener('click', () => {
+                    body.classList.toggle('dark-mode');
+                    if (body.classList.contains('dark-mode')) {
+                        localStorage.setItem('darkMode', 'enabled');
+                        darkModeToggle.textContent = '☀️';
+                    } else {
+                        localStorage.setItem('darkMode', 'disabled');
+                        darkModeToggle.textContent = '🌙';
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html>

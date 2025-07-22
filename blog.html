@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المدونة التعليمية - Broker SMM</title>
     <meta name="description" content="اكتشف مقالاتنا المتخصصة حول أمان الإنترنت، الشبكات الافتراضية، ونصائح الاتصال لتحسين تجربتك الرقمية.">
     
@@ -20,6 +20,7 @@
       gtag('js', new Date());
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
+    
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
          crossorigin="anonymous"></script>
 </head>
@@ -159,7 +160,8 @@
                         <p>دليل لأفضل التطبيقات المجانية التي تعمل مع أدوات الاتصال لبناء حصن رقمي متكامل.</p>
                         <div class="article-meta"><span>17 يوليوز 2025</span></div>
                     </div>
-                    <a href="article12.html" class="article-card">
+                </a>
+                 <a href="article12.html" class="article-card">
                     <img src="images/article12_placeholder.webp" alt="قراءة نتائج اختبار السرعة" class="article-image">
                     <div class="article-content">
                         <span class="article-category category-tips">نصائح</span>
@@ -167,7 +169,6 @@
                         <p>دليلك الكامل لفهم ماذا تعني أرقام Ping, Jitter, Download, و Upload وكيف تؤثر على تجربتك اليومية...</p>
                         <div class="article-meta"><span>22 يوليو 2025</span></div>
                     </div>
-                </a>
                 </a>
             </div>
 
@@ -185,7 +186,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // --- Sidenav Logic ---
             const openNavBtn = document.getElementById('openNavBtn');
             const closeNavBtn = document.getElementById('closeNavBtn');
             const sideNav = document.getElementById('side-nav');
@@ -196,7 +196,6 @@
             if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
             if (overlay) overlay.addEventListener('click', closeNav);
             
-            // --- Sidenav Accordion Logic ---
             const accordions = document.querySelectorAll('.sidenav .accordion');
             accordions.forEach(acc => {
                 acc.addEventListener('click', function() {
@@ -206,7 +205,6 @@
                 });
             });
 
-            // --- Dark Mode Logic ---
             const darkModeToggle = document.getElementById('darkModeToggle');
             const body = document.body;
             if (localStorage.getItem('darkMode') === 'enabled') {
