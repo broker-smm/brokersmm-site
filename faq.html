@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الأسئلة الشائعة - Broker SMM</title>
-    <meta name="description" content="ابحث عن إجابات للأسئلة الأكثر شيوعًا حول استخدام أدوات الاتصال، الأمان، سرعة الشبكة، والمزيد. دليلك السريع لحل المشاكل.">
+    <meta name="description" content="ابحث عن إجابات للأسئلة الأكثر شيوعًا حول عناوين IP، سرعة الإنترنت، أمان DNS، وغيرها من المواضيع التقنية المفيدة. دليلك الشامل للمعرفة.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-prompt {
+            background-color: #f0f8ff; /* Light blue background */
+            border: 1px solid #d1e7fd;
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin: 40px auto;
+            text-align: center;
+            max-width: 95%;
+        }
+        .contact-prompt h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0c5460;
+        }
+        .contact-prompt p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #333;
+        }
+        .cta-button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            display: inline-block;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+        /* Dark Mode styles for CTA box */
+        .dark-mode .contact-prompt {
+            background-color: #2c3e50;
+            border-color: #34495e;
+        }
+        .dark-mode .contact-prompt h3 {
+            color: #ecf0f1;
+        }
+        .dark-mode .contact-prompt p {
+            color: #bdc3c7;
+        }
+        .dark-mode .cta-button {
+            background-color: #3498db;
+        }
+        .dark-mode .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
@@ -62,37 +117,55 @@
 
             <div class="faq-container">
                 <div class="faq-item">
-                    <button class="faq-question">كل كم يتم تحديث ملفات الإعدادات؟</button>
-                    <div class="faq-answer"><p>يتم تحديث جميع ملفات الإعدادات بشكل دوري لضمان أفضل أداء واستقرار ممكن.</p></div>
+                    <button class="faq-question">ما هو عنوان IP وما أهميته؟</button>
+                    <div class="faq-answer"><p>عنوان IP هو معرّف فريد لجهازك على الإنترنت، يشبه عنوان منزلك في العالم الحقيقي. يسمح للأجهزة والمواقع بتبادل البيانات مع بعضها البعض. يمكنك معرفة المزيد في <a href="article2.html" class="internal-link">هذا المقال</a>.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">الاتصال لا يعمل، ما هي الأسباب المحتملة؟</button>
-                    <div class="faq-answer"><p>هناك عدة أسباب، أبرزها ضعف شبكة الاتصال، أو وجود ضغط على الخادم. <a href="article4.html" class="internal-link">اضغط هنا لمعرفة تفاصيل اكثر</a>.</p></div>
+                    <button class="faq-question">ماذا يعني اختبار سرعة الاتصال؟</button>
+                    <div class="faq-answer"><p>هو أداة تقيس سرعة التحميل (Download) والرفع (Upload) وزمن الاستجابة (Ping) لاتصالك بالإنترنت. تساعدك هذه الأرقام على فهم جودة اتصالك وما إذا كان مناسبًا لأنشطتك.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">ما الفرق بين خادم دولة وأخرى؟</button>
-                    <div class="faq-answer"><p>نعم، يؤثر على السرعة. كلما كان الخادم أقرب جغرافيًا، كان زمن الاستجابة (Ping) أفضل، مما يعني تصفحًا أكثر سلاسة.</p></div>
+                    <button class="faq-question">ما هو تسريب DNS ولماذا هو خطير؟</button>
+                    <div class="faq-answer"><p>يحدث تسريب DNS عندما يتم كشف طلبات تصفحك للإنترنت لمزود الخدمة، حتى لو كنت تستخدم VPN. هذا يضر بخصوصيتك. أداة "كشف تسريب DNS" تساعدك على التحقق مما إذا كان اتصالك آمنًا. <a href="article8.html" class="internal-link">اقرأ المزيد هنا</a>.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">كيف أختار أفضل ملف تعريف يناسبني؟</button>
-                    <div class="faq-answer"><p>اختيار الملف الأنسب يعتمد على عوامل منها سرعة الاستجابة (Ping) واستقرار الخادم. <a href="article10.html" class="internal-link">اضغط هنا لمعرفة تفاصيل اكثر</a>.</p></div>
+                    <button class="faq-question">ما هو الفرق بين تقنية SSH و VPN؟</button>
+                    <div class="faq-answer"><p>كلاهما تقنيات لتأمين الاتصال عبر الإنترنت. الـ SSH يستخدم بشكل أساسي للوصول الآمن للأنظمة عن بعد، بينما الـ VPN مصمم لتشفير وتوجيه كل حركة المرور على جهازك عبر خادم آمن. <a href="article6.html" class="internal-link">اضغط هنا لمعرفة تفاصيل اكثر</a>.</p></div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">كيف يمكنني تحسين سرعة الإنترنت لدي؟</button>
+                    <div class="faq-answer"><p>هناك عدة طرق بسيطة، مثل إعادة تشغيل جهاز الراوتر، تقريب جهازك منه، استخدام كابل Ethernet بدلاً من Wi-Fi، وإغلاق التطبيقات غير الضرورية التي تستهلك النطاق الترددي.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">ما الفرق بين تقنية SSH و VPN؟</button>
-                    <div class="faq-answer"><p>كلاهما تقنيات لتأمين الاتصال، لكن الـ VPN مصمم لتشفير كل حركة المرور على جهازك. <a href="article6.html" class="internal-link">اضغط هنا لمعرفة تفاصيل اكثر</a>.</p></div>
+                    <button class="faq-question">هل أدواتكم مجانية؟</button>
+                    <div class="faq-answer"><p>نعم، جميع الأدوات المتوفرة على موقعنا (مثل معرفة IP، اختبار السرعة، وكشف تسريب DNS) مجانية تمامًا للاستخدام.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">هل استخدام هذه الأدوات يجعلني مجهول الهوية 100%؟</button>
-                    <div class="faq-answer"><p>استخدام ملف تعريف آمن يجعلك "شبحًا" في الإنترنت ويخفي هويتك، لكن لا يوجد شيء اسمه أمان بنسبة 100% على الإطلاق. <a href="article5.html" class="internal-link">اضغط هنا لمعرفة تفاصيل اكثر</a>.</p></div>
+                    <button class="faq-question">هل يمكن تغيير عنوان IP الخاص بي؟</button>
+                    <div class="faq-answer"><p>نعم، يمكن تغييره. أبسط طريقة هي إعادة تشغيل جهاز الراوتر، حيث يقوم مزود الخدمة غالبًا بتعيين IP جديد. للحصول على تحكم أكبر، يمكن استخدام خدمات VPN لتغيير موقعك الجغرافي الافتراضي.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">لماذا تنفد بطارية هاتفي أسرع عند استخدام أدوات الاتصال؟</button>
-                    <div class="faq-answer"><p>هذا طبيعي، لأن الحفاظ على "نفق" اتصال دائم ومشفّر يتطلب طاقة إضافية من هاتفك. <a href="article7.html" class="internal-link">اضغط هنا لمعرفة تفاصيل اكثر</a>.</p></div>
+                    <button class="faq-question">ماذا يعني "زمن الاستجابة" أو Ping؟</button>
+                    <div class="faq-answer"><p>الـ Ping هو الوقت الذي يستغرقه إرسال حزمة بيانات صغيرة من جهازك إلى خادم والعودة مرة أخرى. كلما كان الرقم أقل (بالمللي ثانية)، كان اتصالك أفضل للألعاب عبر الإنترنت ومكالمات الفيديو.</p></div>
                 </div>
+                <div class="faq-item">
+                    <button class="faq-question">هل استخدام أدوات إخفاء الهوية يجعلني آمناً 100%؟</button>
+                    <div class="faq-answer"><p>استخدام أدوات مثل VPN يزيد من خصوصيتك بشكل كبير، لكن لا يوجد حل يضمن الأمان بنسبة 100% على الإنترنت. الأمان الحقيقي يعتمد على مجموعة من الممارسات الجيدة مثل استخدام كلمات مرور قوية وتجنب الروابط المشبوهة. <a href="article5.html" class="internal-link">اقرأ هذا المقال لمزيد من النصائح</a>.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">ما هو هدف موقع Broker SMM؟</button>
+                    <div class="faq-answer"><p>هدفنا هو توفير محتوى تعليمي باللغة العربية حول تقنيات الإنترنت والشبكات، بالإضافة إلى أدوات مجانية ومفيدة تساعد المستخدمين على فهم وحماية اتصالهم بالإنترنت بشكل أفضل.</p></div>
+                </div>
+            </div>
+
+            <div class="contact-prompt">
+                <h3>هل لديك سؤال آخر؟</h3>
+                <p>إذا لم تجد إجابتك، أو كان لديك استفسار بخصوص أمان الاتصال أو محتوى الموقع، فلا تتردد في التواصل معنا.</p>
+                <a href="contact.html" class="cta-button">تواصل معنا</a>
             </div>
             
             <footer class="main-footer">
-<p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
                 <nav class="footer-nav">
                     <a href="about.html">عنا</a><span class="separator">|</span>
                     <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
