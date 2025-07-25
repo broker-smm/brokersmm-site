@@ -83,6 +83,8 @@ body {
 .card-color-4 { background: linear-gradient(135deg, #d35400, #f39c12); }
 .card-color-5 { background: linear-gradient(135deg, #2980b9, #6dd5fa); }
 .card-color-6 { background: linear-gradient(135deg, #00A896, #02C39A); }
+.card-color-7 { background: linear-gradient(45deg, #007991, #78ffd6); }
+.card-color-8 { background: linear-gradient(45deg, #ff5f6d, #ffc371); }
 
 /* =========================================== */
 /* ==           BLOG & ARTICLE STYLES       == */
@@ -432,6 +434,7 @@ body.dark-mode .alternative-button:hover {
     background-color: #1abc9c;
     color: #2c3e50;
 }
+
 /* --- Dark Mode Styles --- */
 body.dark-mode { background-color: #1a252f; }
 body.dark-mode .container { background-color: transparent; }
@@ -476,7 +479,7 @@ body.dark-mode .page-content { background-color: #2c3e50; box-shadow: 0 10px 25p
 body.dark-mode .text-content h3 { color: #ecf0f1; border-bottom-color: #34495e; }
 body.dark-mode .text-content p, body.dark-mode .text-content li { color: #bdc3c7; }
 body.dark-mode .text-content ul li::before { color: #2ecc71; }
-body.dark-mode .tool-gateway-button { box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+body.dark-de .tool-gateway-button { box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
 body.dark-mode .results-explanation { border-top-color: #34495e; }
 body.dark-mode .results-explanation h3 { color: #ecf0f1; }
 body.dark-mode .results-explanation ul li { color: #bdc3c7; }
