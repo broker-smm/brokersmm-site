@@ -26,7 +26,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://www.brokersmm.com/what-is-my-ip.html</loc>
     <lastmod>2025-07-22</lastmod>
@@ -120,6 +119,12 @@
   </url>
   <url>
     <loc>https://www.brokersmm.com/article13.html</loc>
+    <lastmod>2025-07-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.brokersmm.com/article14.html</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
