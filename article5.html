@@ -115,47 +115,6 @@
         </div>
     </div>
 
-    <script>
-        // Full JavaScript for Sidenav and Dark Mode
-        document.addEventListener('DOMContentLoaded', () => {
-            const openNavBtn = document.getElementById('openNavBtn');
-            const closeNavBtn = document.getElementById('closeNavBtn');
-            const sideNav = document.getElementById('side-nav');
-            const overlay = document.getElementById('overlay');
-            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
-            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
-            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
-            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
-            if (overlay) overlay.addEventListener('click', closeNav);
-            const accordions = document.querySelectorAll('.sidenav .accordion');
-            accordions.forEach(acc => {
-                acc.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    const panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
-                });
-            });
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                body.classList.add('dark-mode');
-                if(darkModeToggle) darkModeToggle.textContent = '☀️';
-            } else {
-                if(darkModeToggle) darkModeToggle.textContent = '🌙';
-            }
-            if(darkModeToggle) {
-                darkModeToggle.addEventListener('click', () => {
-                    body.classList.toggle('dark-mode');
-                    if (body.classList.contains('dark-mode')) {
-                        localStorage.setItem('darkMode', 'enabled');
-                        darkModeToggle.textContent = '☀️';
-                    } else {
-                        localStorage.setItem('darkMode', 'disabled');
-                        darkModeToggle.textContent = '🌙';
-                    }
-                });
-            }
-        });
-    </script>
+<script src="main.js" defer></script>
 </body>
 </html>
