@@ -1,31 +1,29 @@
-// Full JavaScript for Sidenav, Dark Mode, and Share Buttons
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Sidenav & Dark Mode Logic ---
+    
+    // --- 1. شيفرة القائمة الجانبية والوضع الليلي ---
     const openNavBtn = document.getElementById('openNavBtn');
     const closeNavBtn = document.getElementById('closeNavBtn');
     const sideNav = document.getElementById('side-nav');
     const overlay = document.getElementById('overlay');
-    function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
+
+    function openNav() { if (sideNav) sideNav.style.width = "280px"; if (overlay) overlay.style.display = "block"; }
     function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
+
     if (openNavBtn) openNavBtn.addEventListener('click', openNav);
     if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
     if (overlay) overlay.addEventListener('click', closeNav);
-    const accordions = document.querySelectorAll('.sidenav .accordion');
-    accordions.forEach(acc => {
-        acc.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const panel = this.nextElementSibling;
-            if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
-        });
-    });
+    
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
+
+    // Check if dark mode is saved in localStorage
     if (localStorage.getItem('darkMode') === 'enabled') {
         body.classList.add('dark-mode');
         if(darkModeToggle) darkModeToggle.textContent = '☀️';
     } else {
         if(darkModeToggle) darkModeToggle.textContent = '🌙';
     }
+
     if(darkModeToggle) {
         darkModeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
@@ -39,7 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Social Share Logic ---
+    // --- 2. شيفرة القائمة المنسدلة (Accordion) ---
+    const accordions = document.querySelectorAll('.sidenav .accordion');
+    accordions.forEach(acc => {
+        acc.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    });
+
+    // --- 3. شيفرة تفعيل أزرار المشاركة ---
     const shareSection = document.querySelector('.share-section');
     if (shareSection) {
         const pageUrl = encodeURIComponent(window.location.href);
@@ -71,4 +83,5 @@ document.addEventListener('DOMContentLoaded', () => {
             telegramBtn.rel = 'noopener noreferrer';
         }
     }
+
 });
