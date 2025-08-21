@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولّد الاقتباسات - Broker SMM</title>
+    <link rel="canonical" href="https://www.brokersmm.com/quote-generator.html" />
+    <meta name="description" content="أنشئ صور اقتباسات مذهلة بخطوط عربية متنوعة وخلفيات مخصصة لمشاركتها على وسائل التواصل الاجتماعي، متوافق مع تصميم Broker SMM.">
+
+    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HTYEW9YJ5L');
+    </script>
+    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Lalezar&family=Amiri:wght@700&family=Changa:wght@600&family=El+Messiri:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <style>
+        /* Custom styles for the quote generator page */
+        .generator-card {
+            background-color: var(--card-bg-color);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        body.dark-mode .generator-card {
+            background-color: #2c3e50;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .generator-card h2 {
+            font-size: 2em;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body.dark-mode .generator-card h2 {
+             color: #ecf0f1;
+        }
+
+        #topic-input {
+            width: 100%;
+            height: 80px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            color: var(--text-color);
+            font-size: 1rem;
+            resize: vertical;
+            margin-bottom: 1rem;
+            font-family: 'Tajawal', sans-serif;
+        }
+        body.dark-mode #topic-input {
+            background-color: #1a252f;
+            color: #ecf0f1;
+            border-color: #4a6279;
+        }
+        #topic-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .action-btn {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fff;
+            background-color: var(--primary-color);
+            margin-bottom: 2rem;
+        }
+        .action-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+        .action-btn:disabled {
+            background-color: #555;
+            cursor: not-allowed;
+        }
+
+        #preview-area {
+            background-color: #000;
+            color: #fff;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 8px;
+            padding: 2.5rem; /* Increased padding */
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 28px; /* Default size, will be controlled by JS */
+            line-height: 1.6;
+            transition: all 0.2s ease;
+            overflow: hidden;
+            font-family: 'Tajawal', sans-serif;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        /* Controls Grouping */
+        .controls-group {
+            margin-bottom: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+        .controls-group label {
+            display: block;
+            margin-bottom: 1rem; /* Increased margin */
+            font-weight: bold;
+            color: var(--text-color);
+            font-family: 'Tajawal', sans-serif;
+        }
+        body.dark-mode .controls-group label {
+            color: #ecf0f1;
+        }
+
+        .font-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .font-btn {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-color-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+        }
+        body.dark-mode .font-btn { color: #bdc3c7; }
+        .font-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        .font-btn.active {
+            background-color: var(--primary-color);
+            color: #fff;
+            border-color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        #background-upload {
+            display: none;
+        }
+
+        .upload-btn {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: transparent;
+            color: var(--text-color);
+            font-family: 'Tajawal', sans-serif;
+        }
+        body.dark-mode .upload-btn {
+            color: #bdc3c7;
+            border-color: #4a6279;
+        }
+        .upload-btn:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        #font-size-slider {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        #download-btn {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body class="dark-mode">
+
+<div id="side-nav" class="sidenav">
+    <div class="sidenav-header"> <h2 class="sidenav-title-main">🦜Broker SMM</h2> </div>
+    <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
+    <a href="index.html" class="main-nav-link"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
+    <a href="news.html" class="main-nav-link"><i class="far fa-newspaper icon-margin"></i>الأخبار الرقمية</a>
+    <a href="blog.html" class="main-nav-link"><i class="fas fa-graduation-cap icon-margin"></i>المدونة التعليمية</a>
+    <hr>
+    <button class="accordion"><i class="fas fa-tools icon-margin"></i>الأدوات</button>
+    <div class="panel">
+        <span class="sidenav-title-sub">أدوات الشبكة</span>
+        <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
+        <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
+        <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
+        <a href="webrtc-leak-test.html"><i class="fas fa-broadcast-tower icon-margin"></i>كشف تسريب WebRTC</a>
+        <a href="browser-fingerprint.html"><i class="fas fa-fingerprint icon-margin"></i>عرض بصمة المتصفح</a>
+        <hr class="sub-hr">
+        <span class="sidenav-title-sub">أدوات الأمان</span>
+        <a href="password-strength-checker.html"><i class="fas fa-shield-alt icon-margin"></i>فاحص قوة كلمة المرور</a>
+        <a href="password-generator.html"><i class="fas fa-key icon-margin"></i>مولد كلمات المرور</a>
+    </div>
+    <hr>
+    <span class="sidenav-title">عن الموقع</span>
+    <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
+    <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
+    <a href="contact.html"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
+    <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
+    <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
+</div>
+<div id="overlay"></div>
+
+<div id="main-content">
+    <header class="main-header">
+        <button id="openNavBtn" class="menu-btn">&#9776;</button>
+        <h1 class="header-title">🦜Broker SMM</h1>
+        <button id="darkModeToggle" class="dark-mode-toggle">☀️</button>
+    </header>
+
+    <div class="container">
+        <div class="generator-card">
+            <h2>مولّد الاقتباسات</h2>
+            <textarea id="topic-input" placeholder="اكتب موضوعًا لإنشاء اقتباس عنه..."></textarea>
+            <button class="action-btn" id="generate-btn">
+                <i class="fas fa-wand-magic-sparkles"></i>
+                <span>أنشئ اقتباس</span>
+            </button>
+
+            <div id="preview-area">
+                <p id="preview-text">سيظهر اقتباسك الملهم هنا</p>
+            </div>
+
+            <div class="controls-group">
+                <label for="background-upload">تغيير الخلفية</label>
+                <input type="file" id="background-upload" accept="image/*">
+                <label for="background-upload" class="upload-btn">اختر صورة</label>
+            </div>
+            
+            <div class="controls-group">
+                <label for="font-size-slider">التحكم بحجم الخط</label>
+                <input type="range" id="font-size-slider" min="16" max="100" value="28">
+            </div>
+
+            <div class="controls-group">
+                <label>اختيار الخط</label>
+                <div class="font-selector" id="font-selector">
+                    <button class="font-btn active" data-font="Tajawal">تجوال</button>
+                    <button class="font-btn" data-font="Lalezar">لالزار</button>
+                    <button class="font-btn" data-font="Amiri">أميري</button>
+                    <button class="font-btn" data-font="El Messiri">المسيري</button>
+                    <button class="font-btn" data-font="Changa">شانجا</button>
+                </div>
+            </div>
+
+            <button class="action-btn" id="download-btn">تحميل الصورة</button>
+        </div>
+
+        <footer class="main-footer">
+            <p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
+            <nav class="footer-nav">
+                <a href="about.html">عنا</a><span class="separator">|</span>
+                <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
+                <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
+                <a href="contact.html">تواصل معنا</a>
+            </nav>
+        </footer>
+    </div>
+</div>
+
+<script src="main.js" defer></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // ---===[ هام جداً: ضع مفتاحك هنا ]===---
+    const GEMINI_API_KEY = 'AIzaSyDXNH2dNHeVfXCOw_MgI-_EVzjpJxsADFM';
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`;
+
+    const topicInput = document.getElementById('topic-input');
+    const generateBtn = document.getElementById('generate-btn');
+    const fontSelector = document.getElementById('font-selector');
+    const previewArea = document.getElementById('preview-area');
+    const previewText = document.getElementById('preview-text');
+    const downloadBtn = document.getElementById('download-btn');
+    const backgroundUpload = document.getElementById('background-upload');
+    const fontSizeSlider = document.getElementById('font-size-slider');
+
+    let activeFont = 'Tajawal';
+    let backgroundImage = null;
+    let activeFontSize = '28px'; // KEY CHANGE: Default value is now smaller
+
+    function updatePreview() {
+        previewArea.style.fontFamily = `'${activeFont}', sans-serif`;
+        previewArea.style.fontSize = activeFontSize;
+        if (backgroundImage) {
+            previewArea.style.backgroundImage = `url('${backgroundImage}')`;
+        } else {
+            previewArea.style.backgroundImage = 'none';
+            previewArea.style.backgroundColor = '#000';
+        }
+    }
+
+    fontSelector.addEventListener('click', (e) => {
+        if (e.target && e.target.classList.contains('font-btn')) {
+            fontSelector.querySelector('.active')?.classList.remove('active');
+            e.target.classList.add('active');
+            activeFont = e.target.dataset.font;
+            updatePreview();
+        }
+    });
+
+    fontSizeSlider.addEventListener('input', (e) => {
+        activeFontSize = `${e.target.value}px`;
+        updatePreview();
+    });
+
+    generateBtn.addEventListener('click', async () => {
+        const topic = topicInput.value.trim();
+        if (!topic) {
+            alert('الرجاء إدخال موضوع أولاً.');
+            return;
+        }
+        if (GEMINI_API_KEY === 'ضع-مفتاحك-هنا') {
+            alert('خطأ: الرجاء إضافة مفتاح API الخاص بك في الكود.');
+            return;
+        }
+
+        generateBtn.disabled = true;
+        generateBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i><span>جاري الإنشاء...</span>`;
+        previewText.textContent = '';
+
+        try {
+            const prompt = `اكتب اقتباسًا عميقًا ومختصرًا باللغة العربية حول موضوع "${topic}". يجب أن يكون الاقتباس من 10 إلى 20 كلمة فقط ولا يحتوي على علامات تنصيص.`;
+            const response = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ contents: [{ "parts": [{ "text": prompt }] }] })
+            });
+
+            if (!response.ok) throw new Error('فشل طلب API. تأكد من صحة المفتاح.');
+
+            const data = await response.json();
+            const newQuote = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
+            if (newQuote) {
+                previewText.textContent = newQuote;
+            } else {
+                previewText.textContent = "حدث خطأ في إنشاء الاقتباس.";
+            }
+        } catch (error) {
+            console.error("API Error:", error);
+            alert(error.message);
+            previewText.textContent = "حدث خطأ. الرجاء المحاولة مرة أخرى.";
+        } finally {
+            generateBtn.disabled = false;
+            generateBtn.innerHTML = `<i class="fas fa-wand-magic-sparkles"></i><span>أنشئ اقتباس</span>`;
+        }
+    });
+
+    backgroundUpload.addEventListener('change', (e) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                backgroundImage = e.target.result;
+                updatePreview();
+            }
+            reader.readAsDataURL(file);
+        } else {
+            backgroundImage = null;
+            updatePreview();
+        }
+    });
+
+    downloadBtn.addEventListener('click', () => {
+        if (previewText.textContent.includes('سيظهر اقتباسك') || previewText.textContent.trim() === '') {
+            alert('الرجاء إنشاء اقتباس أولاً قبل التحميل.');
+            return;
+        }
+
+        html2canvas(previewArea, {
+            useCORS: true,
+            allowTaint: true,
+            backgroundColor: backgroundImage ? null : '#000000',
+            scale: 3
+        }).then(canvas => {
+            const link = document.createElement('a');
+            link.download = 'BrokerSMM-Quote.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        });
+    });
+
+    // Initialize the preview with the default smaller font size
+    updatePreview();
+});
+
+// Sidenav and dark mode logic from your website
+document.addEventListener('DOMContentLoaded', function() {
+    const openNavBtn = document.getElementById('openNavBtn');
+    const closeNavBtn = document.getElementById('closeNavBtn');
+    const sideNav = document.getElementById('side-nav');
+    const overlay = document.getElementById('overlay');
+
+    if (openNavBtn) {
+        openNavBtn.addEventListener('click', () => {
+            sideNav.style.width = '250px';
+            overlay.style.display = 'block';
+        });
+    }
+
+    function closeNav() {
+        sideNav.style.width = '0';
+        overlay.style.display = 'none';
+    }
+
+    if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
+    if (overlay) overlay.addEventListener('click', closeNav);
+});
+</script>
+
+</body>
+</html>
