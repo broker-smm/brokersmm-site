@@ -2,224 +2,165 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://www.brokersmm.com/index.html</loc>
-    <lastmod>2025-08-21</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://brokersmm.com/index.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://www.brokersmm.com/blog.html</loc>
-    <lastmod>2025-08-09</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://brokersmm.com/about.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://brokersmm.com/contact.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://brokersmm.com/privacy.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://brokersmm.com/terms.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://brokersmm.com/disclaimer.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://brokersmm.com/markets.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/news.html</loc>
-    <lastmod>2025-08-21</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://brokersmm.com/crypto.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://brokersmm.com/real-estate.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://brokersmm.com/wisdom.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://www.brokersmm.com/quote-generator.html</loc>
-    <lastmod>2025-08-21</lastmod>
+    <loc>https://brokersmm.com/crypto-defi-intro.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/password-strength-checker.html</loc>
-    <lastmod>2025-08-17</lastmod>
+    <loc>https://brokersmm.com/crypto-first-coin.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/password-generator.html</loc>
-    <lastmod>2025-08-17</lastmod>
+    <loc>https://brokersmm.com/crypto-wallets-guide.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/what-is-my-ip.html</loc>
-    <lastmod>2025-08-02</lastmod>
+    <loc>https://brokersmm.com/financial-wisdom.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/speed-test.html</loc>
-    <lastmod>2025-08-02</lastmod>
+    <loc>https://brokersmm.com/markets-article-index-funds.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/dns-leak-test.html</loc>
-    <lastmod>2025-08-02</lastmod>
+    <loc>https://brokersmm.com/markets-article-retirement-accounts.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/webrtc-leak-test.html</loc>
-    <lastmod>2025-08-02</lastmod>
+    <loc>https://brokersmm.com/markets-article-tech-vs-sp500.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/browser-fingerprint.html</loc>
-    <lastmod>2025-08-02</lastmod>
+    <loc>https://brokersmm.com/re-article-reits.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.brokersmm.com/news1.html</loc>
-    <lastmod>2025-08-21</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/news2.html</loc>
-    <lastmod>2025-08-21</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://brokersmm.com/re-financing-guide.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/news3.html</loc>
-    <lastmod>2025-08-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://www.brokersmm.com/article1.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://brokersmm.com/re-first-property.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/article2.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article3.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article4.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article5.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article6.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article7.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article8.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article9.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article10.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article11.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article12.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article13.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article14.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article15.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
- <url>
-    <loc>https://www.brokersmm.com/article16.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/article17.html</loc>
-    <lastmod>2025-08-09</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://brokersmm.com/wisdom-psychology-of-money.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://www.brokersmm.com/about.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/contact.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.brokersmm.com/faq.html</loc>
-    <lastmod>2025-08-02</lastmod>
+    <loc>https://brokersmm.com/ultimate-beginner-guide.html</loc>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/privacy.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://brokersmm.com/ultimate-beginner-guide-chapter-2.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.brokersmm.com/terms.html</loc>
-    <lastmod>2025-08-02</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://brokersmm.com/ultimate-beginner-guide-chapter-3.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://brokersmm.com/ultimate-beginner-guide-chapter-4.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://brokersmm.com/ultimate-beginner-guide-chapter-5.html</loc>
+    <lastmod>2025-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
