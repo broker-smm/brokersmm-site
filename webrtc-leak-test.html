@@ -1,200 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أداة كشف تسريب WebRTC - دليل شامل | Broker SMM</title>
-    <meta name="description" content="اختبر أمان اتصالك. أداتنا المجانية تكشف وتشرح ما إذا كان عنوان IP الحقيقي الخاص بك يتسرب عبر تقنية WebRTC، حتى مع استخدام VPN، وكيفية حماية نفسك.">
-    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
-    <link rel="canonical" href="https://www.brokersmm.com/webrtc-leak-test.html" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-    <noscript>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-      <link rel="stylesheet" href="style.css">
-    </noscript>
-
-    <link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/tajawal/v9/IurfWxDckDOTI6_Ra-h_p-5-y_f5.woff2" crossorigin>
-    
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HTYEW9YJ5L');
-    </script>
-    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <link rel="canonical" href="https://brokersmm.com/"/>
+  <meta http-equiv="refresh" content="0; url=https://brokersmm.com/">
 </head>
 <body>
-
-    <div id="side-nav" class="sidenav">
-        <div class="sidenav-header">
-            <h2 class="sidenav-title-main">🦜Broker SMM</h2>
-        </div>
-        <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
-        <a href="index.html" class="main-nav-link"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
-        <a href="blog.html" class="main-nav-link"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
-        <hr>
-        <span class="sidenav-title">أدوات الشبكة</span>
-        <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
-        <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
-        <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
-        <a href="webrtc-leak-test.html" class="active"><i class="fas fa-broadcast-tower icon-margin"></i>كشف تسريب WebRTC</a>
-        <a href="browser-fingerprint.html"><i class="fas fa-fingerprint icon-margin"></i>عرض بصمة المتصفح</a>
-        <hr>
-        <span class="sidenav-title">عن الموقع</span>
-        <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
-        <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
-        <a href="contact.html"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
-        <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
-        <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
-    </div>
-    <div id="overlay"></div>
-
-    <div id="main-content">
-        <header class="main-header">
-            <button id="openNavBtn" class="menu-btn">&#9776;</button>
-            <h1 class="header-title">🦜Broker SMM</h1>
-            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
-        </header>
-
-        <div class="container">
-            <div class="page-content">
-                <div class="blog-intro">
-                    <h2>أداة كشف تسريب WebRTC</h2>
-                    <p>تقنية WebRTC ضرورية للاتصالات الصوتية والمرئية في المتصفح، لكنها قد تكشف عن عنوان IP الحقيقي الخاص بك حتى عند استخدام VPN. هذه الأداة ستفحص عن أي تسريب.</p>
-                </div>
-
-                <div class="tool-card" style="text-align: right;">
-                    <h3><i class="fas fa-network-wired icon-margin"></i>عناوين IP التي تم كشفها</h3>
-                    <div id="webrtc-result" class="highlight-result" style="padding: 20px; min-height: 50px; font-size: 1.2em;">... جاري الفحص ...</div>
-                </div>
-
-                <div class="results-explanation text-content">
-                    <h2>ما هي تقنية WebRTC وكيف يحدث التسريب؟</h2>
-                    <p>WebRTC (Web Real-Time Communication) هي تقنية قوية مدمجة في معظم المتصفحات الحديثة (مثل Chrome و Firefox) تسمح بإجراء مكالمات الفيديو والصوت ومشاركة الملفات مباشرة من المتصفح دون الحاجة لإضافات. لإنشاء هذا الاتصال السريع والمباشر، تحتاج الأجهزة إلى معرفة عناوين IP الحقيقية لبعضها البعض. وهنا تكمن المشكلة: أحيانًا، يمكن للمواقع أن تستخدم وظائف WebRTC لتجاوز نفق الـ VPN المشفر وطلب عنوان IP الحقيقي مباشرة من جهازك.</p>
-
-                    <hr style="margin: 40px 0;">
-
-                    <h2>شرح مفصل لنتائج الفحص</h2>
-                    <p>تقوم أداتنا بمحاولة إنشاء اتصال WebRTC وهمي ومراقبة عناوين IP التي يكشف عنها متصفحك أثناء هذه العملية. إليك كيفية تفسير النتائج بدقة:</p>
-                    
-                    <h3>✅ الحالة الآمنة (لا يوجد تسريب)</h3>
-                    <p>إذا كانت النتيجة "<strong>آمن. لم يتم العثور على تسريب</strong>"، فهذا يعني أن متصفحك أو الـ VPN الذي تستخدمه يقوم بعمل رائع في حجب هذه الطلبات. لا يظهر أي عنوان IP عام أو محلي، وخصوصيتك محمية.</p>
-
-                    <h3>⚠️ الحالة الخطرة (تسريب محتمل!)</h3>
-                    <p>إذا ظهرت النتيجة "<strong>تسريب محتمل!</strong>" مع قائمة من عناوين IP، فاقرأها بعناية:</p>
-                    <ul>
-                        <li><strong>عنوان IP عام (Public IP):</strong> إذا رأيت عنوان IP عامًا (مثال: `82.14.25.100`) **يختلف عن عنوان IP الخاص بالـ VPN** الذي تستخدمه، فهذا تسريب حقيقي وخطير. هذا يعني أن موقعك الحقيقي مكشوف.</li>
-                        <li><strong>عنوان IP محلي (Local IP):</strong> إذا رأيت عنوان IP يبدأ بـ `192.168.x.x` أو `10.x.x.x`، فهذا هو عنوان IP الخاص بك داخل شبكتك المنزلية فقط. الكشف عنه أقل خطورة، لكنه لا يزال معلومة إضافية عنك لا يجب مشاركتها.</li>
-                    </ul>
-
-                     <hr style="margin: 40px 0;">
-
-                    <h2>كيف تحمي نفسك من تسريب WebRTC؟ (الحلول النهائية)</h2>
-                    <p>حماية نفسك من هذا النوع من التسريبات أمر ممكن تمامًا باتباع واحدة أو أكثر من هذه الخطوات الفعالة:</p>
-                    <ol>
-                        <li><strong>اختر VPN موثوقًا:</strong> معظم خدمات الـ VPN المدفوعة والموثوقة تأتي مع حماية مدمجة ضد تسريبات WebRTC و DNS. غالبًا ما يكون هناك خيار في إعدادات التطبيق لتفعيل هذه الحماية.</li>
-                        <li><strong>استخدم إضافات المتصفح المخصصة:</strong> هناك إضافات ممتازة مصممة خصيصًا لحل هذه المشكلة، مثل **"WebRTC Leak Prevent"** أو **"uBlock Origin"** (الذي يوفر هذه الميزة في إعداداته المتقدمة).</li>
-                        <li><strong>قم بتعطيل WebRTC يدويًا في المتصفح:</strong> هذا خيار للمستخدمين المتقدمين. في متصفح Firefox، يمكنك الذهاب إلى صفحة `about:config` والبحث عن `media.peerconnection.enabled` وتغيير قيمتها إلى `false`. (هذا الخيار غير متاح بسهولة في Chrome).</li>
-                        <li><strong>استخدم متصفحًا يركز على الخصوصية:</strong> متصفحات مثل **Brave** تقوم بتعطيل أو تقييد طلبات WebRTC بشكل افتراضي كجزء من إعدادات الخصوصية القوية لديها.</li>
-                    </ol>
-                </div>
-            </div>
-            
-            <footer class="main-footer">
-                <p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
-                <nav class="footer-nav">
-                    <a href="about.html">عنا</a><span class="separator">|</span>
-                    <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
-                    <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
-                    <a href="contact.html">تواصل معنا</a>
-                </nav>
-            </footer>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Sidenav & Dark Mode Logic ---
-            const openNavBtn = document.getElementById('openNavBtn');
-            const closeNavBtn = document.getElementById('closeNavBtn');
-            const sideNav = document.getElementById('side-nav');
-            const overlay = document.getElementById('overlay');
-            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
-            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
-            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
-            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
-            if (overlay) overlay.addEventListener('click', closeNav);
-            
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                body.classList.add('dark-mode');
-                if(darkModeToggle) darkModeToggle.textContent = '☀️';
-            } else {
-                if(darkModeToggle) darkModeToggle.textContent = '🌙';
-            }
-            if(darkModeToggle) {
-                darkModeToggle.addEventListener('click', () => {
-                    body.classList.toggle('dark-mode');
-                    if (body.classList.contains('dark-mode')) {
-                        localStorage.setItem('darkMode', 'enabled');
-                        darkModeToggle.textContent = '☀️';
-                    } else {
-                        localStorage.setItem('darkMode', 'disabled');
-                        darkModeToggle.textContent = '🌙';
-                    }
-                });
-            }
-
-            // --- WebRTC Leak Test Logic (REVISED & MORE RELIABLE) ---
-            const webrtcResult = document.getElementById('webrtc-result');
-            if (webrtcResult) {
-                const RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
-                if (!RTCPeerConnection) {
-                    webrtcResult.innerHTML = '❌ <span class="highlight-leak">خطأ:</span> متصفحك لا يدعم تقنية WebRTC.';
-                    return;
-                }
-
-                const pc = new RTCPeerConnection({ iceServers: [{ urls: "stun:stun.l.google.com:19302" }] });
-                const foundIPs = new Set();
-
-                pc.onicecandidate = (ice) => {
-                    if (ice && ice.candidate && ice.candidate.candidate) {
-                        const ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3})/g;
-                        let match;
-                        while ((match = ipRegex.exec(ice.candidate.candidate)) !== null) {
-                            if (match[1]) {
-                                foundIPs.add(match[1]);
-                            }
-                        }
-                    }
-                };
-
-                pc.onicegatheringstatechange = () => {
-                    if (pc.iceGatheringState === 'complete') {
-                        if (foundIPs.size === 0) {
-                            webrtcResult.innerHTML = `✅ <span class="highlight-safe">آمن.</span> لم يتم العثور على تسريب لعنوان IP.`;
-                        } else {
-                            let htmlResult = `⚠️ <span class="highlight-leak">تسريب محتمل!</span> تم العثور على العناوين التالية:<br>`;
-                            foundIPs.forEach(ip => {
-                                htmlResult += `<strong>${ip}</strong><br>`;
-                            });
-                            webrtcResult.innerHTML = htmlResult;
-                        }
-                    }
-                };
-                
-                pc.createDataChannel('');
-                pc.createOffer().then(offer => pc.setLocalDescription(offer)).catch(err => console.error(err));
-            }
-        });
-    </script>
+  <h1>Redirecting...</h1>
+  <p>This page has moved. You will be redirected to the new page. If not, <a href="https://brokersmm.com/">click here</a>.</p>
 </body>
 </html>

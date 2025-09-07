@@ -1,220 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ما هو عنوان IP الخاص بي؟ - أدوات Broker SMM</title>
-    <link rel="canonical" href="https://www.brokersmm.com/what-is-my-ip.html" />
-    <meta name="description" content="أداة مجانية وسريعة لمعرفة عنوان IP العام الخاص بك وتفاصيله (الدولة، المدينة، ومزود الخدمة). تحقق من عنوان بروتوكول الإنترنت الذي يظهر به اتصالك الآن.">
-    
-    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</noscript>
-    
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-HTYEW9YJ5L');
-    </script>
-
-    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
-
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <link rel="canonical" href="https://brokersmm.com/"/>
+  <meta http-equiv="refresh" content="0; url=https://brokersmm.com/">
 </head>
 <body>
-
-<div id="side-nav" class="sidenav">
-    <div class="sidenav-header">
-        <h2 class="sidenav-title-main">🦜Broker SMM</h2>
-    </div>
-    <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
-    <a href="index.html" class="main-nav-link"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
-    <a href="blog.html" class="main-nav-link"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
-    <hr>
-    <span class="sidenav-title">أدوات الشبكة</span>
-    <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
-    <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
-    <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
-    <a href="webrtc-leak-test.html"><i class="fas fa-broadcast-tower icon-margin"></i>كشف تسريب WebRTC</a>
-    <a href="browser-fingerprint.html"><i class="fas fa-fingerprint icon-margin"></i>عرض بصمة المتصفح</a>
-    <hr>
-    <span class="sidenav-title">عن الموقع</span>
-    <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
-    <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
-    <a href="contact.html"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
-    <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
-    <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
-</div>
-    <div id="overlay"></div>
-
-    <div id="main-content">
-        <header class="main-header">
-            <button id="openNavBtn" class="menu-btn">&#9776;</button>
-            <h1 class="header-title">🦜Broker SMM</h1>
-            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
-        </header>
-
-        <div class="container">
-            <div class="page-content">
-                <div class="blog-intro">
-                    <h2>عنوان IP العام الخاص بك</h2>
-                    <p>هذا هو عنوان بروتوكول الإنترنت (IP) الذي يظهر به اتصالك حاليًا على الشبكة.</p>
-                </div>
-
-                <div class="ip-details-grid" id="ip-details-container">
-                    <div class="ip-detail-item placeholder">
-                        <i class="fas fa-network-wired"></i>
-                        <span>عنوان IP</span>
-                        <strong>... جاري التحميل ...</strong>
-                    </div>
-                    <div class="ip-detail-item placeholder">
-                        <i class="fas fa-flag"></i>
-                        <span>الدولة</span>
-                        <strong>...</strong>
-                    </div>
-                    <div class="ip-detail-item placeholder">
-                        <i class="fas fa-city"></i>
-                        <span>المدينة</span>
-                        <strong>...</strong>
-                    </div>
-                    <div class="ip-detail-item placeholder">
-                        <i class="fas fa-server"></i>
-                        <span>مزود الخدمة</span>
-                        <strong>...</strong>
-                    </div>
-                </div>
-                
-                <div class="results-explanation text-content">
-                    <h3>دليل شامل حول عناوين IP</h3>
-                    <h4>1. ما هو عنوان IP بالضبط؟</h4>
-                    <p>فكر في عنوان IP على أنه "عنوان منزلك الرقمي". إنه معرف فريد يمنحه مزود خدمة الإنترنت (ISP) لجهازك للسماح له بالاتصال بالإنترنت والتواصل مع الأجهزة والمواقع الأخرى.</p>
-
-                    <h4>2. ما الفرق بين IP العام و IP الخاص؟</h4>
-                    <p>الأداة أعلاه تعرض عنوان IP **العام** الخاص بك، وهو العنوان الذي يراك به العالم الخارجي. هناك أيضًا عنوان IP **خاص** يستخدم داخل شبكتك المحلية للتواصل بين أجهزتك والراوتر، وهذا العنوان لا يمكن رؤيته من الإنترنت.</p>
-
-                    <h4>3. ما هو الفرق بين IPv4 و IPv6؟</h4>
-                    <ul>
-                        <li><strong>IPv4:</strong> هو الإصدار الأقدم والأكثر شيوعًا (مثال: `192.168.1.1`). بسبب محدودية عدد العناوين المتاحة، تم تطوير إصدار جديد.</li>
-                        <li><strong>IPv6:</strong> هو الإصدار الأحدث الذي يوفر عددًا هائلاً من العناوين (مثال: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`).</li>
-                    </ul>
-
-                    <h4>4. لماذا قد ترغب في إخفاء عنوان IP الخاص بك؟</h4>
-                    <p>إخفاء عنوان IP العام الخاص بك باستخدام أدوات تأمين الاتصال هو خطوة أساسية لحماية خصوصيتك على الإنترنت. هذا يمنع المواقع والمعلنين من تتبع موقعك الجغرافي ونشاطك، ويساعدك على تجاوز القيود الجغرافية على المحتوى.</p>
-                </div>
-            </div>
-            
-            <footer class="main-footer">
-<p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
-                <nav class="footer-nav">
-                    <a href="about.html">عنا</a><span class="separator">|</span>
-                    <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
-                    <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
-                    <a href="contact.html">تواصل معنا</a>
-                </nav>
-            </footer>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // --- Sidenav Logic ---
-            const openNavBtn = document.getElementById('openNavBtn');
-            const closeNavBtn = document.getElementById('closeNavBtn');
-            const sideNav = document.getElementById('side-nav');
-            const overlay = document.getElementById('overlay');
-            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
-            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
-            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
-            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
-            if (overlay) overlay.addEventListener('click', closeNav);
-            
-            const accordions = document.querySelectorAll('.sidenav .accordion');
-            accordions.forEach(acc => {
-                acc.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    const panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
-                });
-            });
-
-            // --- Dark Mode Logic ---
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                body.classList.add('dark-mode');
-                if(darkModeToggle) darkModeToggle.textContent = '☀️';
-            } else {
-                if(darkModeToggle) darkModeToggle.textContent = '🌙';
-            }
-            if(darkModeToggle) {
-                darkModeToggle.addEventListener('click', () => {
-                    body.classList.toggle('dark-mode');
-                    if (body.classList.contains('dark-mode')) {
-                        localStorage.setItem('darkMode', 'enabled');
-                        darkModeToggle.textContent = '☀️';
-                    } else {
-                        localStorage.setItem('darkMode', 'disabled');
-                        darkModeToggle.textContent = '🌙';
-                    }
-                });
-            }
-            
-            // --- IP Details Fetching Logic ---
-            const ipDetailsContainer = document.getElementById('ip-details-container');
-            if (ipDetailsContainer) {
-                fetch('https://ipapi.co/json/')
-                    .then(response => {
-                        if (!response.ok) { throw new Error('Network response was not ok'); }
-                        return response.json();
-                    })
-                    .then(data => {
-                        ipDetailsContainer.innerHTML = `
-                            <div class="ip-detail-item">
-                                <i class="fas fa-network-wired"></i>
-                                <span>عنوان IP</span>
-                                <strong>${data.ip || 'غير متوفر'}</strong>
-                            </div>
-                            <div class="ip-detail-item">
-                                <i class="fas fa-flag"></i>
-                                <span>الدولة</span>
-                                <strong>${data.country_name || 'غير متوفر'} <span class="country-flag">${data.country_code ? getFlagEmoji(data.country_code) : ''}</span></strong>
-                            </div>
-                            <div class="ip-detail-item">
-                                <i class="fas fa-city"></i>
-                                <span>المدينة</span>
-                                <strong>${data.city || 'غير متوفر'}</strong>
-                            </div>
-                            <div class="ip-detail-item">
-                                <i class="fas fa-server"></i>
-                                <span>مزود الخدمة</span>
-                                <strong>${data.org || 'غير متوفر'}</strong>
-                            </div>
-                        `;
-                    })
-                    .catch(error => {
-                        console.error('Error fetching IP details:', error);
-                        ipDetailsContainer.innerHTML = '<p class="error-message">فشل في جلب تفاصيل العنوان. يرجى المحاولة مرة أخرى.</p>';
-                    });
-            }
-
-            function getFlagEmoji(countryCode) {
-                const codePoints = countryCode
-                    .toUpperCase()
-                    .split('')
-                    .map(char => 127397 + char.charCodeAt());
-                return String.fromCodePoint(...codePoints);
-            }
-        });
-    </script>
+  <h1>Redirecting...</h1>
+  <p>This page has moved. You will be redirected to the new page. If not, <a href="https://brokersmm.com/">click here</a>.</p>
 </body>
 </html>
