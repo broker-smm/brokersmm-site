@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering the Markets - BrokersMM</title>
+    
+    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HTYEW9YJ5L');
+    </script>
+    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
+         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+        :root {
+            --accent-blue-data: #5c85ad;
+            --accent-red-loss: #E57373;
+            --card-border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: #0A0A0A;
+        }
+
+        img {
+            height: auto;
+            max-width: 100%;
+        }
+        
+        /* General Page Styles */
+        .hub-container { 
+            padding: 60px 5%; 
+        }
+        .hub-section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .hub-section-heading::after {
+            content: '';
+            flex-grow: 1;
+            height: 1px;
+            background-image: linear-gradient(to right, var(--card-border-color), transparent);
+        }
+
+        /* --- NEW, ROBUST & BULLETPROOF CARD LAYOUT --- */
+        
+        /* MOBILE FIRST APPROACH (Default state) */
+        .featured-strip {
+            display: flex;
+            flex-direction: column; /* On mobile, everything stacks */
+            gap: 20px;
+        }
+        
+        .featured-secondary {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .featured-card {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid var(--card-border-color);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .featured-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-gold);
+        }
+        
+        .featured-card-image {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+        .featured-card-image img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.4s ease-out;
+        }
+        .featured-card:hover .featured-card-image img {
+             transform: scale(1.05);
+        }
+
+        .featured-card .content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+        
+        .featured-main h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            line-height: 1.4;
+        }
+        
+        .featured-main p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            margin-top: 10px;
+        }
+
+        .featured-secondary h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        /* DESKTOP STYLES (Switches to Grid layout for stability) */
+        @media (min-width: 768px) {
+            .hub-container { padding: 80px 8%; }
+            .hub-section-heading { font-size: 2.5rem; }
+
+            .featured-strip {
+                display: grid; /* Use robust Grid for desktop */
+                grid-template-columns: 2fr 1fr; /* 2 parts for main, 1 part for secondary */
+                gap: 30px;
+            }
+            
+            .featured-secondary {
+                gap: 30px;
+            }
+        }
+        
+        /* Other page styles, kept for completeness */
+        .markets-hero { position: relative; padding: 200px 8% 120px; text-align: center; background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; overflow: hidden; }
+        .markets-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 8vw, 6rem); color: var(--text-primary); text-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
+        .markets-hero p { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text-secondary); max-width: 650px; margin: 20px auto 0; line-height: 1.8; }
+        .hub-layout { display: grid; grid-template-columns: 1fr; gap: 50px; }
+        @media (min-width: 1024px) { .hub-layout { grid-template-columns: 1fr 350px; } }
+        .strategy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
+        .strategy-card { display: block; text-decoration: none; color: inherit; background-color: var(--card-bg); border-radius: 15px; border: 1px solid var(--card-border-color); padding: 30px; text-align: center; transition: all 0.3s ease; }
+        .strategy-card:hover { transform: translateY(-8px); border-color: var(--accent-blue-data); }
+        .strategy-card .icon { font-size: 2rem; color: var(--accent-blue-data); margin-bottom: 20px; }
+        .strategy-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
+        .strategy-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+        .sidebar { display: flex; flex-direction: column; gap: 30px; }
+        .widget { background-color: var(--card-bg); border-radius: 15px; border: 1px solid var(--card-border-color); padding: 30px; }
+        .widget-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 20px; color: var(--text-primary); }
+        .market-pulse { border-color: var(--accent-blue-data); }
+        .market-pulse .widget-title { color: var(--accent-blue-data); }
+        .metrics-list { list-style: none; padding: 0; }
+        .metric-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--card-border-color); }
+        .metric-item:last-child { border-bottom: none; }
+        .metric-item .label { font-size: 0.9rem; color: var(--text-secondary); }
+        .metric-item .value { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 1.1rem; }
+        .metric-item .value.up { color: var(--accent-green-money); }
+        .metric-item .value.down { color: var(--accent-red-loss); }
+        .investor-list { list-style: none; padding: 0; }
+        .investor-item { margin-bottom: 15px; }
+        .investor-item a { display: flex; align-items: center; gap: 15px; text-decoration: none; padding: 10px; border-radius: 10px; transition: background-color 0.3s ease; }
+        .investor-item a:hover { background-color: rgba(255, 255, 255, 0.05); }
+        .investor-item img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
+        .investor-item .name { font-weight: 600; color: var(--text-primary); }
+        .investor-item .title { font-size: 0.8rem; color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Insights</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">BrokersMM</a>
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="markets-hero">
+            <h1>Mastering the Markets</h1>
+            <p>Your portal to the world of stocks and ETFs. From deep-dive strategies to inspirational investor journeys, this is where your confidence grows.</p>
+        </section>
+
+        <div class="hub-container">
+            <div class="hub-layout">
+                <div class="main-content-area">
+                    <h2 class="hub-section-heading">Featured Insights</h2>
+                    <div class="featured-strip">
+                        <div class="featured-main">
+                            <a href="markets-article-index-funds.html" class="featured-card">
+                                <div class="featured-card-image">
+                                    <img src="images/index-funds-article-thumb.webp" alt="A screen showing stock market data charts." width="1080" height="608">
+                                </div>
+                                <div class="content">
+                                    <h3>The Ultimate Beginner's Guide: Why Index Funds Are Your Smartest First Step</h3>
+                                    <p>Instead of trying to pick one winning stock, this guide shows you how to buy the entire market simply and safely.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="featured-secondary">
+                            <a href="markets-article-retirement-accounts.html" class="featured-card">
+                                <div class="featured-card-image">
+                                    <img src="images/retirement-accounts-growth-16x9.webp" alt="A plant growing inside a clear piggy bank, representing protected retirement savings." width="1080" height="608">
+                                </div>
+                                <div class="content">
+                                    <h3>The Ultimate Money Hack: Understanding Retirement Accounts</h3>
+                                </div>
+                            </a>
+                            <a href="markets-article-tech-vs-sp500.html" class="featured-card">
+                                <div class="featured-card-image">
+                                    <img src="images/tech-vs-sp500-16x9.webp" alt="A split screen showing tech data streams vs a stable stock chart." width="1050" height="591">
+                                </div>
+                                <div class="content">
+                                    <h3>Tech ETFs vs. S&P 500: Which is Right for You?</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h2 class="hub-section-heading" style="margin-top: 60px;">Strategy Vault</h2>
+                    <div class="strategy-grid">
+                        <a href="#" class="strategy-card">
+                            <div class="icon"><i class="fas fa-balance-scale"></i></div>
+                            <h3>Dollar-Cost Averaging</h3>
+                            <p>Learn the disciplined approach to investing consistently, regardless of market highs or lows.</p>
+                        </a>
+                        <a href="#" class="strategy-card">
+                            <div class="icon"><i class="fas fa-leaf"></i></div>
+                            <h3>Growth Investing</h3>
+                            <p>An introduction to identifying companies with high growth potential for your portfolio.</p>
+                        </a>
+                        <a href="#" class="strategy-card">
+                            <div class="icon"><i class="fas fa-gem"></i></div>
+                            <h3>Value Investing</h3>
+                            <p>Explore the timeless strategy of finding undervalued companies in the market.</p>
+                        </a>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="widget market-pulse">
+                        <h3 class="widget-title">Market Pulse</h3>
+                        <ul class="metrics-list">
+                            <li class="metric-item">
+                                <span class="label">S&P 500 Trend</span>
+                                <span class="value up"><i class="fas fa-arrow-up"></i> Stable</span>
+                            </li>
+                            <li class="metric-item">
+                                <span class="label">Tech Sector</span>
+                                <span class="value down"><i class="fas fa-arrow-down"></i> Volatile</span>
+                            </li>
+                            <li class="metric-item">
+                                <span class="label">Investor Sentiment</span>
+                                <span class="value"><i class="fas fa-arrow-right"></i> Neutral</span>
+                            </li>
+                        </ul>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; margin-top: 20px;">Monthly Outlook: Focus on inflation data and central bank announcements. Expect short-term volatility.</p>
+                    </div>
+
+                    <div class="widget">
+                        <h3 class="widget-title">Investor Journeys</h3>
+                        <ul class="investor-list">
+                            <li class="investor-item">
+                                <a href="#">
+                                    <img src="images/buffett.webp" alt="Warren Buffett" width="45" height="45">
+                                    <div>
+                                        <div class="name">Warren Buffett</div>
+                                        <div class="title">The Oracle of Omaha</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="investor-item">
+                                <a href="#">
+                                    <img src="images/lynch.webp" alt="Peter Lynch" width="45" height="45">
+                                    <div>
+                                        <div class="name">Peter Lynch</div>
+                                        <div class="title">The Common Sense Investor</div>
+                                    </div>
+                                </a>
+                            </li>
+                             <li class="investor-item">
+                                <a href="#">
+                                    <img src="images/bogle.webp" alt="John Bogle" width="45" height="45">
+                                    <div>
+                                        <div class="name">John Bogle</div>
+                                        <div class="title">The Vanguard of Index Funds</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <p>&copy; 2025 BrokersMM. Your Guide to Smart Investing.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+    </footer>
+
+    <script>
+        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+    </script>
+
+</body>
+</html>

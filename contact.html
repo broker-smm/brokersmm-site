@@ -1,147 +1,162 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا - Broker SMM</title>
-    <link rel="canonical" href="https://www.brokersmm.com/contact.html" />
-    <meta name="description" content="تواصل مع فريق Broker SMM. إذا كان لديك أي أسئلة، استفسارات، أو اقتراحات، يمكنك التواصل معنا عبر واتساب أو البريد الإلكتروني.">
-    
-    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
+    <title>Contact Us - BrokersMM</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</noscript>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-
     <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
          crossorigin="anonymous"></script>
+    <style>
+        .contact-page-container {
+            padding: 160px 8% 100px;
+            text-align: center;
+        }
+
+        .contact-page-container h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 6vw, 4.5rem);
+            margin-bottom: 20px;
+        }
+
+        .contact-page-container .subtitle {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto 80px;
+            line-height: 1.8;
+        }
+
+        .contact-options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background-color: var(--card-bg);
+            padding: 50px 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-gold);
+        }
+
+        .contact-card .icon {
+            margin-bottom: 30px;
+        }
+
+        .contact-card .icon svg {
+            width: 60px;
+            height: 60px;
+        }
+
+        .contact-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        
+        .contact-card p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        
+        .contact-card .cta-button,
+        .contact-card .cta-button-secondary {
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        
+        /* Specific colors for icons */
+        #whatsapp-icon path {
+            fill: var(--accent-green-money);
+        }
+        
+        #email-icon path {
+            fill: var(--accent-gold);
+        }
+
+    </style>
 </head>
 <body>
 
-<div id="side-nav" class="sidenav">
-    <div class="sidenav-header">
-        <h2 class="sidenav-title-main">🦜Broker SMM</h2>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html">Insights</a>
+        <a href="contact.html">Contact</a>
     </div>
-    <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
-    <a href="index.html" class="main-nav-link"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
-    <a href="blog.html" class="main-nav-link"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
-    <hr>
-    <span class="sidenav-title">أدوات الشبكة</span>
-    <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
-    <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
-    <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
-    <a href="webrtc-leak-test.html"><i class="fas fa-broadcast-tower icon-margin"></i>كشف تسريب WebRTC</a>
-    <a href="browser-fingerprint.html"><i class="fas fa-fingerprint icon-margin"></i>عرض بصمة المتصفح</a>
-    <hr>
-    <span class="sidenav-title">عن الموقع</span>
-    <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
-    <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
-    <a href="contact.html"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
-    <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
-    <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
-</div>
-    <div id="overlay"></div>
 
-    <div id="main-content">
-        <header class="main-header">
-            <button id="openNavBtn" class="menu-btn">&#9776;</button>
-            <h1 class="header-title">🦜Broker SMM</h1>
-            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
-        </header>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">BrokersMM</a>
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
+        </nav>
+    </header>
 
-        <div class="container">
-            <div class="blog-intro">
-                <h2>نحن هنا للمساعدة</h2>
-                <p>إذا كان لديك أي سؤال أو اقتراح، فلا تتردد في التواصل معنا.</p>
-            </div>
+    <main>
+        <div class="contact-page-container">
+            <h1>Get In Touch</h1>
+            <p class="subtitle">Have a question, a suggestion, or just want to say hello? We'd love to hear from you. Choose your preferred way to connect with us below.</p>
 
-            <div class="contact-methods-grid">
+            <div class="contact-options-grid">
                 <div class="contact-card">
-                    <div class="contact-icon whatsapp-bg"><i class="fab fa-whatsapp"></i></div>
-                    <h3>التواصل السريع عبر واتساب</h3>
-                    <p>للحصول على أسرع رد، يمكنك التواصل معنا مباشرة عبر واتساب.</p>
-                    <a href="https://wa.me/212632549474" class="contact-button whatsapp-bg" target="_blank" rel="noopener noreferrer">
-                        تحدث معنا الآن
-                    </a>
+                    <div class="icon" id="whatsapp-icon">
+                        <svg viewBox="0 0 24 24"><path d="M16.75,13.96C17.09,14.3 17.07,14.88 16.73,15.22C16.4,15.56 15.82,15.58 15.48,15.25C15.09,14.86 14.2,14.05 13.46,13.31C12.8,12.65 12.41,12.26 12.2,12.05C12,11.85 11.83,11.67 11.63,11.67C11.43,11.67 11.22,11.88 11.02,12.08C10.82,12.28 10.42,12.67 10.22,12.87C10.02,13.07 9.82,13.1 9.59,13.03C9.36,12.96 8.8,12.75 8.16,12.11C7.41,11.36 6.85,10.46 6.7,10.18C6.55,9.9 6.73,9.73 6.89,9.57C7.03,9.43 7.2,9.26 7.33,9.13C7.46,9 7.53,8.9 7.59,8.77C7.65,8.64 7.61,8.5 7.54,8.37L7.04,7.14C6.91,6.88 6.81,6.81 6.65,6.78C6.49,6.75 6.3,6.75 6.13,6.75H5.9C5.5,6.75 5.1,6.9 4.79,7.21C4.48,7.52 4.09,7.99 4.09,8.79C4.09,9.59 4.5,10.39 4.6,10.59C4.8,11 5.3,11.84 6.14,12.68C6.98,13.52 7.97,14.02 8.97,14.22C9.53,14.34 10.04,14.33 10.45,14.22C10.9,14.12 11.67,13.62 11.97,13.32C12.27,13.02 12.47,12.82 12.67,12.62C12.87,12.42 13.04,12.35 13.24,12.45C13.44,12.55 14.18,12.94 14.88,13.64C15.58,14.34 15.75,14.54 15.95,14.64C16.15,14.74 16.35,14.71 16.5,14.56L16.75,13.96M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C10.03,22 8.2,21.43 6.65,20.45L2,22L3.55,17.35C2.57,15.8 2,13.97 2,12A10,10 0 0,1 12,2Z"></path></svg>
+                    </div>
+                    <h2>Quick Chat via WhatsApp</h2>
+                    <p>For quick questions and faster responses, feel free to send us a message directly on WhatsApp.</p>
+                    <a href="https://wa.me/message/PH7PSUTH25NZH1" target="_blank" class="cta-button" style="background-color: var(--accent-green-money);">Message Us</a>
                 </div>
 
                 <div class="contact-card">
-                    <div class="contact-icon email-bg"><i class="fas fa-envelope-open-text"></i></div>
-                    <h3>التواصل الرسمي عبر البريد</h3>
-                    <p>يمكنك إرسال رسالة مفصلة إلينا عبر البريد الإلكتروني وسنرد في أقرب وقت.</p>
-                    <a href="mailto:brokersmm1@gmail.com" class="contact-button email-bg">
-                        أرسل بريدًا إلكترونيًا
-                    </a>
+                    <div class="icon" id="email-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"></path></svg>
+                    </div>
+                    <h2>Official Email</h2>
+                    <p>For more detailed inquiries, partnership proposals, or official communication, please send us an email.</p>
+                    <a href="mailto:brokersmm1@gmail.com" class="cta-button-secondary">Send an Email</a>
                 </div>
             </div>
-            
-            <footer class="main-footer">
-<p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
-                <nav class="footer-nav">
-                    <a href="about.html">عنا</a><span class="separator">|</span>
-                    <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
-                    <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
-                    <a href="contact.html">تواصل معنا</a>
-                </nav>
-            </footer>
         </div>
-    </div>
+    </main>
+    
+    <footer class="main-footer">
+        <p>&copy; 2025 BrokersMM. Your Guide to Smart Investing.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+    </footer>
 
     <script>
-        // Full JavaScript for Sidenav and Dark Mode
-        document.addEventListener('DOMContentLoaded', () => {
-            const openNavBtn = document.getElementById('openNavBtn');
-            const closeNavBtn = document.getElementById('closeNavBtn');
-            const sideNav = document.getElementById('side-nav');
-            const overlay = document.getElementById('overlay');
-            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
-            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
-            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
-            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
-            if (overlay) overlay.addEventListener('click', closeNav);
-            const accordions = document.querySelectorAll('.sidenav .accordion');
-            accordions.forEach(acc => {
-                acc.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    const panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
-                });
-            });
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                body.classList.add('dark-mode');
-                if(darkModeToggle) darkModeToggle.textContent = '☀️';
-            } else {
-                if(darkModeToggle) darkModeToggle.textContent = '🌙';
-            }
-            if(darkModeToggle) {
-                darkModeToggle.addEventListener('click', () => {
-                    body.classList.toggle('dark-mode');
-                    if (body.classList.contains('dark-mode')) {
-                        localStorage.setItem('darkMode', 'enabled');
-                        darkModeToggle.textContent = '☀️';
-                    } else {
-                        localStorage.setItem('darkMode', 'disabled');
-                        darkModeToggle.textContent = '🌙';
-                    }
-                });
-            }
-        });
+        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
     </script>
+
 </body>
 </html>

@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Broker SMM - شروحات وأدوات الشبكة</title>
-    <link rel="canonical" href="https://www.brokersmm.com/index.html" />
-    <meta name="description" content="مركزك التعليمي لكل ما يخص أمن الشبكات والاتصال الآمن. مقالات، شروحات، وأدوات متقدمة لحماية خصوصيتك الرقمية.">
-    
-    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
+    <title>BrokersMM - Your Guide to Beginner Investing</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-</noscript>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -25,137 +18,86 @@
       gtag('js', new Date());
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-    
     <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
          crossorigin="anonymous"></script>
-</head>
+    </head>
 <body>
 
-<div id="side-nav" class="sidenav">
-    <div class="sidenav-header">
-        <h2 class="sidenav-title-main">🦜Broker SMM</h2>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="wisdom.html">Wisdom</a>
+        <a href="crypto.html">Crypto</a>
+        <a href="contact.html">Contact</a>
     </div>
-    <a href="javascript:void(0)" class="close-btn" id="closeNavBtn">&times;</a>
-    <a href="index.html" class="main-nav-link"><i class="fas fa-home icon-margin"></i>الصفحة الرئيسية</a>
-    <a href="blog.html" class="main-nav-link"><i class="fas fa-newspaper icon-margin"></i>المدونة التعليمية</a>
-    <hr>
-    <span class="sidenav-title">أدوات الشبكة</span>
-    <a href="what-is-my-ip.html"><i class="fas fa-location-dot icon-margin"></i>ما هو IP الخاص بي؟</a>
-    <a href="speed-test.html"><i class="fas fa-gauge-high icon-margin"></i>اختبار سرعة الاتصال</a>
-    <a href="dns-leak-test.html"><i class="fas fa-user-secret icon-margin"></i>كشف تسريب DNS</a>
-    <a href="webrtc-leak-test.html"><i class="fas fa-broadcast-tower icon-margin"></i>كشف تسريب WebRTC</a>
-    <a href="browser-fingerprint.html"><i class="fas fa-fingerprint icon-margin"></i>عرض بصمة المتصفح</a>
-    <hr>
-    <span class="sidenav-title">عن الموقع</span>
-    <a href="about.html"><i class="fas fa-info-circle icon-margin"></i>من نحن</a>
-    <a href="faq.html"><i class="fas fa-circle-question icon-margin"></i>الأسئلة الشائعة</a>
-    <a href="contact.html"><i class="fas fa-envelope icon-margin"></i>تواصل معنا</a>
-    <a href="privacy.html"><i class="fas fa-shield-halved icon-margin"></i>سياسة الخصوصية</a>
-    <a href="terms.html"><i class="fas fa-file-contract icon-margin"></i>شروط الاستخدام</a>
-</div>
-    <div id="overlay"></div>
 
-    <div id="main-content">
-        <header class="main-header">
-            <button id="openNavBtn" class="menu-btn">&#9776;</button>
-            <h1 class="header-title">🦜Broker SMM</h1>
-            <button id="darkModeToggle" class="dark-mode-toggle">🌙</button>
-        </header>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">BrokersMM</a>
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
+        </nav>
+    </header>
 
-        <div class="container">
-            <div class="dashboard-intro">
-                <h2>المركز التعليمي للشبكات</h2>
-                <p>شروحات، أدوات، ومقالات لتعزيز أمنك الرقمي</p>
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="fade-in">Stop Guessing. Start <span class="text-gold">Investing.</span></h1>
+                <p class="fade-in-delay1">Your simple, jargon-free guide to the world of modern investing.</p>
+                <a href="#start" class="cta-button fade-in-delay2">Show Me How</a>
             </div>
-            <main class="dashboard-grid">
-                <a href="quote-generator.html" class="dashboard-card card-color-tools">
-    <div class="card-icon">
-        <i class="fas fa-quote-left"></i>
-    </div>
-    <h3>مولّد الاقتباسات</h3>
-    <p>أنشئ صور اقتباسات فنية بخلفيات وخطوط مخصصة.</p>
-</a>
-                <a href="news.html" class="dashboard-card card-color-news">
-    <div class="card-icon">
-        <i class="far fa-newspaper"></i>
-    </div>
-    <h3>الأخبار الرقمية</h3>
-    <p>تابع آخر التحديثات والأحداث في عالم التقنية والأمان.</p>
-</a>
-                <a href="blog.html" class="dashboard-card card-color-1"><div class="card-icon"><i class="fas fa-newspaper"></i></div><h3>المدونة التعليمية</h3><p>مقالات وشروحات تقنية متجددة</p></a>
+        </section>
+
+        <section class="problem-promise-section">
+            <h2 class="section-title-small">Feeling Overwhelmed by the World of Finance?</h2>
+            <p>You're not alone. We cut through the noise with clear, step-by-step guides designed for absolute beginners. No complex charts, no confusing terms—just the essential knowledge you need to start building your wealth with confidence.</p>
+        </section>
+
+        <section class="social-links-section">
+            <h3 class="proof-title">FOLLOW OUR JOURNEY</h3>
+            <div class="social-icons-container">
+                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.reddit.com/u/brokersmm/s/BHRAApP4hJ" target="_blank" class="social-icon" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+                <a href="https://www.instagram.com/brokersmm?igsh=MXN2YWNneDhmYnpraA==" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/14GywdVuFZe/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <p class="proof-text">Join our community for daily tips, news, and behind-the-scenes content.</p>
+        </section>
+
+        <section id="start" class="services-section">
+            <h2 class="section-title">Explore Your Path to Investing</h2>
+            <div class="services-grid">
+                <a href="wisdom.html" class="service-link"><div class="service-card"><h3>Building Financial Wisdom</h3><p>Master your money mindset with timeless advice and key lessons from influential financial books.</p></div></a>
+                <a href="crypto.html" class="service-link"><div class="service-card"><h3>Investing in Crypto</h3><p>Dive into the world of digital currencies like Bitcoin and Ethereum. Understand the basics, the risks, and the potential.</p></div></a>
+            </div>
+        </section>
+        
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2 class="section-title">Get Your Free "First Investment" Checklist</h2>
+                <p>Subscribe and get our essential 10-point checklist PDF to guide you through your first investment, plus our weekly tips.</p>
                 
-                <a href="faq.html" class="dashboard-card card-color-2"><div class="card-icon"><i class="fas fa-circle-question"></i></div><h3>الأسئلة الشائعة</h3><p>إجابات لأهم استفساراتكم التقنية</p></a>
-                <a href="what-is-my-ip.html" class="dashboard-card card-color-3"><div class="card-icon"><i class="fas fa-location-dot"></i></div><h3>ما هو IP الخاص بي؟</h3><p>أداة بسيطة لمعرفة عنوانك الرقمي</p></a>
-                <a href="password-generator.html" class="dashboard-card card-color-tools">
-    <div class="card-icon">
-        <i class="fas fa-key"></i>
-    </div>
-    <h3>مولد كلمات المرور</h3>
-    <p>أنشئ كلمات مرور قوية ومعقدة بنقرة زر لحماية حساباتك.</p>
-</a>
-                <a href="speed-test.html" class="dashboard-card card-color-4"><div class="card-icon"><i class="fas fa-gauge-high"></i></div><h3>اختبار السرعة</h3><p>بوابة احترافية لقياس أداء اتصالك</p></a>
-                <a href="dns-leak-test.html" class="dashboard-card card-color-6"><div class="card-icon"><i class="fas fa-user-secret"></i></div><h3>كشف تسريب DNS</h3><p>تأكد من أن اتصالك آمن 100%</p></a>
-                
-                <a href="webrtc-leak-test.html" class="dashboard-card card-color-7"><div class="card-icon"><i class="fas fa-broadcast-tower"></i></div><h3>كشف تسريب WebRTC</h3><p>هل الـ VPN الخاص بك يخفي هويتك حقًا؟</p></a>
-                <a href="browser-fingerprint.html" class="dashboard-card card-color-8"><div class="card-icon"><i class="fas fa-fingerprint"></i></div><h3>عرض بصمة المتصفح</h3><p>اكتشف البيانات التي يشاركها متصفحك</p></a>
-                
-                <a href="about.html" class="dashboard-card card-color-5"><div class="card-icon"><i class="fas fa-info-circle"></i></div><h3>عن الموقع</h3><p>تعرف على رؤيتنا وأهدافنا</p></a>
-            </main>
-            
-            <footer class="main-footer">
-                <p>&copy; 2025 Broker SMM. جميع الحقوق محفوظة.</p>
-                <nav class="footer-nav">
-                    <a href="about.html">عنا</a><span class="separator">|</span>
-                    <a href="privacy.html">سياسة الخصوصية</a><span class="separator">|</span>
-                    <a href="terms.html">شروط الاستخدام</a><span class="separator">|</span>
-                    <a href="contact.html">تواصل معنا</a>
-                </nav>
-            </footer>
+                <form class="newsletter-form" action="https://assets.mailerlite.com/jsonp/1782154/forms/164826663071254162/subscribe" method="post" target="_blank">
+                    <input type="email" name="fields[email]" class="form-control" placeholder="Enter your email address" required autocomplete="email">
+                    <button type="submit" class="cta-button">Get The Checklist</button>
+                </form>
+                </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <p>&copy; 2025 BrokersMM. Your Guide to Smart Investing.</p>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="disclaimer.html">Disclaimer</a>
         </div>
-    </div>
+    </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const openNavBtn = document.getElementById('openNavBtn');
-            const closeNavBtn = document.getElementById('closeNavBtn');
-            const sideNav = document.getElementById('side-nav');
-            const overlay = document.getElementById('overlay');
-            function openNav() { if (sideNav) sideNav.style.width = "260px"; if (overlay) overlay.style.display = "block"; }
-            function closeNav() { if (sideNav) sideNav.style.width = "0"; if (overlay) overlay.style.display = "none"; }
-            if (openNavBtn) openNavBtn.addEventListener('click', openNav);
-            if (closeNavBtn) closeNavBtn.addEventListener('click', closeNav);
-            if (overlay) overlay.addEventListener('click', closeNav);
-            
-            const accordions = document.querySelectorAll('.sidenav .accordion');
-            accordions.forEach(acc => {
-                acc.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    const panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) { panel.style.maxHeight = null; } else { panel.style.maxHeight = panel.scrollHeight + "px"; }
-                });
-            });
-
-            const darkModeToggle = document.getElementById('darkModeToggle');
-            const body = document.body;
-            if (localStorage.getItem('darkMode') === 'enabled') {
-                body.classList.add('dark-mode');
-                if(darkModeToggle) darkModeToggle.textContent = '☀️';
-            } else {
-                if(darkModeToggle) darkModeToggle.textContent = '🌙';
-            }
-            if(darkModeToggle) {
-                darkModeToggle.addEventListener('click', () => {
-                    body.classList.toggle('dark-mode');
-                    if (body.classList.contains('dark-mode')) {
-                        localStorage.setItem('darkMode', 'enabled');
-                        darkModeToggle.textContent = '☀️';
-                    } else {
-                        localStorage.setItem('darkMode', 'disabled');
-                        darkModeToggle.textContent = '🌙';
-                    }
-                });
-            }
-        });
+        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
+        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
     </script>
+
 </body>
 </html>
