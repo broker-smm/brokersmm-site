@@ -4,27 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About BrokersMM - Our Mission and Story</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    
-    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HTYEW9YJ5L');
-    </script>
-    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
+    <meta name="description" content="Learn about the mission and story behind BrokersMM. Discover the founder's journey from beginner to investor and his commitment to providing simple, actionable financial guidance.">
+
     <style>
-        .about-page-hero {
-            padding: 180px 8% 100px;
-            text-align: center;
+        :root {
+            --bg-dark: #121212;
+            --accent-gold: #D4AF37;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A9A9A9;
+            --card-bg: #1A1A1A;
+            --accent-green-money: #28a745;
         }
 
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
+
+        .main-header { position: fixed; width: 100%; top: 0; left: 0; z-index: 1000; padding: 20px 8%; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; }
+        .logo { font-family: 'Playfair Display', serif; color: var(--text-primary); font-size: 1.8rem; }
+        .sidenav {
+            height: 100%; width: 0; position: fixed; z-index: 2000; top: 0; right: 0;
+            background-color: rgba(26, 26, 26, 0.85); backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); overflow-x: hidden;
+            transition: 0.5s; padding-top: 60px;
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .sidenav .closebtn {
+            position: absolute; top: 15px; right: 25px; font-size: 36px;
+            background: none; border: none; color: var(--text-secondary);
+            cursor: pointer; line-height: 1;
+        }
+        .sidenav a {
+            padding: 10px 15px 10px 30px; text-decoration: none; font-size: 1.2rem;
+            font-weight: 600; color: var(--text-secondary); display: block;
+            transition: 0.3s;
+        }
+        
+        .about-page-hero { padding: 180px 8% 100px; text-align: center; }
         .about-page-hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(2.8rem, 6vw, 4.5rem);
@@ -41,11 +62,8 @@
             max-width: 750px;
             margin: 0 auto;
         }
-
-        .story-section {
-            padding: 80px 8%;
-        }
-
+        
+        .story-section { padding: 80px 8%; }
         .story-grid {
             display: grid;
             grid-template-columns: 300px 1fr;
@@ -55,11 +73,7 @@
             margin: 0 auto;
         }
 
-        .story-avatar-container {
-            position: sticky;
-            top: 140px;
-        }
-        
+        .story-avatar-container { position: sticky; top: 140px; }
         .story-avatar img {
             width: 100%;
             border-radius: 50%;
@@ -67,7 +81,6 @@
             object-fit: cover;
             border: 5px solid var(--card-bg);
         }
-        
         .story-avatar-container .author-name {
             text-align: center;
             margin-top: 20px;
@@ -81,14 +94,12 @@
             margin-bottom: 25px;
             color: var(--accent-gold);
         }
-        
         .story-content p {
             font-size: 1.1rem;
             color: var(--text-secondary);
             line-height: 1.9;
             margin-bottom: 2em;
         }
-        
         .story-content .highlight {
             background-color: var(--card-bg);
             padding: 30px;
@@ -100,28 +111,16 @@
             color: var(--text-primary);
             font-style: italic;
         }
-
-        .our-promise-section {
-            padding: 100px 8%;
-            background-color: var(--card-bg);
-        }
-        
-        .our-promise-section .section-title {
-            text-align: center;
-        }
-
-        .cta-section {
-            text-align: center;
-            padding: 100px 8%;
-        }
-
+        .our-promise-section { padding: 100px 8%; background-color: var(--card-bg); }
+        .our-promise-section .section-title { text-align: center; }
+        .cta-section { text-align: center; padding: 100px 8%; }
         .cta-section p {
             max-width: 600px;
             margin: 20px auto 30px;
             color: var(--text-secondary);
             line-height: 1.8;
         }
-
+        
         /* Responsive adjustments */
         @media (max-width: 900px) {
             .story-grid {
@@ -133,13 +132,19 @@
                 margin: 0 auto 40px;
             }
         }
-
     </style>
+    
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap"></noscript>
+    
 </head>
 <body>
 
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <button class="closebtn" onclick="closeNav()">&times;</button>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="blog.html">Insights</a>
@@ -154,7 +159,6 @@
     </header>
 
     <main>
-
         <section class="about-page-hero">
             <h1>From Zero in Investing to Financial Confidence: My Story, and My Mission to Help You.</h1>
             <p class="subtitle">I'm not a Wall Street guru. I’m Hicham, someone who started exactly where you are: with a big dream, little knowledge, and a lot of questions.</p>
@@ -164,7 +168,7 @@
             <div class="story-grid">
                 <aside class="story-avatar-container">
                     <div class="story-avatar">
-                        <img src="images/avatar.png" alt="Hicham, Founder of BrokersMM">
+                        <img src="images/avatar.png" alt="Hicham, Founder of BrokersMM" loading="lazy">
                     </div>
                     <p class="author-name">Hicham</p>
                 </aside>
@@ -215,6 +219,16 @@
             <a href="disclaimer.html">Disclaimer</a>
         </div>
     </footer>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HTYEW9YJ5L');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
+         crossorigin="anonymous"></script>
 
     <script>
         function openNav() { document.getElementById("mySidenav").style.width = "250px"; }

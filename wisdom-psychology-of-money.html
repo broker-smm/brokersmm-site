@@ -5,21 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Psychology of Money: Timeless Lessons - BrokersMM</title>
     
-    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-HTYEW9YJ5L');
-    </script>
-    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A concise summary of Morgan Housel's 'The Psychology of Money.' Learn timeless lessons on how behavior and mindset are more important than intelligence in building wealth.">
+
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
 
     <style>
         :root {
@@ -28,7 +23,7 @@
         }
 
         body {
-            background-color: #121212; /* A slightly softer black for articles */
+            background-color: #121212;
         }
 
         /* --- ARTICLE HEADER --- */
@@ -42,17 +37,7 @@
             text-align: center;
             color: var(--text-primary);
         }
-        .article-header::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background-image: url('images/wisdom-psychology-money-thumb.webp');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(0.4);
-            z-index: 1;
-        }
+        /* NOTE: The background image is now handled by an <img> tag for better performance */
         .article-header-content {
             position: relative;
             z-index: 2;
@@ -69,6 +54,14 @@
             font-family: 'Playfair Display', serif;
             font-size: clamp(2.5rem, 6vw, 4.5rem);
             line-height: 1.2;
+        }
+        .article-header-background {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            filter: brightness(0.4);
+            z-index: 1;
         }
 
         /* --- ARTICLE BODY --- */
@@ -132,6 +125,7 @@
 
     <main>
         <header class="article-header">
+            <img src="images/wisdom-psychology-money-thumb.webp" alt="A desk with a laptop, notebooks, and a cup of coffee, symbolizing financial planning and focused thinking." class="article-header-background" width="1920" height="1080" decoding="async">
             <div class="article-header-content">
                 <p class="category">BOOK SUMMARY</p>
                 <h1>The Psychology of Money</h1>
@@ -178,6 +172,16 @@
             <a href="disclaimer.html">Disclaimer</a>
         </div>
     </footer>
+    <meta name="google-adsense-account" content="ca-pub-1544823206346151">
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HTYEW9YJ5L');
+    </script>
+    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
+         crossorigin="anonymous"></script>
     <script>
         function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
         function closeNav() { document.getElementById("mySidenav").style.width = "0"; }

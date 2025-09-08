@@ -472,7 +472,13 @@ body {
     top: 15px;
     right: 25px;
     font-size: 36px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    line-height: 1;
 }
+.sidenav .closebtn:hover { color: var(--accent-gold); }
 
 /* --- Footer --- */
 .main-footer {
