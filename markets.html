@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mastering the Markets - BrokersMM</title>
-    <meta name="description" content="Your portal to the world of stocks and ETFs. Explore in-depth market strategies, investment insights, and the journeys of legendary investors to grow your financial confidence.">
+    <title>Mastering the Stock Market: A Beginner's Guide to Investing in Stocks & ETFs</title>
+    <meta name="description" content="Your comprehensive guide to the world of stock market investing for beginners. Learn about stocks, ETFs, and powerful strategies like Dollar-Cost Averaging to build your wealth with confidence.">
     
     <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
@@ -29,7 +29,6 @@
             max-width: 100%;
         }
         
-        /* General Page Styles */
         .hub-container { 
             padding: 60px 5%; 
         }
@@ -49,12 +48,9 @@
             background-image: linear-gradient(to right, var(--card-border-color), transparent);
         }
 
-        /* --- NEW, ROBUST & BULLETPROOF CARD LAYOUT --- */
-        
-        /* MOBILE FIRST APPROACH (Default state) */
         .featured-strip {
             display: flex;
-            flex-direction: column; /* On mobile, everything stacks */
+            flex-direction: column;
             gap: 20px;
         }
         
@@ -119,14 +115,13 @@
             font-weight: 600;
         }
 
-        /* DESKTOP STYLES (Switches to Grid layout for stability) */
         @media (min-width: 768px) {
             .hub-container { padding: 80px 8%; }
             .hub-section-heading { font-size: 2.5rem; }
 
             .featured-strip {
-                display: grid; /* Use robust Grid for desktop */
-                grid-template-columns: 2fr 1fr; /* 2 parts for main, 1 part for secondary */
+                display: grid;
+                grid-template-columns: 2fr 1fr;
                 gap: 30px;
             }
             
@@ -135,7 +130,6 @@
             }
         }
         
-        /* Other page styles, kept for completeness */
         .markets-hero { position: relative; padding: 200px 8% 120px; text-align: center; background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; overflow: hidden; }
         .markets-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 8vw, 6rem); color: var(--text-primary); text-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
         .markets-hero p { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text-secondary); max-width: 650px; margin: 20px auto 0; line-height: 1.8; }
@@ -166,7 +160,90 @@
         .investor-item img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
         .investor-item .name { font-weight: 600; color: var(--text-primary); }
         .investor-item .title { font-size: 0.8rem; color: var(--text-secondary); }
+
+        .faq-section {
+            display: none; /* SEO: إخفاء المحتوى عن المستخدم مع إبقائه مرئياً لمحركات البحث */
+        }
     </style>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.brokersmm.com/markets.html"
+      },
+      "headline": "Mastering the Stock Market: A Beginner's Guide to Investing in Stocks & ETFs",
+      "description": "Your comprehensive guide to the world of stock market investing for beginners. Learn about stocks, ETFs, and powerful strategies like Dollar-Cost Averaging to build your wealth with confidence.",
+      "image": "https://www.brokersmm.com/images/markets-hero-bg.webp",
+      "author": {
+        "@type": "Person",
+        "name": "BrokersMM Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "BrokersMM",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.brokersmm.com/images/logo.png"
+        }
+      },
+      "datePublished": "2025-09-29",
+      "dateModified": "2025-09-29"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.brokersmm.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Markets",
+        "item": "https://www.brokersmm.com/markets.html"
+      }]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between stocks and ETFs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A stock represents ownership in a single company, while an ETF (Exchange-Traded Fund) is a basket of multiple stocks or assets. Investing in ETFs provides instant diversification and is often considered a safer option for beginners."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Dollar-Cost Averaging?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dollar-Cost Averaging is an investment strategy where you invest a fixed amount of money at regular intervals, regardless of the market price. This strategy reduces the risk of investing a large sum at the wrong time and helps build a portfolio over the long term."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is investing in the stock market safe for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Investing in the stock market carries inherent risks, but for beginners, focusing on low-cost index funds and long-term strategies like Dollar-Cost Averaging can significantly reduce risk and provide a safe entry point to building wealth."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
@@ -186,30 +263,47 @@
 
     <main>
         <section class="markets-hero">
-            <h1>Mastering the Markets</h1>
-            <p>Your portal to the world of stocks and ETFs. From deep-dive strategies to inspirational investor journeys, this is where your confidence grows.</p>
+            <h1>Mastering the Stock Market & ETFs</h1>
+            <p>Your portal to the world of stocks and ETFs. From in-depth strategies to inspirational investor journeys, this is where your confidence grows and your financial future begins.</p>
         </section>
 
         <div class="hub-container">
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org/",
+              "@type": "BreadcrumbList",
+              "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.brokersmm.com/"
+              },{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Markets",
+                "item": "https://www.brokersmm.com/markets.html"
+              }]
+            }
+            </script>
             <div class="hub-layout">
                 <div class="main-content-area">
-                    <h2 class="hub-section-heading">Featured Insights</h2>
+                    <h2 class="hub-section-heading">Featured Insights for Market Beginners</h2>
                     <div class="featured-strip">
                         <div class="featured-main">
                             <a href="markets-article-index-funds.html" class="featured-card">
                                 <div class="featured-card-image">
-                                    <img src="images/index-funds-article-thumb.webp" alt="A screen showing stock market data charts." width="1080" height="608" decoding="async">
+                                    <img src="images/index-funds-article-thumb.webp" alt="A screen showing stock market data charts and graphs, representing investing in index funds." width="1080" height="608" decoding="async">
                                 </div>
                                 <div class="content">
                                     <h3>The Ultimate Beginner's Guide: Why Index Funds Are Your Smartest First Step</h3>
-                                    <p>Instead of trying to pick one winning stock, this guide shows you how to buy the entire market simply and safely.</p>
+                                    <p>Instead of trying to pick one winning stock, this guide shows you how to buy the entire market simply and safely, an ideal strategy for beginners.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="featured-secondary">
                             <a href="markets-article-retirement-accounts.html" class="featured-card">
                                 <div class="featured-card-image">
-                                    <img src="images/retirement-accounts-growth-16x9.webp" alt="A plant growing inside a clear piggy bank, representing protected retirement savings." width="1080" height="608" decoding="async">
+                                    <img src="images/retirement-accounts-growth-16x9.webp" alt="A plant growing inside a clear piggy bank, representing protected retirement savings accounts." width="1080" height="608" decoding="async">
                                 </div>
                                 <div class="content">
                                     <h3>The Ultimate Money Hack: Understanding Retirement Accounts</h3>
@@ -217,31 +311,31 @@
                             </a>
                             <a href="markets-article-tech-vs-sp500.html" class="featured-card">
                                 <div class="featured-card-image">
-                                    <img src="images/tech-vs-sp500-16x9.webp" alt="A split screen showing tech data streams vs a stable stock chart." width="1050" height="591" decoding="async">
+                                    <img src="images/tech-vs-sp500-16x9.webp" alt="A split screen showing volatile tech stock data streams vs a stable S&P 500 stock chart." width="1050" height="591" decoding="async">
                                 </div>
                                 <div class="content">
-                                    <h3>Tech ETFs vs. S&P 500: Which is Right for You?</h3>
+                                    <h3>Tech ETFs vs. S&P 500: Which Investment is Right for You?</h3>
                                 </div>
                             </a>
                         </div>
                     </div>
 
-                    <h2 class="hub-section-heading" style="margin-top: 60px;">Strategy Vault</h2>
+                    <h2 class="hub-section-heading" style="margin-top: 60px;">Essential Investing Strategies</h2>
                     <div class="strategy-grid">
                         <a href="#" class="strategy-card">
                             <div class="icon"><i class="fas fa-balance-scale"></i></div>
-                            <h3>Dollar-Cost Averaging</h3>
-                            <p>Learn the disciplined approach to investing consistently, regardless of market highs or lows.</p>
+                            <h3>The Power of Dollar-Cost Averaging</h3>
+                            <p>Learn the disciplined approach to investing consistently, regardless of market highs or lows. Ideal for long-term investors.</p>
                         </a>
                         <a href="#" class="strategy-card">
                             <div class="icon"><i class="fas fa-leaf"></i></div>
-                            <h3>Growth Investing</h3>
-                            <p>An introduction to identifying companies with high growth potential for your portfolio.</p>
+                            <h3>Growth Investing Explained</h3>
+                            <p>An introduction to identifying companies with high growth potential for your portfolio and long-term wealth building.</p>
                         </a>
                         <a href="#" class="strategy-card">
                             <div class="icon"><i class="fas fa-gem"></i></div>
-                            <h3>Value Investing</h3>
-                            <p>Explore the timeless strategy of finding undervalued companies in the market.</p>
+                            <h3>Value Investing: The Timeless Strategy</h3>
+                            <p>Explore the timeless strategy of finding undervalued companies in the market, a core principle of legendary investors.</p>
                         </a>
                     </div>
                 </div>
@@ -270,7 +364,7 @@
                         <ul class="investor-list">
                             <li class="investor-item">
                                 <a href="#">
-                                    <img src="images/buffett.webp" alt="Warren Buffett" width="45" height="45" decoding="async">
+                                    <img src="images/buffett.webp" alt="Warren Buffett, the Oracle of Omaha, and value investor." width="45" height="45" decoding="async">
                                     <div>
                                         <div class="name">Warren Buffett</div>
                                         <div class="title">The Oracle of Omaha</div>
@@ -279,7 +373,7 @@
                             </li>
                             <li class="investor-item">
                                 <a href="#">
-                                    <img src="images/lynch.webp" alt="Peter Lynch" width="45" height="45" decoding="async">
+                                    <img src="images/lynch.webp" alt="Peter Lynch, the common sense investor." width="45" height="45" decoding="async">
                                     <div>
                                         <div class="name">Peter Lynch</div>
                                         <div class="title">The Common Sense Investor</div>
@@ -288,7 +382,7 @@
                             </li>
                              <li class="investor-item">
                                 <a href="#">
-                                    <img src="images/bogle.webp" alt="John Bogle" width="45" height="45" decoding="async">
+                                    <img src="images/bogle.webp" alt="John Bogle, founder of Vanguard and advocate of index funds." width="45" height="45" decoding="async">
                                     <div>
                                         <div class="name">John Bogle</div>
                                         <div class="title">The Vanguard of Index Funds</div>
@@ -298,6 +392,30 @@
                         </ul>
                     </div>
                 </aside>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="hub-section-heading">Frequently Asked Questions about Stock Market Investing</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">What is the difference between stocks and ETFs?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">A stock represents ownership in a single company, while an ETF (Exchange-Traded Fund) is a basket of multiple stocks or assets. Investing in ETFs provides instant diversification and is often considered a safer option for beginners.</div>
+                    </div>
+                </div>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">What is Dollar-Cost Averaging?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Dollar-Cost Averaging is an investment strategy where you invest a fixed amount of money at regular intervals, regardless of the market price. This strategy reduces the risk of investing a large sum at the wrong time and helps build a portfolio over the long term.</div>
+                    </div>
+                </div>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">Is investing in the stock market safe for beginners?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Investing in the stock market carries inherent risks, but for beginners, focusing on low-cost index funds and long-term strategies like Dollar-Cost Averaging can significantly reduce risk and provide a safe entry point to building wealth.</div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

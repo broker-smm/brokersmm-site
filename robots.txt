@@ -1,0 +1,16 @@
+# This file tells all search engine crawlers which parts of your site they can access.
+# User-agent: * means these rules apply to all crawlers.
+User-agent: *
+
+# The 'Allow: /' rule tells search engines that they are allowed to crawl and index all content on your website.
+# This is the recommended setting for most websites to ensure full visibility.
+Allow: /
+
+# The 'Disallow' rule can be used to prevent crawling of specific directories or files.
+# For example, to block a private folder, you would use:
+# Disallow: /private/
+
+# This line directs search engines to the location of your sitemap.
+# A sitemap is a file that lists all important pages on your website.
+# You must first generate this file and upload it to your site.
+Sitemap: https://www.brokersmm.com/sitemap.xml
