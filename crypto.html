@@ -3,135 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Investing for Beginners: Your Guide to Bitcoin, Ethereum & Digital Assets - BrokersMM</title>
+    <title>Building Financial Wisdom: The Investor's Mindset & Behavioral Finance - BrokersMM</title>
     
-    <meta name="description" content="A simple guide to cryptocurrency investing for beginners. Learn how to buy Bitcoin, understand blockchain, and secure your digital assets with our easy-to-follow tutorials and expert insights.">
+    <meta name="description" content="Investing is more than numbers; it's about mindset. Here, we distill timeless wisdom from the greatest financial minds to guide your behavior and decisions for building wealth.">
     
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.css"></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap"></noscript>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"></noscript>
+
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
 
     <style>
         :root {
-            --accent-cyan-crypto: #00E5FF;
+            --accent-burgundy-wisdom: #800020;
+            --accent-gold: #D4AF37;
             --card-border-color: rgba(255, 255, 255, 0.1);
-            --card-bg-light: #202020;
         }
 
         body {
             background-color: #0A0A0A; 
-            font-family: 'Montserrat', sans-serif;
-            color: var(--text-secondary);
-            line-height: 1.8;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        .wisdom-hero {
+            padding: 180px 8% 120px;
+            text-align: center;
         }
-        .crypto-hero {
-            padding: 160px 8% 100px;
-            text-align: left;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 40px;
-            border-bottom: 1px solid var(--card-border-color);
-        }
-        .crypto-hero-content { max-width: 600px; }
-        .crypto-hero-content h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: clamp(2.8rem, 5vw, 4.5rem);
-            color: var(--text-primary);
-            line-height: 1.2;
-        }
-        .crypto-hero-content .eyebrow {
+        .wisdom-hero .eyebrow {
+            font-size: 1rem;
             font-weight: 600;
-            color: var(--accent-cyan-crypto);
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-            font-family: 'Roboto Mono', monospace;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
         }
-        .crypto-hero-content p {
-            font-size: 1.1rem;
+        .wisdom-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 7vw, 5rem);
+            color: var(--accent-gold);
+        }
+        .wisdom-hero p {
+            font-size: 1.2rem;
             color: var(--text-secondary);
-            margin-top: 20px;
+            max-width: 600px;
+            margin: 20px auto 0;
             line-height: 1.8;
         }
-        .crypto-hero-image { max-width: 400px; display: none; }
-        @media (min-width: 992px) { .crypto-hero-image { display: block; } }
-        .crypto-hero-image img { width: 100%; border-radius: 15px; }
-        .hub-container { padding: 80px 8%; }
-        .hub-layout { display: grid; grid-template-columns: 1fr; gap: 50px; }
-        @media (min-width: 1024px) { .hub-layout { grid-template-columns: 1fr 350px; } }
-        .hub-section-heading {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: var(--text-primary);
-            border-bottom: 2px solid var(--accent-cyan-crypto);
-            padding-bottom: 15px;
+        
+        .ornate-divider {
+            text-align: center;
+            margin: 60px 0;
         }
-        .crypto-featured-card {
-            display: block; text-decoration: none; color: inherit;
+        .ornate-divider svg {
+            width: 80px;
+            height: auto;
+            fill: var(--accent-burgundy-wisdom);
+        }
+
+        .horizontal-scroll-container {
+            padding: 0 0 80px 0;
+        }
+        .hub-section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: var(--accent-gold);
+            padding: 0 8%;
+        }
+        .scroll-wrapper {
+            display: flex;
+            overflow-x: auto;
+            padding: 0 8% 25px 8%;
+            gap: 20px;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            scroll-snap-type: x mandatory;
+        }
+        .scroll-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+        .quote-card {
+            flex: 0 0 85%;
+            text-decoration: none;
+            color: inherit;
             background-color: var(--card-bg);
             border: 1px solid var(--card-border-color);
+            border-top: 5px solid var(--accent-burgundy-wisdom);
             border-radius: 15px;
-            overflow: hidden;
-            margin-bottom: 40px;
+            padding: 30px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            scroll-snap-align: start;
         }
-        .crypto-featured-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        @media (min-width: 768px) {
+            .quote-card {
+                flex: 0 0 350px;
+            }
+            .scroll-wrapper {
+                padding: 0 8% 25px 8%;
+            }
         }
-        .crypto-featured-card-image { aspect-ratio: 16 / 9; }
-        .crypto-featured-card-image img { width: 100%; height: 100%; object-fit: cover; }
-        .crypto-featured-card-content { padding: 30px; }
-        .crypto-featured-card-content .eyebrow { font-weight: 600; color: var(--accent-cyan-crypto); margin-bottom: 10px; font-size: 0.9rem; font-family: 'Roboto Mono', monospace; }
-        .crypto-featured-card-content h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.6rem; margin-bottom: 15px; color: var(--text-primary); }
-        .crypto-featured-card-content p { color: var(--text-secondary); line-height: 1.8; font-size: 1rem; }
+        .quote-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        .quote-card .quote-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            line-height: 1.6;
+            min-height: 150px;
+        }
+        .quote-card .author {
+            margin-top: 20px;
+            font-weight: 600;
+            color: var(--accent-gold);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .quote-card .author img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .hub-container { padding: 0 8% 80px; }
         
-        .guides-grid {
+        .wisdom-featured-card {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: 1fr;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid var(--card-border-color);
+            margin-bottom: 50px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        @media (min-width: 992px) {
+            .wisdom-featured-card {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .wisdom-featured-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-gold);
+        }
+        .featured-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .featured-card-content {
+            padding: 40px;
+        }
+        .featured-card-content .category {
+            font-size: 0.8rem; font-weight: 600; letter-spacing: 1px;
+            color: var(--accent-burgundy-wisdom); margin-bottom: 15px;
+        }
+        .featured-card-content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            line-height: 1.4;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+        }
+        .featured-card-content .description {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-        .guide-card {
+        .article-card {
             display: block; text-decoration: none; color: inherit;
-            background-color: var(--card-bg); border-radius: 15px; border: 1px solid transparent;
-            height: 100%; overflow: hidden; transition: all 0.3s ease;
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            border: 1px solid var(--card-border-color);
+            height: 100%;
+            transition: all 0.3s ease;
         }
-        .guide-card:hover { transform: translateY(-5px); border-color: var(--accent-cyan-crypto); background-color: var(--card-bg-light); }
-        .guide-card-image { aspect-ratio: 16 / 9; overflow: hidden; border-radius: 15px 15px 0 0; }
-        .guide-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-        .guide-card:hover .guide-card-image img { transform: scale(1.05); }
-        .guide-card-content { padding: 25px; }
-        .guide-card h3 { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.2rem; margin-bottom: 10px; line-height: 1.5; color: var(--text-primary); }
-
-        .sidebar { display: flex; flex-direction: column; gap: 30px; }
-        .widget { background-color: var(--card-bg); border-radius: 15px; padding: 30px; border: 1px solid var(--card-border-color); }
-        .widget-title { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.3rem; margin-bottom: 20px; color: var(--text-primary); border-bottom: 1px solid var(--card-border-color); padding-bottom: 15px; }
-        
-        .crypto-terms-widget {
-             background: linear-gradient(145deg, var(--card-bg), #1a2222);
-             border: 1px solid var(--accent-cyan-crypto);
+        .article-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-burgundy-wisdom);
         }
-        .crypto-terms-widget .widget-title { color: var(--accent-cyan-crypto); border-bottom-color: rgba(0, 229, 255, 0.3); }
-        .concept-list { list-style: none; padding: 0; }
-        .concept-item { display: flex; align-items: flex-start; gap: 15px; padding: 15px 0; border-bottom: 1px solid var(--card-border-color); }
-        .concept-item:last-child { border-bottom: none; }
-        .concept-item .icon { font-size: 1.5rem; color: var(--accent-cyan-crypto); margin-top: 5px; }
-        .concept-item .name { font-weight: 700; color: var(--text-primary); font-family: 'Roboto Mono', monospace; }
-        .concept-item .description { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
-
+        .article-card-content { padding: 30px; }
+        .article-card .category {
+            font-size: 0.8rem; font-weight: 600; letter-spacing: 1px;
+            color: var(--accent-burgundy-wisdom); margin-bottom: 10px;
+        }
+        .article-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+        .faq-section {
+            display: none;
+        }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["WebPage", "CollectionPage"],
+      "name": "Building Financial Wisdom: The Investor's Mindset & Behavioral Finance",
+      "description": "A collection of guides and insights to help you build financial wisdom. Explore the psychology of money, investor behavior, and timeless lessons from legendary investors to improve your financial decisions.",
+      "url": "https://www.brokersmm.com/wisdom.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.brokersmm.com/wisdom.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "BrokersMM",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.brokersmm.com/images/logo.png"
+        }
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.brokersmm.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Financial Wisdom",
+        "item": "https://www.brokersmm.com/wisdom.html"
+      }]
+    }
+    </script>
     
     <script type="application/ld+json">
     {
@@ -139,14 +259,14 @@
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.brokersmm.com/crypto.html"
+        "@id": "https://www.brokersmm.com/wisdom.html"
       },
-      "headline": "Crypto Investing for Beginners: Your Guide to Bitcoin, Ethereum & Digital Assets",
-      "description": "A simple guide to cryptocurrency investing for beginners. Learn how to buy Bitcoin, understand blockchain, and secure your digital assets with our easy-to-follow tutorials and expert insights.",
-      "image": "https://www.brokersmm.com/images/crypto-hero-image.webp",
+      "headline": "Building Financial Wisdom: The Investor's Mindset & Behavioral Finance",
+      "description": "Investing is more than numbers; it's about mindset. Here, we distill timeless wisdom from the greatest financial minds to guide your behavior and decisions for building wealth.",
+      "image": "https://www.brokersmm.com/images/wisdom-hero-bg.webp",
       "author": {
         "@type": "Person",
-        "name": "Hicham"
+        "name": "BrokersMM Team"
       },
       "publisher": {
         "@type": "Organization",
@@ -156,8 +276,8 @@
           "url": "https://www.brokersmm.com/images/logo.png"
         }
       },
-      "datePublished": "2025-09-10",
-      "dateModified": "2025-09-10"
+      "datePublished": "2025-09-30",
+      "dateModified": "2025-09-30"
     }
     </script>
     
@@ -168,147 +288,134 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is Blockchain?",
+          "name": "What is financial wisdom?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Blockchain is a decentralized, distributed digital ledger technology used to record transactions across many computers so that the record cannot be altered retroactively without the alteration of all subsequent blocks and the consensus of the network."
+            "text": "Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success."
           }
         },
         {
           "@type": "Question",
-          "name": "What is a Crypto Wallet?",
+          "name": "Why is investor behavior more important than market knowledge?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A crypto wallet is software or hardware that stores the public and private keys used to send and receive cryptocurrencies. Wallets don't hold the crypto itself, but rather the information required to access it on the blockchain."
+            "text": "Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls."
           }
         },
         {
           "@type": "Question",
-          "name": "What is a Crypto Exchange?",
+          "name": "What are some timeless investing principles?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A cryptocurrency exchange is a platform where you can buy, sell, or trade cryptocurrencies. These platforms act as a third party to facilitate secure transactions between buyers and sellers."
+            "text": "Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle."
           }
         }
       ]
     }
     </script>
-    
+
 </head>
 <body>
-
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Insights</a>
+        <a href="wisdom.html">Wisdom</a>
+        <a href="crypto.html">Crypto</a>
         <a href="contact.html">Contact</a>
     </div>
-
     <header class="main-header">
         <nav class="navbar">
             <a href="index.html" class="logo">BrokersMM</a>
             <span class="menu-icon" onclick="openNav()">&#9776;</span>
         </nav>
     </header>
-
     <main>
-        <section class="crypto-hero">
-            <div class="crypto-hero-content">
-                <p class="eyebrow">THE CRYPTO REALM FOR BEGINNERS</p>
-                <h1>Navigating the Digital Frontier of Wealth: A Beginner's Guide to Crypto Investing</h1>
-                <p>Dive into the revolutionary world of Bitcoin, Ethereum, and beyond. This is your definitive guide to understanding, investing in, and securing digital assets for the future of finance.</p>
-            </div>
-            <div class="crypto-hero-image">
-                <img src="https://images.unsplash.com/photo-1620321023380-d2996f014490?auto=format&fit=crop&q=80" alt="Abstract digital currency concept with glowing lines, binary code, and cryptocurrency symbols." width="800" height="1000" decoding="async" loading="lazy">
-            </div>
+        <section class="wisdom-hero">
+            <p class="eyebrow">THE FOURTH PILLAR OF WEALTH</p>
+            <h1>Building Financial Wisdom & Investor Mindset</h1>
+            <p>Investing is more than numbers; it's about mindset. Here, we distill timeless wisdom from the greatest financial minds to guide your behavior and decisions.</p>
         </section>
 
-        <div class="hub-container">
-            <script type="application/ld+json">
-            {
-              "@context": "https://schema.org/",
-              "@type": "BreadcrumbList",
-              "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.brokersmm.com/"
-              },{
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Crypto Investing",
-                "item": "https://www.brokersmm.com/crypto.html"
-              }]
-            }
-            </script>
-            <div class="hub-layout">
-                <div class="main-content-area">
-                    <a href="crypto-first-coin.html" class="crypto-featured-card">
-                        <div class="crypto-featured-card-image">
-                            <img src="images/crypto-first-coin-thumb.webp" alt="Your Crypto Blueprint: A visual guide to making your first crypto purchase." width="1280" height="720" decoding="async" loading="lazy">
-                        </div>
-                        <div class="crypto-featured-card-content">
-                            <p class="eyebrow">GETTING STARTED</p>
-                            <h3>Your Crypto Blueprint: A Step-by-Step Guide to Your First Digital Coin</h3>
-                            <p>Demystify cryptocurrency. This guide provides a simple, secure path to understanding blockchain and making your first crypto purchase.</p>
-                        </div>
-                    </a>
-
-                    <h2 class="hub-section-heading" style="margin-top: 40px;">Recent Guides for Your Crypto Journey</h2>
-                    <div class="guides-grid">
-                        
-                        <a href="crypto-wallets-guide.html" class="guide-card">
-                            <div class="guide-card-image">
-                                <img src="images/crypto-wallets-guide-thumb.webp" alt="The Ultimate Guide to Crypto Wallets (Hot vs. Cold) - a visual comparison." width="1280" height="720" decoding="async" loading="lazy">
-                            </div>
-                            <div class="guide-card-content"><h3>The Ultimate Guide to Crypto Wallets (Hot vs. Cold)</h3></div>
-                        </a>
-                        <a href="crypto-defi-intro.html" class="guide-card">
-                            <div class="guide-card-image">
-                                <img src="images/placeholder-crypto.webp" alt="An introductory guide to Decentralized Finance (DeFi) with futuristic visuals." width="1280" height="720" decoding="async" loading="lazy">
-                            </div>
-                            <div class="guide-card-content"><h3>What is Decentralized Finance (DeFi)? Your Guide to the Future of Financial Services</h3></div>
-                        </a>
-                         <a href="#" class="guide-card">
-                            <div class="guide-card-image">
-                                <img src="images/placeholder-crypto.webp" alt="An introductory guide to NFTs for beginners, explaining how they work." width="1280" height="720" decoding="async" loading="lazy">
-                            </div>
-                            <div class="guide-card-content"><h3>NFTs for Beginners: What Are They and How Do They Work?</h3></div>
-                        </a>
-                    </div>
-                </div>
-
-                <aside class="sidebar">
-                    <div class="widget crypto-terms-widget">
-                        <h3 class="widget-title">Key Crypto Terms for Beginners</h3>
-                        <ul class="concept-list">
-                            <li class="concept-item">
-                                <i class="fas fa-cubes icon"></i>
-                                <div>
-                                    <div class="name">Blockchain</div>
-                                    <p class="description">A decentralized, distributed ledger technology that records cryptocurrency transactions securely.</p>
-                                </div>
-                            </li>
-                            <li class="concept-item">
-                                <i class="fas fa-wallet icon"></i>
-                                <div>
-                                    <div class="name">Wallet</div>
-                                    <p class="description">Software or hardware used to store the keys that allow you to access and manage your digital assets securely.</p>
-                                </div>
-                            </li>
-                             <li class="concept-item">
-                                <i class="fas fa-exchange-alt icon"></i>
-                                <div>
-                                    <div class="name">Exchange</div>
-                                    <p class="description">A platform where you can easily buy, sell, or trade cryptocurrencies like Bitcoin and Ethereum.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
+        <div class="horizontal-scroll-container">
+            <h2 class="hub-section-heading">Wisdom to Invest By</h2>
+            <div class="scroll-wrapper">
+                <a href="#" class="quote-card">
+                    <p class="quote-text">"The stock market is a device for transferring money from the impatient to the patient."</p>
+                    <div class="author"><img src="images/buffett.webp" alt="Warren Buffett, the Oracle of Omaha" width="40" height="40" decoding="async"><span>Warren Buffett</span></div>
+                </a>
+                <a href="#" class="quote-card">
+                    <p class="quote-text">"An investment in knowledge pays the best interest."</p>
+                    <div class="author"><img src="images/franklin.webp" alt="Benjamin Franklin, American polymath" width="40" height="40" decoding="async"><span>Benjamin Franklin</span></div>
+                </a>
+                <a href="#" class="quote-card">
+                    <p class="quote-text">"Know what you own, and know why you own it."</p>
+                    <div class="author"><img src="images/lynch.webp" alt="Peter Lynch, legendary investor and fund manager" width="40" height="40" decoding="async"><span>Peter Lynch</span></div>
+                </a>
+                <a href="#" class="quote-card">
+                    <p class="quote-text">"The four most dangerous words in investing are: 'This time it's different'."</p>
+                    <div class="author"><img src="images/templeton.webp" alt="Sir John Templeton, pioneer of global investing" width="40" height="40" decoding="async"><span>Sir John Templeton</span></div>
+                </a>
             </div>
         </div>
+
+        <div class="ornate-divider">
+            <svg viewBox="0 0 24 24"><path d="M12,2L8,6H16L12,2M12,22L16,18H8L12,22M18,16V8H22L18,12L22,16H18M6,16V8H2L6,12L2,16H6Z" /></svg>
+        </div>
+
+        <div class="hub-container">
+            <h2 class="hub-section-heading">Deeper Readings on Financial Psychology</h2>
+
+            <a href="wisdom-psychology-of-money.html" class="wisdom-featured-card">
+                <div class="featured-card-image">
+                    <img src="images/wisdom-psychology-money-thumb.webp" alt="A human head silhouette filled with financial symbols and clockwork, representing the psychology of money in investing." width="1280" height="720" decoding="async" loading="lazy">
+                </div>
+                <div class="featured-card-content">
+                    <p class="category">BOOK SUMMARY</p>
+                    <h3>Lessons from "The Psychology of Money" by Morgan Housel</h3>
+                    <p class="description">Explore the hidden biases and emotional triggers that shape our financial decisions. This summary of Morgan Housel's classic reveals why behavior is more important than spreadsheets.</p>
+                </div>
+            </a>
+            
+            <div class="articles-grid">
+                <a href="#" class="article-card">
+                    <div class="article-card-content">
+                        <p class="category">BEHAVIORAL FINANCE</p>
+                        <h3>Overcoming Loss Aversion: Why We Fear Losing More Than We Value Gaining</h3>
+                    </div>
+                </a>
+                <a href="#" class="article-card">
+                    <div class="article-card-content">
+                        <p class="category">MENTAL MODELS</p>
+                        <h3>The Power of Compound Interest: Einstein's "Eighth Wonder of the World"</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="faq-section">
+            <h2 class="hub-section-heading">Frequently Asked Questions about Financial Wisdom</h2>
+            <div itemscope itemtype="https://schema.org/FAQPage">
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">What is financial wisdom?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success.</div>
+                    </div>
+                </div>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">Why is investor behavior more important than market knowledge?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls.</div>
+                    </div>
+                </div>
+                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 itemprop="name">What are some timeless investing principles?</h3>
+                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     
     <footer class="main-footer">
@@ -320,6 +427,7 @@
             <a href="disclaimer.html">Disclaimer</a>
         </div>
     </footer>
+
     <meta name="google-adsense-account" content="ca-pub-1544823206346151">
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
@@ -330,9 +438,13 @@
     </script>
     <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
          crossorigin="anonymous"></script>
+
     <script>
         function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
         function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
     </script>
 </body>
 </html>
+}
+}
+قارن هذا الملف مع الملف السابق اللذي ارسلت لك
