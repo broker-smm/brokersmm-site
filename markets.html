@@ -6,6 +6,29 @@
     <title>Mastering the Stock Market: A Beginner's Guide to Investing in Stocks & ETFs</title>
     <meta name="description" content="Your comprehensive guide to the world of stock market investing for beginners. Learn about stocks, ETFs, and powerful strategies like Dollar-Cost Averaging to build your wealth with confidence.">
     
+    <!-- وسوم Meta محسنة لـ SEO -->
+    <meta name="keywords" content="stock market investing, beginner investing, ETFs, stocks, index funds, dollar cost averaging, investment strategies, stock market for beginners, how to invest in stocks">
+    <meta name="author" content="BrokersMM Team">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#D4AF37">
+    
+    <!-- Canonical URL to avoid duplicate content -->
+    <link rel="canonical" href="https://www.brokersmm.com/markets.html">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Mastering the Stock Market: A Beginner's Guide to Investing in Stocks & ETFs">
+    <meta property="og:description" content="Your comprehensive guide to the world of stock market investing for beginners. Learn about stocks, ETFs, and powerful strategies like Dollar-Cost Averaging.">
+    <meta property="og:image" content="https://www.brokersmm.com/images/markets-hero-bg.webp">
+    <meta property="og:url" content="https://www.brokersmm.com/markets.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="BrokersMM">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mastering the Stock Market: Beginner's Guide to Stocks & ETFs">
+    <meta name="twitter:description" content="Learn about stocks, ETFs, and investment strategies for beginners. Build wealth with confidence.">
+    <meta name="twitter:image" content="https://www.brokersmm.com/images/markets-hero-bg.webp">
+    
     <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -18,10 +41,21 @@
             --accent-blue-data: #5c85ad;
             --accent-red-loss: #E57373;
             --card-border-color: rgba(255, 255, 255, 0.1);
+            --bg-dark: #0A0A0A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A9A9A9;
+            --card-bg: #1A1A1A;
+            --accent-gold: #D4AF37;
+            --accent-green-money: #28a745;
         }
 
         body {
-            background-color: #0A0A0A;
+            background-color: var(--bg-dark);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
         img {
@@ -32,6 +66,7 @@
         .hub-container { 
             padding: 60px 5%; 
         }
+        
         .hub-section-heading {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -41,6 +76,7 @@
             align-items: center;
             gap: 15px;
         }
+        
         .hub-section-heading::after {
             content: '';
             flex-grow: 1;
@@ -71,6 +107,7 @@
             color: inherit;
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
+        
         .featured-card:hover {
             transform: translateY(-8px);
             border-color: var(--accent-gold);
@@ -80,6 +117,7 @@
             aspect-ratio: 16 / 9;
             overflow: hidden;
         }
+        
         .featured-card-image img {
             width: 100%;
             height: 100%;
@@ -87,6 +125,7 @@
             object-fit: cover;
             transition: transform 0.4s ease-out;
         }
+        
         .featured-card:hover .featured-card-image img {
              transform: scale(1.05);
         }
@@ -130,39 +169,235 @@
             }
         }
         
-        .markets-hero { position: relative; padding: 200px 8% 120px; text-align: center; background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80'); background-size: cover; background-position: center; overflow: hidden; }
-        .markets-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(3.5rem, 8vw, 6rem); color: var(--text-primary); text-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
-        .markets-hero p { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--text-secondary); max-width: 650px; margin: 20px auto 0; line-height: 1.8; }
-        .hub-layout { display: grid; grid-template-columns: 1fr; gap: 50px; }
-        @media (min-width: 1024px) { .hub-layout { grid-template-columns: 1fr 350px; } }
-        .strategy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px; }
-        .strategy-card { display: block; text-decoration: none; color: inherit; background-color: var(--card-bg); border-radius: 15px; border: 1px solid var(--card-border-color); padding: 30px; text-align: center; transition: all 0.3s ease; }
-        .strategy-card:hover { transform: translateY(-8px); border-color: var(--accent-blue-data); }
-        .strategy-card .icon { font-size: 2rem; color: var(--accent-blue-data); margin-bottom: 20px; }
-        .strategy-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
-        .strategy-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
-        .sidebar { display: flex; flex-direction: column; gap: 30px; }
-        .widget { background-color: var(--card-bg); border-radius: 15px; border: 1px solid var(--card-border-color); padding: 30px; }
-        .widget-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 20px; color: var(--text-primary); }
-        .market-pulse { border-color: var(--accent-blue-data); }
-        .market-pulse .widget-title { color: var(--accent-blue-data); }
-        .metrics-list { list-style: none; padding: 0; }
-        .metric-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--card-border-color); }
-        .metric-item:last-child { border-bottom: none; }
-        .metric-item .label { font-size: 0.9rem; color: var(--text-secondary); }
-        .metric-item .value { font-family: 'Roboto Condensed', sans-serif; font-weight: 700; font-size: 1.1rem; }
-        .metric-item .value.up { color: var(--accent-green-money); }
-        .metric-item .value.down { color: var(--accent-red-loss); }
-        .investor-list { list-style: none; padding: 0; }
-        .investor-item { margin-bottom: 15px; }
-        .investor-item a { display: flex; align-items: center; gap: 15px; text-decoration: none; padding: 10px; border-radius: 10px; transition: background-color 0.3s ease; }
-        .investor-item a:hover { background-color: rgba(255, 255, 255, 0.05); }
-        .investor-item img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
-        .investor-item .name { font-weight: 600; color: var(--text-primary); }
-        .investor-item .title { font-size: 0.8rem; color: var(--text-secondary); }
+        .markets-hero { 
+            position: relative; 
+            padding: 200px 8% 120px; 
+            text-align: center; 
+            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)), url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80'); 
+            background-size: cover; 
+            background-position: center; 
+            overflow: hidden; 
+        }
+        
+        .markets-hero h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: clamp(3.5rem, 8vw, 6rem); 
+            color: var(--text-primary); 
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5); 
+            margin-bottom: 20px;
+        }
+        
+        .markets-hero p { 
+            font-size: clamp(1rem, 2vw, 1.2rem); 
+            color: var(--text-secondary); 
+            max-width: 650px; 
+            margin: 20px auto 0; 
+            line-height: 1.8; 
+        }
+        
+        .hub-layout { 
+            display: grid; 
+            grid-template-columns: 1fr; 
+            gap: 50px; 
+        }
+        
+        @media (min-width: 1024px) { 
+            .hub-layout { 
+                grid-template-columns: 1fr 350px; 
+            } 
+        }
+        
+        .strategy-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+            margin-top: 30px; 
+        }
+        
+        .strategy-card { 
+            display: block; 
+            text-decoration: none; 
+            color: inherit; 
+            background-color: var(--card-bg); 
+            border-radius: 15px; 
+            border: 1px solid var(--card-border-color); 
+            padding: 30px; 
+            text-align: center; 
+            transition: all 0.3s ease; 
+        }
+        
+        .strategy-card:hover { 
+            transform: translateY(-8px); 
+            border-color: var(--accent-blue-data); 
+        }
+        
+        .strategy-card .icon { 
+            font-size: 2rem; 
+            color: var(--accent-blue-data); 
+            margin-bottom: 20px; 
+        }
+        
+        .strategy-card h3 { 
+            font-size: 1.2rem; 
+            font-weight: 600; 
+            margin-bottom: 10px; 
+        }
+        
+        .strategy-card p { 
+            font-size: 0.9rem; 
+            color: var(--text-secondary); 
+            line-height: 1.6; 
+        }
+        
+        .sidebar { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 30px; 
+        }
+        
+        .widget { 
+            background-color: var(--card-bg); 
+            border-radius: 15px; 
+            border: 1px solid var(--card-border-color); 
+            padding: 30px; 
+        }
+        
+        .widget-title { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 1.5rem; 
+            margin-bottom: 20px; 
+            color: var(--text-primary); 
+        }
+        
+        .market-pulse { 
+            border-color: var(--accent-blue-data); 
+        }
+        
+        .market-pulse .widget-title { 
+            color: var(--accent-blue-data); 
+        }
+        
+        .metrics-list { 
+            list-style: none; 
+            padding: 0; 
+        }
+        
+        .metric-item { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px 0; 
+            border-bottom: 1px solid var(--card-border-color); 
+        }
+        
+        .metric-item:last-child { 
+            border-bottom: none; 
+        }
+        
+        .metric-item .label { 
+            font-size: 0.9rem; 
+            color: var(--text-secondary); 
+        }
+        
+        .metric-item .value { 
+            font-family: 'Roboto Condensed', sans-serif; 
+            font-weight: 700; 
+            font-size: 1.1rem; 
+        }
+        
+        .metric-item .value.up { 
+            color: var(--accent-green-money); 
+        }
+        
+        .metric-item .value.down { 
+            color: var(--accent-red-loss); 
+        }
+        
+        .investor-list { 
+            list-style: none; 
+            padding: 0; 
+        }
+        
+        .investor-item { 
+            margin-bottom: 15px; 
+        }
+        
+        .investor-item a { 
+            display: flex; 
+            align-items: center; 
+            gap: 15px; 
+            text-decoration: none; 
+            padding: 10px; 
+            border-radius: 10px; 
+            transition: background-color 0.3s ease; 
+        }
+        
+        .investor-item a:hover { 
+            background-color: rgba(255, 255, 255, 0.05); 
+        }
+        
+        .investor-item img { 
+            width: 45px; 
+            height: 45px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+        }
+        
+        .investor-item .name { 
+            font-weight: 600; 
+            color: var(--text-primary); 
+        }
+        
+        .investor-item .title { 
+            font-size: 0.8rem; 
+            color: var(--text-secondary); 
+        }
 
+        /* قسم الأسئلة الشائعة - جعله مرئيًا بدلاً من إخفائه */
         .faq-section {
-            display: none; /* SEO: إخفاء المحتوى عن المستخدم مع إبقائه مرئياً لمحركات البحث */
+            padding: 80px 8%;
+            background-color: var(--card-bg);
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--card-border-color);
+            padding-bottom: 20px;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+        }
+        
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        /* تحسينات للجوال */
+        @media (max-width: 768px) {
+            .markets-hero {
+                padding: 150px 5% 80px;
+            }
+            
+            .hub-container {
+                padding: 40px 5%;
+            }
+            
+            .faq-section {
+                padding: 40px 5%;
+            }
+            
+            .faq-question {
+                font-size: 1.2rem;
+            }
         }
     </style>
     
@@ -190,7 +425,8 @@
         }
       },
       "datePublished": "2025-09-29",
-      "dateModified": "2025-09-29"
+      "dateModified": "2025-09-29",
+      "keywords": "stock market investing, beginner investing, ETFs, stocks, index funds, dollar cost averaging, investment strategies"
     }
     </script>
     
@@ -268,23 +504,6 @@
         </section>
 
         <div class="hub-container">
-            <script type="application/ld+json">
-            {
-              "@context": "https://schema.org/",
-              "@type": "BreadcrumbList",
-              "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.brokersmm.com/"
-              },{
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Markets",
-                "item": "https://www.brokersmm.com/markets.html"
-              }]
-            }
-            </script>
             <div class="hub-layout">
                 <div class="main-content-area">
                     <h2 class="hub-section-heading">Featured Insights for Market Beginners</h2>
@@ -292,29 +511,31 @@
                         <div class="featured-main">
                             <a href="markets-article-index-funds.html" class="featured-card">
                                 <div class="featured-card-image">
-                                    <img src="images/index-funds-article-thumb.webp" alt="A screen showing stock market data charts and graphs, representing investing in index funds." width="1080" height="608" decoding="async">
+                                    <img src="images/index-funds-article-thumb.webp" alt="Stock market data charts and graphs showing index fund performance for investment analysis" width="1080" height="608" decoding="async" loading="lazy">
                                 </div>
                                 <div class="content">
                                     <h3>The Ultimate Beginner's Guide: Why Index Funds Are Your Smartest First Step</h3>
-                                    <p>Instead of trying to pick one winning stock, this guide shows you how to buy the entire market simply and safely, an ideal strategy for beginners.</p>
+                                    <p>Instead of trying to pick one winning stock, this guide shows you how to buy the entire market simply and safely, an ideal strategy for beginners. Learn how index funds provide instant diversification and reduce risk.</p>
                                 </div>
                             </a>
                         </div>
                         <div class="featured-secondary">
                             <a href="markets-article-retirement-accounts.html" class="featured-card">
                                 <div class="featured-card-image">
-                                    <img src="images/retirement-accounts-growth-16x9.webp" alt="A plant growing inside a clear piggy bank, representing protected retirement savings accounts." width="1080" height="608" decoding="async">
+                                    <img src="images/retirement-accounts-growth-16x9.webp" alt="Plant growing inside piggy bank symbolizing retirement savings growth and financial security" width="1080" height="608" decoding="async" loading="lazy">
                                 </div>
                                 <div class="content">
                                     <h3>The Ultimate Money Hack: Understanding Retirement Accounts</h3>
+                                    <p>Maximize your retirement savings with tax-advantaged accounts. Learn about IRAs, 401(k)s, and how to plan for your financial future.</p>
                                 </div>
                             </a>
                             <a href="markets-article-tech-vs-sp500.html" class="featured-card">
                                 <div class="featured-card-image">
-                                    <img src="images/tech-vs-sp500-16x9.webp" alt="A split screen showing volatile tech stock data streams vs a stable S&P 500 stock chart." width="1050" height="591" decoding="async">
+                                    <img src="images/tech-vs-sp500-16x9.webp" alt="Comparison of technology sector ETFs vs S&P 500 index performance and volatility" width="1050" height="591" decoding="async" loading="lazy">
                                 </div>
                                 <div class="content">
                                     <h3>Tech ETFs vs. S&P 500: Which Investment is Right for You?</h3>
+                                    <p>Understand the differences between sector-specific technology ETFs and broad market index funds for your investment portfolio.</p>
                                 </div>
                             </a>
                         </div>
@@ -322,20 +543,20 @@
 
                     <h2 class="hub-section-heading" style="margin-top: 60px;">Essential Investing Strategies</h2>
                     <div class="strategy-grid">
-                        <a href="#" class="strategy-card">
+                        <a href="dollar-cost-averaging-guide.html" class="strategy-card">
                             <div class="icon"><i class="fas fa-balance-scale"></i></div>
                             <h3>The Power of Dollar-Cost Averaging</h3>
-                            <p>Learn the disciplined approach to investing consistently, regardless of market highs or lows. Ideal for long-term investors.</p>
+                            <p>Learn the disciplined approach to investing consistently, regardless of market highs or lows. Ideal for long-term investors seeking to build wealth gradually.</p>
                         </a>
-                        <a href="#" class="strategy-card">
+                        <a href="growth-investing-guide.html" class="strategy-card">
                             <div class="icon"><i class="fas fa-leaf"></i></div>
                             <h3>Growth Investing Explained</h3>
-                            <p>An introduction to identifying companies with high growth potential for your portfolio and long-term wealth building.</p>
+                            <p>An introduction to identifying companies with high growth potential for your portfolio and long-term wealth building through emerging market leaders.</p>
                         </a>
-                        <a href="#" class="strategy-card">
+                        <a href="value-investing-guide.html" class="strategy-card">
                             <div class="icon"><i class="fas fa-gem"></i></div>
                             <h3>Value Investing: The Timeless Strategy</h3>
-                            <p>Explore the timeless strategy of finding undervalued companies in the market, a core principle of legendary investors.</p>
+                            <p>Explore the timeless strategy of finding undervalued companies in the market, a core principle of legendary investors like Warren Buffett.</p>
                         </a>
                     </div>
                 </div>
@@ -363,8 +584,8 @@
                         <h3 class="widget-title">Investor Journeys</h3>
                         <ul class="investor-list">
                             <li class="investor-item">
-                                <a href="#">
-                                    <img src="images/buffett.webp" alt="Warren Buffett, the Oracle of Omaha, and value investor." width="45" height="45" decoding="async">
+                                <a href="warren-buffett-investing-strategy.html">
+                                    <img src="images/buffett.webp" alt="Warren Buffett - Legendary value investor known as the Oracle of Omaha" width="45" height="45" decoding="async" loading="lazy">
                                     <div>
                                         <div class="name">Warren Buffett</div>
                                         <div class="title">The Oracle of Omaha</div>
@@ -372,8 +593,8 @@
                                 </a>
                             </li>
                             <li class="investor-item">
-                                <a href="#">
-                                    <img src="images/lynch.webp" alt="Peter Lynch, the common sense investor." width="45" height="45" decoding="async">
+                                <a href="peter-lynch-investing-philosophy.html">
+                                    <img src="images/lynch.webp" alt="Peter Lynch - Fidelity fund manager and author of investment classics" width="45" height="45" decoding="async" loading="lazy">
                                     <div>
                                         <div class="name">Peter Lynch</div>
                                         <div class="title">The Common Sense Investor</div>
@@ -381,8 +602,8 @@
                                 </a>
                             </li>
                              <li class="investor-item">
-                                <a href="#">
-                                    <img src="images/bogle.webp" alt="John Bogle, founder of Vanguard and advocate of index funds." width="45" height="45" decoding="async">
+                                <a href="john-bogle-index-investing.html">
+                                    <img src="images/bogle.webp" alt="John Bogle - Founder of Vanguard and pioneer of index fund investing" width="45" height="45" decoding="async" loading="lazy">
                                     <div>
                                         <div class="name">John Bogle</div>
                                         <div class="title">The Vanguard of Index Funds</div>
@@ -395,29 +616,35 @@
             </div>
         </div>
 
-        <div class="faq-section">
+        <!-- قسم الأسئلة الشائعة - أصبح مرئيًا الآن -->
+        <section class="faq-section">
             <h2 class="hub-section-heading">Frequently Asked Questions about Stock Market Investing</h2>
-            <div itemscope itemtype="https://schema.org/FAQPage">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What is the difference between stocks and ETFs?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">A stock represents ownership in a single company, while an ETF (Exchange-Traded Fund) is a basket of multiple stocks or assets. Investing in ETFs provides instant diversification and is often considered a safer option for beginners.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What is Dollar-Cost Averaging?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Dollar-Cost Averaging is an investment strategy where you invest a fixed amount of money at regular intervals, regardless of the market price. This strategy reduces the risk of investing a large sum at the wrong time and helps build a portfolio over the long term.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">Is investing in the stock market safe for beginners?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Investing in the stock market carries inherent risks, but for beginners, focusing on low-cost index funds and long-term strategies like Dollar-Cost Averaging can significantly reduce risk and provide a safe entry point to building wealth.</div>
-                    </div>
-                </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">What is the difference between stocks and ETFs?</h3>
+                <p class="faq-answer">A stock represents ownership in a single company, while an ETF (Exchange-Traded Fund) is a basket of multiple stocks or assets. Investing in ETFs provides instant diversification and is often considered a safer option for beginners. ETFs trade like stocks but offer exposure to an entire sector, index, or commodity with a single purchase.</p>
             </div>
-        </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">What is Dollar-Cost Averaging?</h3>
+                <p class="faq-answer">Dollar-Cost Averaging is an investment strategy where you invest a fixed amount of money at regular intervals, regardless of the market price. This strategy reduces the risk of investing a large sum at the wrong time and helps build a portfolio over the long term. It's particularly effective for beginner investors as it removes emotion from investment decisions.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Is investing in the stock market safe for beginners?</h3>
+                <p class="faq-answer">Investing in the stock market carries inherent risks, but for beginners, focusing on low-cost index funds and long-term strategies like Dollar-Cost Averaging can significantly reduce risk and provide a safe entry point to building wealth. The key is to start with a well-diversified portfolio and maintain a long-term perspective rather than trying to time the market.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">How much money do I need to start investing in stocks?</h3>
+                <p class="faq-answer">You can start investing with as little as $50 or $100 thanks to fractional shares offered by many modern brokerage platforms. The most important factor is consistency rather than the initial amount. Regular contributions over time, even small ones, can grow significantly through compound growth.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">What are the best investment strategies for beginners?</h3>
+                <p class="faq-answer">For beginners, the most recommended strategies include: 1) Dollar-Cost Averaging to invest consistently over time, 2) Investing in low-cost index funds or ETFs for instant diversification, 3) Maintaining a long-term perspective (5+ years), and 4) Regularly contributing to your investment portfolio regardless of market conditions.</p>
+            </div>
+        </section>
     </main>
     
     <footer class="main-footer">
@@ -427,21 +654,37 @@
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
             <a href="disclaimer.html">Disclaimer</a>
+            <a href="sitemap.html">Sitemap</a>
         </div>
     </footer>
+    
     <meta name="google-adsense-account" content="ca-pub-1544823206346151">
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151" crossorigin="anonymous"></script>
+    
     <script>
-        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
-        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+        function openNav() { 
+            document.getElementById("mySidenav").style.width = "250px"; 
+        }
+        
+        function closeNav() { 
+            document.getElementById("mySidenav").style.width = "0"; 
+        }
+        
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', function(event) {
+            const sidenav = document.getElementById('mySidenav');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (sidenav.style.width === '250px' && !sidenav.contains(event.target) && event.target !== menuIcon) {
+                closeNav();
+            }
+        });
     </script>
 </body>
 </html>
