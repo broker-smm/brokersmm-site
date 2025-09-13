@@ -7,6 +7,29 @@
     
     <meta name="description" content="Investing is more than numbers; it's about mindset. Here, we distill timeless wisdom from the greatest financial minds to guide your behavior and decisions for building wealth.">
     
+    <!-- وسوم Meta محسنة لـ SEO -->
+    <meta name="keywords" content="financial wisdom, investor mindset, behavioral finance, investment psychology, wealth building, Warren Buffett quotes, investment strategies, financial education, money mindset, investment principles">
+    <meta name="author" content="BrokersMM Team">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#800020">
+    
+    <!-- Canonical URL to avoid duplicate content -->
+    <link rel="canonical" href="https://www.brokersmm.com/wisdom.html">
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="Building Financial Wisdom: The Investor's Mindset & Behavioral Finance">
+    <meta property="og:description" content="Investing is more than numbers; it's about mindset. Discover timeless wisdom from the greatest financial minds to guide your investment decisions.">
+    <meta property="og:image" content="https://www.brokersmm.com/images/wisdom-hero-bg.webp">
+    <meta property="og:url" content="https://www.brokersmm.com/wisdom.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="BrokersMM">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Building Financial Wisdom: Investor Mindset & Behavioral Finance">
+    <meta name="twitter:description" content="Discover timeless wisdom from the greatest financial minds to guide your investment decisions and build wealth.">
+    <meta name="twitter:image" content="https://www.brokersmm.com/images/wisdom-hero-bg.webp">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -25,28 +48,44 @@
             --accent-burgundy-wisdom: #800020;
             --accent-gold: #D4AF37;
             --card-border-color: rgba(255, 255, 255, 0.1);
+            --bg-dark: #0A0A0A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A9A9A9;
+            --card-bg: #1A1A1A;
         }
 
         body {
-            background-color: #0A0A0A; 
+            background-color: var(--bg-dark); 
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
         .wisdom-hero {
             padding: 180px 8% 120px;
             text-align: center;
+            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 1)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80') no-repeat center center/cover;
         }
+        
         .wisdom-hero .eyebrow {
             font-size: 1rem;
             font-weight: 600;
             letter-spacing: 2px;
             color: var(--accent-gold);
             margin-bottom: 20px;
+            text-transform: uppercase;
         }
+        
         .wisdom-hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: clamp(3rem, 7vw, 5rem);
             color: var(--accent-gold);
+            margin-bottom: 20px;
+            line-height: 1.2;
         }
+        
         .wisdom-hero p {
             font-size: 1.2rem;
             color: var(--text-secondary);
@@ -59,6 +98,7 @@
             text-align: center;
             margin: 60px 0;
         }
+        
         .ornate-divider svg {
             width: 80px;
             height: auto;
@@ -68,6 +108,7 @@
         .horizontal-scroll-container {
             padding: 0 0 80px 0;
         }
+        
         .hub-section-heading {
             font-family: 'Playfair Display', serif;
             font-size: 2.5rem;
@@ -75,6 +116,7 @@
             color: var(--accent-gold);
             padding: 0 8%;
         }
+        
         .scroll-wrapper {
             display: flex;
             overflow-x: auto;
@@ -84,9 +126,11 @@
             scrollbar-width: none;
             scroll-snap-type: x mandatory;
         }
+        
         .scroll-wrapper::-webkit-scrollbar {
             display: none;
         }
+        
         .quote-card {
             flex: 0 0 85%;
             text-decoration: none;
@@ -99,6 +143,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             scroll-snap-align: start;
         }
+        
         @media (min-width: 768px) {
             .quote-card {
                 flex: 0 0 350px;
@@ -107,16 +152,19 @@
                 padding: 0 8% 25px 8%;
             }
         }
+        
         .quote-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
+        
         .quote-card .quote-text {
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             line-height: 1.6;
             min-height: 150px;
         }
+        
         .quote-card .author {
             margin-top: 20px;
             font-weight: 600;
@@ -125,6 +173,7 @@
             align-items: center;
             gap: 10px;
         }
+        
         .quote-card .author img {
             width: 40px;
             height: 40px;
@@ -132,7 +181,9 @@
             object-fit: cover;
         }
 
-        .hub-container { padding: 0 8% 80px; }
+        .hub-container { 
+            padding: 0 8% 80px; 
+        }
         
         .wisdom-featured-card {
             display: grid;
@@ -146,27 +197,37 @@
             color: inherit;
             transition: all 0.3s ease;
         }
+        
         @media (min-width: 992px) {
             .wisdom-featured-card {
                 grid-template-columns: 1fr 1fr;
             }
         }
+        
         .wisdom-featured-card:hover {
             transform: translateY(-8px);
             border-color: var(--accent-gold);
         }
+        
         .featured-card-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+        
         .featured-card-content {
             padding: 40px;
         }
+        
         .featured-card-content .category {
-            font-size: 0.8rem; font-weight: 600; letter-spacing: 1px;
-            color: var(--accent-burgundy-wisdom); margin-bottom: 15px;
+            font-size: 0.8rem; 
+            font-weight: 600; 
+            letter-spacing: 1px;
+            color: var(--accent-burgundy-wisdom); 
+            margin-bottom: 15px;
+            text-transform: uppercase;
         }
+        
         .featured-card-content h3 {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -174,6 +235,7 @@
             color: var(--accent-gold);
             margin-bottom: 20px;
         }
+        
         .featured-card-content .description {
             font-size: 1rem;
             line-height: 1.8;
@@ -185,31 +247,97 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
+        
         .article-card {
-            display: block; text-decoration: none; color: inherit;
+            display: block; 
+            text-decoration: none; 
+            color: inherit;
             background-color: var(--card-bg);
             border-radius: 15px;
             border: 1px solid var(--card-border-color);
             height: 100%;
             transition: all 0.3s ease;
         }
+        
         .article-card:hover {
             transform: translateY(-8px);
             border-color: var(--accent-burgundy-wisdom);
         }
-        .article-card-content { padding: 30px; }
-        .article-card .category {
-            font-size: 0.8rem; font-weight: 600; letter-spacing: 1px;
-            color: var(--accent-burgundy-wisdom); margin-bottom: 10px;
+        
+        .article-card-content { 
+            padding: 30px; 
         }
+        
+        .article-card .category {
+            font-size: 0.8rem; 
+            font-weight: 600; 
+            letter-spacing: 1px;
+            color: var(--accent-burgundy-wisdom); 
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
         .article-card h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             line-height: 1.5;
             color: var(--text-primary);
         }
+        
+        /* قسم الأسئلة الشائعة - أصبح مرئيًا الآن */
         .faq-section {
-            display: none;
+            padding: 80px 8%;
+            background-color: var(--card-bg);
+        }
+        
+        .faq-item {
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--card-border-color);
+            padding-bottom: 20px;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+        }
+        
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        
+        /* تحسينات للجوال */
+        @media (max-width: 768px) {
+            .wisdom-hero {
+                padding: 150px 5% 80px;
+            }
+            
+            .hub-container {
+                padding: 40px 5%;
+            }
+            
+            .faq-section {
+                padding: 40px 5%;
+            }
+            
+            .faq-question {
+                font-size: 1.2rem;
+            }
+            
+            .hub-section-heading {
+                font-size: 2rem;
+                padding: 0 5%;
+            }
+            
+            .scroll-wrapper {
+                padding: 0 5% 25px 5%;
+            }
         }
     </style>
 
@@ -231,7 +359,8 @@
           "@type": "ImageObject",
           "url": "https://www.brokersmm.com/images/logo.png"
         }
-      }
+      },
+      "keywords": "financial wisdom, investor mindset, behavioral finance, investment psychology, wealth building, Warren Buffett quotes, investment strategies"
     }
     </script>
 
@@ -291,7 +420,7 @@
           "name": "What is financial wisdom?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success."
+            "text": "Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success. It combines knowledge of financial principles with emotional intelligence to navigate market complexities."
           }
         },
         {
@@ -299,7 +428,7 @@
           "name": "Why is investor behavior more important than market knowledge?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls."
+            "text": "Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls like emotional trading, herd mentality, and confirmation bias that can derail investment success."
           }
         },
         {
@@ -307,7 +436,7 @@
           "name": "What are some timeless investing principles?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle."
+            "text": "Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle. Other key principles include investing in what you understand, maintaining a margin of safety, and continuously educating yourself about financial markets."
           }
         }
       ]
@@ -323,37 +452,39 @@
         <a href="crypto.html">Crypto</a>
         <a href="contact.html">Contact</a>
     </div>
+    
     <header class="main-header">
         <nav class="navbar">
             <a href="index.html" class="logo">BrokersMM</a>
             <span class="menu-icon" onclick="openNav()">&#9776;</span>
         </nav>
     </header>
+    
     <main>
         <section class="wisdom-hero">
             <p class="eyebrow">THE FOURTH PILLAR OF WEALTH</p>
             <h1>Building Financial Wisdom & Investor Mindset</h1>
-            <p>Investing is more than numbers; it's about mindset. Here, we distill timeless wisdom from the greatest financial minds to guide your behavior and decisions.</p>
+            <p>Investing is more than numbers; it's about mindset. Here, we distill timeless wisdom from the greatest financial minds to guide your behavior and decisions for long-term wealth building and financial independence.</p>
         </section>
 
         <div class="horizontal-scroll-container">
             <h2 class="hub-section-heading">Wisdom to Invest By</h2>
             <div class="scroll-wrapper">
-                <a href="#" class="quote-card">
+                <a href="warren-buffett-investing-wisdom.html" class="quote-card">
                     <p class="quote-text">"The stock market is a device for transferring money from the impatient to the patient."</p>
-                    <div class="author"><img src="images/buffett.webp" alt="Warren Buffett, the Oracle of Omaha" width="40" height="40" decoding="async"><span>Warren Buffett</span></div>
+                    <div class="author"><img src="images/buffett.webp" alt="Warren Buffett - Legendary value investor known as the Oracle of Omaha" width="40" height="40" decoding="async" loading="lazy"><span>Warren Buffett</span></div>
                 </a>
-                <a href="#" class="quote-card">
+                <a href="benjamin-franklin-financial-wisdom.html" class="quote-card">
                     <p class="quote-text">"An investment in knowledge pays the best interest."</p>
-                    <div class="author"><img src="images/franklin.webp" alt="Benjamin Franklin, American polymath" width="40" height="40" decoding="async"><span>Benjamin Franklin</span></div>
+                    <div class="author"><img src="images/franklin.webp" alt="Benjamin Franklin - American polymath and author of financial wisdom" width="40" height="40" decoding="async" loading="lazy"><span>Benjamin Franklin</span></div>
                 </a>
-                <a href="#" class="quote-card">
+                <a href="peter-lynch-investing-principles.html" class="quote-card">
                     <p class="quote-text">"Know what you own, and know why you own it."</p>
-                    <div class="author"><img src="images/lynch.webp" alt="Peter Lynch, legendary investor and fund manager" width="40" height="40" decoding="async"><span>Peter Lynch</span></div>
+                    <div class="author"><img src="images/lynch.webp" alt="Peter Lynch - Legendary investor and author of investment classics" width="40" height="40" decoding="async" loading="lazy"><span>Peter Lynch</span></div>
                 </a>
-                <a href="#" class="quote-card">
+                <a href="john-templeton-investing-quotes.html" class="quote-card">
                     <p class="quote-text">"The four most dangerous words in investing are: 'This time it's different'."</p>
-                    <div class="author"><img src="images/templeton.webp" alt="Sir John Templeton, pioneer of global investing" width="40" height="40" decoding="async"><span>Sir John Templeton</span></div>
+                    <div class="author"><img src="images/templeton.webp" alt="Sir John Templeton - Pioneer of global investing and mutual funds" width="40" height="40" decoding="async" loading="lazy"><span>Sir John Templeton</span></div>
                 </a>
             </div>
         </div>
@@ -367,54 +498,69 @@
 
             <a href="wisdom-psychology-of-money.html" class="wisdom-featured-card">
                 <div class="featured-card-image">
-                    <img src="images/wisdom-psychology-money-thumb.webp" alt="A human head silhouette filled with financial symbols and clockwork, representing the psychology of money in investing." width="1280" height="720" decoding="async" loading="lazy">
+                    <img src="images/wisdom-psychology-money-thumb.webp" alt="Psychology of Money book concepts - Behavioral finance and investment psychology for wealth building" width="1280" height="720" decoding="async" loading="lazy">
                 </div>
                 <div class="featured-card-content">
                     <p class="category">BOOK SUMMARY</p>
                     <h3>Lessons from "The Psychology of Money" by Morgan Housel</h3>
-                    <p class="description">Explore the hidden biases and emotional triggers that shape our financial decisions. This summary of Morgan Housel's classic reveals why behavior is more important than spreadsheets.</p>
+                    <p class="description">Explore the hidden biases and emotional triggers that shape our financial decisions. This summary of Morgan Housel's classic reveals why behavior is more important than spreadsheets and how understanding financial psychology can lead to better investment outcomes and long-term wealth accumulation.</p>
                 </div>
             </a>
             
             <div class="articles-grid">
-                <a href="#" class="article-card">
+                <a href="overcoming-loss-aversion.html" class="article-card">
                     <div class="article-card-content">
                         <p class="category">BEHAVIORAL FINANCE</p>
                         <h3>Overcoming Loss Aversion: Why We Fear Losing More Than We Value Gaining</h3>
+                        <p>Discover how loss aversion affects investment decisions and learn strategies to overcome this common behavioral bias for better financial outcomes.</p>
                     </div>
                 </a>
-                <a href="#" class="article-card">
+                <a href="power-of-compound-interest.html" class="article-card">
                     <div class="article-card-content">
                         <p class="category">MENTAL MODELS</p>
                         <h3>The Power of Compound Interest: Einstein's "Eighth Wonder of the World"</h3>
+                        <p>Understand how compound interest works and why Albert Einstein called it the most powerful force in the universe for building long-term wealth.</p>
+                    </div>
+                </a>
+                <a href="emotional-discipline-investing.html" class="article-card">
+                    <div class="article-card-content">
+                        <p class="category">INVESTOR MINDSET</p>
+                        <h3>Emotional Discipline in Investing: Mastering Your Money Psychology</h3>
+                        <p>Learn techniques to maintain emotional discipline during market volatility and make rational investment decisions based on logic rather than fear or greed.</p>
                     </div>
                 </a>
             </div>
         </div>
 
-        <div class="faq-section">
+        <!-- قسم الأسئلة الشائعة - أصبح مرئيًا الآن -->
+        <section class="faq-section">
             <h2 class="hub-section-heading">Frequently Asked Questions about Financial Wisdom</h2>
-            <div itemscope itemtype="https://schema.org/FAQPage">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What is financial wisdom?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">Why is investor behavior more important than market knowledge?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What are some timeless investing principles?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle.</div>
-                    </div>
-                </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">What is financial wisdom?</h3>
+                <p class="faq-answer">Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success. It combines knowledge of financial principles with emotional intelligence to navigate market complexities and avoid common behavioral pitfalls that can derail investment success.</p>
             </div>
-        </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">Why is investor behavior more important than market knowledge?</h3>
+                <p class="faq-answer">Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls like emotional trading, herd mentality, and confirmation bias. Even with perfect market knowledge, poor behavior can lead to suboptimal investment outcomes, while good behavior can compensate for imperfect knowledge.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">What are some timeless investing principles?</h3>
+                <p class="faq-answer">Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle. Other key principles include investing in what you understand, maintaining a margin of safety, continuously educating yourself about financial markets, and avoiding market timing strategies that rarely work consistently.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">How can I develop a better investor mindset?</h3>
+                <p class="faq-answer">Developing a better investor mindset involves several key practices: 1) Educate yourself continuously about financial markets and investment principles, 2) Practice emotional discipline by avoiding impulsive decisions during market volatility, 3) Focus on long-term goals rather than short-term fluctuations, 4) Learn from successful investors but develop your own strategy, 5) Regularly review and adjust your investment approach based on experience and changing circumstances.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3 class="faq-question">What role does psychology play in investment success?</h3>
+                <p class="faq-answer">Psychology plays a crucial role in investment success, often more important than technical knowledge. Behavioral biases like overconfidence, loss aversion, herd mentality, and recency bias can lead to poor investment decisions. Understanding these psychological factors helps investors recognize their own biases, maintain discipline during market turbulence, and make rational decisions based on long-term strategies rather than emotional reactions to short-term market movements.</p>
+            </div>
+        </section>
 
     </main>
     
@@ -425,23 +571,37 @@
             <a href="privacy.html">Privacy Policy</a>
             <a href="terms.html">Terms of Service</a>
             <a href="disclaimer.html">Disclaimer</a>
+            <a href="sitemap.html">Sitemap</a>
         </div>
     </footer>
 
     <meta name="google-adsense-account" content="ca-pub-1544823206346151">
-    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTYEW9YJ5L"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-HTYEW9YJ5L');
     </script>
-    <script async defer src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151"
-         crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151" crossorigin="anonymous"></script>
 
     <script>
-        function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
-        function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
+        function openNav() { 
+            document.getElementById("mySidenav").style.width = "250px"; 
+        }
+        
+        function closeNav() { 
+            document.getElementById("mySidenav").style.width = "0"; 
+        }
+        
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', function(event) {
+            const sidenav = document.getElementById('mySidenav');
+            const menuIcon = document.querySelector('.menu-icon');
+            if (sidenav.style.width === '250px' && !sidenav.contains(event.target) && event.target !== menuIcon) {
+                closeNav();
+            }
+        });
     </script>
 </body>
 </html>
