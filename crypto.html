@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Financial Wisdom: The Investor's Mindset & Behavioral Finance - BrokersMM</title>
+    <title>Building Financial Wisdom: The Investor's Mindset & Behavioral Finance</title>
     
     <meta name="description" content="Investing is more than numbers; it's about mindset. Here, we distill timeless wisdom from the greatest financial minds to guide your behavior and decisions for building wealth.">
+    
+    <meta name="keywords" content="financial wisdom, investor mindset, behavioral finance, investing principles, psychology of money, long-term investing, Warren Buffett, emotional discipline">
+    <meta name="author" content="BrokersMM Team">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#800020">
+
+    <link rel="canonical" href="https://www.brokersmm.com/wisdom.html">
+
+    <meta property="og:title" content="Building Financial Wisdom: Investor Mindset & Behavioral Finance">
+    <meta property="og:description" content="Investing is about mindset. Explore timeless wisdom from financial giants to guide your behavior and decisions for building wealth.">
+    <meta property="og:image" content="https://www.brokersmm.com/images/wisdom-hero-bg.webp">
+    <meta property="og:url" content="https://www.brokersmm.com/wisdom.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="BrokersMM">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Building Financial Wisdom: Investor Mindset & Behavioral Finance">
+    <meta name="twitter:description" content="Learn timeless wisdom from financial legends to improve your investing decisions and build long-term wealth.">
+    <meta name="twitter:image" content="https://www.brokersmm.com/images/wisdom-hero-bg.webp">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +44,24 @@
             --accent-burgundy-wisdom: #800020;
             --accent-gold: #D4AF37;
             --card-border-color: rgba(255, 255, 255, 0.1);
+            --bg-dark: #0A0A0A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A9A9A9;
+            --card-bg: #1A1A1A;
         }
 
         body {
-            background-color: #0A0A0A; 
+            background-color: var(--bg-dark);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
         .wisdom-hero {
@@ -208,51 +241,68 @@
             line-height: 1.5;
             color: var(--text-primary);
         }
+
+        /* CSS for the interactive FAQ section */
         .faq-section {
-            display: none;
+            padding: 80px 8%;
+            background-color: var(--card-bg);
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--card-border-color);
+            padding-bottom: 15px;
+        }
+        
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--accent-burgundy-wisdom);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            text-decoration: underline;
+        }
+
+        .faq-question .icon {
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            color: var(--text-secondary);
+            padding-top: 0;
+            line-height: 1.7;
+        }
+
+        .faq-answer.show {
+            max-height: 200px; /* Adjust as needed */
+            padding-top: 15px;
+        }
+        
+        /* Mobile improvements */
+        @media (max-width: 768px) {
+            .wisdom-hero {
+                padding: 120px 5% 80px;
+            }
+            .hub-container { padding: 40px 5%; }
+            .faq-section { padding: 40px 5%; }
+            .hub-section-heading { font-size: 1.8rem; }
+            .faq-question { font-size: 1.2rem; }
         }
     </style>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": ["WebPage", "CollectionPage"],
-      "name": "Building Financial Wisdom: The Investor's Mindset & Behavioral Finance",
-      "description": "A collection of guides and insights to help you build financial wisdom. Explore the psychology of money, investor behavior, and timeless lessons from legendary investors to improve your financial decisions.",
-      "url": "https://www.brokersmm.com/wisdom.html",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.brokersmm.com/wisdom.html"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "BrokersMM",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.brokersmm.com/images/logo.png"
-        }
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.brokersmm.com/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Financial Wisdom",
-        "item": "https://www.brokersmm.com/wisdom.html"
-      }]
-    }
-    </script>
-    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -277,7 +327,26 @@
         }
       },
       "datePublished": "2025-09-30",
-      "dateModified": "2025-09-30"
+      "dateModified": "2025-09-30",
+      "keywords": "financial wisdom, investor mindset, behavioral finance, investing principles, psychology of money, long-term investing, Warren Buffett, emotional discipline"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.brokersmm.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Financial Wisdom",
+        "item": "https://www.brokersmm.com/wisdom.html"
+      }]
     }
     </script>
     
@@ -392,30 +461,31 @@
             </div>
         </div>
 
-        <div class="faq-section">
+        <section class="faq-section">
             <h2 class="hub-section-heading">Frequently Asked Questions about Financial Wisdom</h2>
-            <div itemscope itemtype="https://schema.org/FAQPage">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What is financial wisdom?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">Why is investor behavior more important than market knowledge?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What are some timeless investing principles?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle.</div>
-                    </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">What is financial wisdom?<i class="fas fa-plus icon"></i></h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text"><p>Financial wisdom goes beyond just knowing about stocks and numbers. It involves understanding the mindset, behaviors, and emotional factors that influence your financial decisions, helping you make rational choices for long-term success.</p></div>
                 </div>
             </div>
-        </div>
 
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">Why is investor behavior more important than market knowledge?<i class="fas fa-plus icon"></i></h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text"><p>Many experienced investors believe that your behavior—such as staying patient, avoiding panic selling, and maintaining discipline—has a greater impact on your long-term returns than trying to predict the market. Understanding behavioral finance helps you avoid common pitfalls.</p></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">What are some timeless investing principles?<i class="fas fa-plus icon"></i></h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text"><p>Timeless investing principles include staying patient, understanding the power of compounding, diversifying your portfolio, and focusing on long-term goals rather than short-term market fluctuations. These principles are echoed by legends like Warren Buffett and John Bogle.</p></div>
+                </div>
+            </div>
+
+        </section>
     </main>
     
     <footer class="main-footer">
@@ -443,8 +513,32 @@
         function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
         function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('.icon');
+                    
+                    if (answer.classList.contains('show')) {
+                        answer.classList.remove('show');
+                        icon.classList.remove('active');
+                    } else {
+                        // Close all other open answers
+                        document.querySelectorAll('.faq-answer.show').forEach(openAnswer => {
+                            openAnswer.classList.remove('show');
+                            openAnswer.previousElementSibling.querySelector('.icon').classList.remove('active');
+                        });
+                        // Open the clicked answer
+                        answer.classList.add('show');
+                        icon.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-}
-}
-قارن هذا الملف مع الملف السابق اللذي ارسلت لك
