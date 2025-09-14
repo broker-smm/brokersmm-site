@@ -7,6 +7,25 @@
     
     <meta name="description" content="Explore the world of tangible assets. From your first REIT to your first rental property, this is your blueprint for building long-term, passive wealth and financial freedom.">
     
+    <meta name="keywords" content="real estate investing, REITs, rental properties, passive income, real estate for beginners, real estate crowdfunding, cash flow, appreciation, leverage, investing blueprint">
+    <meta name="author" content="BrokersMM Team">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#B87333">
+    
+    <link rel="canonical" href="https://www.brokersmm.com/real-estate.html">
+    
+    <meta property="og:title" content="Real Estate Investing: Guide to REITs & Rental Properties">
+    <meta property="og:description" content="Explore the world of tangible assets. From your first REIT to your first rental property, this is your blueprint for building long-term, passive wealth.">
+    <meta property="og:image" content="https://www.brokersmm.com/images/re-hero-bg.webp">
+    <meta property="og:url" content="https://www.brokersmm.com/real-estate.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="BrokersMM">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Real Estate Investing: Guide to REITs & Rental Properties">
+    <meta name="twitter:description" content="Explore the world of tangible assets. From your first REIT to your first rental property.">
+    <meta name="twitter:image" content="https://www.brokersmm.com/images/re-hero-bg.webp">
+    
     <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +40,39 @@
             --accent-brown-earth: #B87333;
             --card-border-color: rgba(255, 255, 255, 0.1);
             --card-bg-light: #202020;
+            --bg-dark: #0A0A0A;
+            --text-primary: #FFFFFF;
+            --text-secondary: #A9A9A9;
+            --card-bg: #1A1A1A;
         }
 
         body {
-            background-color: #0A0A0A; 
+            background-color: var(--bg-dark); 
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
 
         img {
             max-width: 100%;
             height: auto;
         }
+        
+        .hub-container { 
+            padding: 60px 5%; 
+        }
 
+        .hub-section-heading {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--accent-brown-earth);
+            padding-bottom: 15px;
+        }
+        
         .re-hero {
             padding: 160px 8% 100px;
             text-align: left;
@@ -74,18 +115,9 @@
             border-radius: 15px;
         }
 
-        .hub-container { padding: 80px 8%; }
         .hub-layout { display: grid; grid-template-columns: 1fr; gap: 50px; }
         @media (min-width: 1024px) {
             .hub-layout { grid-template-columns: 1fr 350px; }
-        }
-        .hub-section-heading {
-            font-family: 'Roboto Slab', serif;
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: var(--text-primary);
-            border-bottom: 2px solid var(--accent-brown-earth);
-            padding-bottom: 15px;
         }
         
         .re-featured-card {
@@ -146,51 +178,71 @@
         .concept-item .icon { font-size: 1.5rem; color: var(--accent-brown-earth); margin-top: 5px; }
         .concept-item .name { font-weight: 700; color: var(--text-primary); }
         .concept-item .description { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+        
+        /* CSS for the interactive FAQ section */
         .faq-section {
-            display: none;
+            padding: 80px 8%;
+            background-color: var(--card-bg);
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--card-border-color);
+            padding-bottom: 15px;
+        }
+        
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--accent-brown-earth);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            text-decoration: underline;
+        }
+
+        .faq-question .icon {
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            color: var(--text-secondary);
+            padding-top: 0;
+            line-height: 1.7;
+        }
+
+        .faq-answer.show {
+            max-height: 200px; /* Adjust as needed */
+            padding-top: 15px;
+        }
+        
+        /* Mobile improvements */
+        @media (max-width: 768px) {
+            .re-hero {
+                padding: 120px 5% 80px;
+                flex-direction: column;
+                text-align: center;
+            }
+            .re-hero-content h1 { font-size: 2.5rem; }
+            .hub-container { padding: 40px 5%; }
+            .faq-section { padding: 40px 5%; }
+            .hub-section-heading { font-size: 1.8rem; }
+            .faq-question { font-size: 1.2rem; }
         }
     </style>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": ["WebPage", "CollectionPage"],
-      "name": "Real Estate Investing for Beginners: Your Guide to REITs & Rental Properties",
-      "description": "Explore the world of tangible assets. From your first REIT to your first rental property, this is your blueprint for building long-term, passive wealth and financial freedom.",
-      "url": "https://www.brokersmm.com/real-estate.html",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.brokersmm.com/real-estate.html"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "BrokersMM",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://www.brokersmm.com/images/logo.png"
-        }
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "BreadcrumbList",
-      "itemListElement": [{
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.brokersmm.com/"
-      },{
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Real Estate",
-        "item": "https://www.brokersmm.com/real-estate.html"
-      }]
-    }
-    </script>
-    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -215,7 +267,26 @@
         }
       },
       "datePublished": "2025-10-03",
-      "dateModified": "2025-10-03"
+      "dateModified": "2025-10-03",
+      "keywords": "real estate investing, REITs, rental properties, passive income, real estate for beginners, real estate crowdfunding, cash flow, appreciation, leverage"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.brokersmm.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Real Estate",
+        "item": "https://www.brokersmm.com/real-estate.html"
+      }]
     }
     </script>
 
@@ -246,6 +317,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Cash flow is the passive income left from a rental property after all expenses are paid. Appreciation is the increase in the property's market value over time. Both are key components of a real estate investment's total return."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much capital do I need to start investing in real estate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can start with very little capital by investing in REITs or crowdfunding platforms, which can be done with as little as a few hundred dollars. Direct ownership of a physical property, however, requires a larger down payment, typically 10-25% of the property's value."
           }
         }
       ]
@@ -282,23 +361,6 @@
         </section>
 
         <div class="hub-container">
-            <script type="application/ld+json">
-            {
-              "@context": "https://schema.org/",
-              "@type": "BreadcrumbList",
-              "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://www.brokersmm.com/"
-              },{
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Real Estate",
-                "item": "https://www.brokersmm.com/real-estate.html"
-              }]
-            }
-            </script>
             <div class="hub-layout">
                 <div class="main-content-area">
                     <a href="re-article-reits.html" class="re-featured-card">
@@ -360,29 +422,38 @@
             </div>
         </div>
         
-        <div class="faq-section">
+        <section class="faq-section">
             <h2 class="hub-section-heading">Frequently Asked Questions about Real Estate Investing</h2>
-            <div itemscope itemtype="https://schema.org/FAQPage">
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What are REITs and how do they work?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">REITs (Real Estate Investment Trusts) are companies that own, operate, or finance income-generating real estate. They allow investors to buy shares of a diversified portfolio of properties, much like stocks, and receive dividends from the rental income without the hassle of property management.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">Is real estate investing a good option for beginners?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Yes, real estate can be a good option for beginners. Passive methods like investing in REITs or real estate crowdfunding platforms can provide exposure to the market without the need for a large down payment or the responsibilities of being a landlord.</div>
-                    </div>
-                </div>
-                <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-                    <h3 itemprop="name">What is the difference between cash flow and appreciation?</h3>
-                    <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                        <div itemprop="text">Cash flow is the passive income left from a rental property after all expenses are paid. Appreciation is the increase in the property's market value over time. Both are key components of a real estate investment's total return.</div>
-                    </div>
+            
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">What are REITs and how do they work?<i class="fas fa-plus icon"></i></h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text"><p>REITs (Real Estate Investment Trusts) are companies that own, operate, or finance income-generating real estate. They allow investors to buy shares of a diversified portfolio of properties, much like stocks, and receive dividends from the rental income without the hassle of property management.</p></div>
                 </div>
             </div>
-        </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">Is real estate investing a good option for beginners?<i class="fas fa-plus icon"></i></h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text"><p>Yes, real estate can be a good option for beginners. Passive methods like investing in REITs or real estate crowdfunding platforms can provide exposure to the market without the need for a large down payment or the responsibilities of being a landlord.</p></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">What is the difference between cash flow and appreciation?<i class="fas fa-plus icon"></i></h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text"><p>Cash flow is the passive income left from a rental property after all expenses are paid. Appreciation is the increase in the property's market value over time. Both are key components of a real estate investment's total return.</p></div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">How much capital do I need to start investing in real estate?<i class="fas fa-plus icon"></i></h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text"><p>You can start with very little capital by investing in REITs or crowdfunding platforms, which can be done with as little as a few hundred dollars. Direct ownership of a physical property, however, requires a larger down payment, typically 10-25% of the property's value.</p></div>
+                </div>
+            </div>
+
+        </section>
     </main>
     
     <footer class="main-footer">
@@ -409,5 +480,33 @@
         function openNav() { document.getElementById("mySidenav").style.width = "250px"; }
         function closeNav() { document.getElementById("mySidenav").style.width = "0"; }
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('.icon');
+                    
+                    if (answer.classList.contains('show')) {
+                        answer.classList.remove('show');
+                        icon.classList.remove('active');
+                    } else {
+                        // Close all other open answers
+                        document.querySelectorAll('.faq-answer.show').forEach(openAnswer => {
+                            openAnswer.classList.remove('show');
+                            openAnswer.previousElementSibling.querySelector('.icon').classList.remove('active');
+                        });
+                        // Open the clicked answer
+                        answer.classList.add('show');
+                        icon.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 </html>
