@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
+Allow: /articles/
+Allow: /img/
 
+# منع أرشفة الملفات التقنية أو المؤقتة إن وجدت مستقبلاً
+Disallow: /README.md
+Disallow: /LICENSE
+
+# توجيه المحركات لملف الخريطة لتسريع الأرشفة
 Sitemap: https://brokersmm.com/sitemap.xml
+
+# تعليمات خاصة لبوت إعلانات جوجل لضمان أفضل سعر نقرة
+User-agent: Mediapartners-Google
+Allow: /
