@@ -3,32 +3,24 @@
    
    <url>
       <loc>https://brokersmm.com/</loc>
-      <lastmod>2026-04-19</lastmod>
+      <lastmod>2026-04-22</lastmod>
       <priority>1.00</priority>
    </url>
 
    <url>
+      <loc>https://brokersmm.com/articles/starlink-morocco.html</loc>
+      <lastmod>2026-04-22</lastmod>
+      <priority>0.95</priority>
+   </url>
+
+   <url>
       <loc>https://brokersmm.com/articles/djbet-scam-report.html</loc>
-      <lastmod>2026-04-19</lastmod>
+      <lastmod>2026-04-22</lastmod>
       <priority>0.90</priority>
    </url>
 
-   <url>
-      <loc>https://brokersmm.com/about.html</loc>
-      <lastmod>2026-04-19</lastmod>
-      <priority>0.50</priority>
-   </url>
-
-   <url>
-      <loc>https://brokersmm.com/contact.html</loc>
-      <lastmod>2026-04-19</lastmod>
-      <priority>0.50</priority>
-   </url>
-
-   <url>
-      <loc>https://brokersmm.com/privacy-policy.html</loc>
-      <lastmod>2026-04-19</lastmod>
-      <priority>0.50</priority>
-   </url>
+   <url><loc>https://brokersmm.com/about.html</loc><priority>0.50</priority></url>
+   <url><loc>https://brokersmm.com/contact.html</loc><priority>0.50</priority></url>
+   <url><loc>https://brokersmm.com/privacy-policy.html</loc><priority>0.50</priority></url>
 
 </urlset>
