@@ -3,76 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BROKER SMM | كشف الحقائق الرقمية</title>
-    <link rel="stylesheet" href="style.css">
+    <title>broker smm | كشف الحقائق والتحقيقات التقنية</title>
+    <meta name="description" content="المرجع الأول لتحليل منصات الربح وكشف الحقائق التقنية في المغرب.">
+    <link rel="stylesheet" href="Style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --primary: #3b82f6;
+            --danger: #ef4444;
+            --bg-dark: #05070a;
+            --card-bg: #0f172a;
+            --text: #f8fafc;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text);
+            margin: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        /* هيدر احترافي */
+        header {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #1e293b;
+            display: flex;
+            justify-content: center; /* توسيط الشعار */
+        }
+
+        .site-logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-decoration: none;
+            color: #fff;
+        }
+        .site-logo span { color: var(--primary); }
+
+        /* قسم البطولة (Hero Section) */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: radial-gradient(circle at center, #1e293b 0%, #05070a 100%);
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+        .hero p { color: #94a3b8; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title::after { content: ""; height: 2px; flex: 1; background: #1e293b; }
+
+        /* تصميم الكروت المطور */
+        .grid-posts { display: grid; grid-template-columns: 1fr; gap: 25px; }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #1e293b;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover { transform: translateY(-5px); border-color: var(--primary); }
+
+        .card-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .card-body { padding: 25px; }
+        .tag { font-size: 0.75rem; padding: 4px 10px; border-radius: 5px; font-weight: bold; margin-bottom: 10px; display: inline-block; }
+        .tag-blue { background: rgba(59, 130, 246, 0.1); color: var(--primary); }
+        .tag-red { background: rgba(239, 68, 68, 0.1); color: var(--danger); }
+
+        .card h3 { margin: 10px 0; font-size: 1.4rem; color: #fff; }
+        .card p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px; }
+
+        .btn-read {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .btn-read:hover { opacity: 0.9; }
+
+        /* الودجت الجانبية */
+        .sidebar .widget {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #1e293b;
+            margin-bottom: 20px;
+        }
+        .widget-h { font-weight: bold; margin-bottom: 15px; color: var(--primary); border-bottom: 1px solid #1e293b; padding-bottom: 10px; }
+
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 1.8rem; }
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <a href="/" class="logo"><span class="b">BROKER</span><span class="s">SMM</span></a>
-    <div style="color:white; font-size:1.5rem">☰</div>
+    <a href="/" class="site-logo">broker <span>smm</span></a>
 </header>
 
 <section class="hero">
-    <h1>دليلك للأمان الرقمي</h1>
-    <p>تحليلات تقنية وحقائق حصرية حول منصات الربح والخدمات الإلكترونية.</p>
+    <h1>دليلك للأمان والوعي الرقمي</h1>
+    <p>تحقيقات تقنية حصرية ومراجعات دقيقة لأحدث المنصات والخدمات في المغرب.</p>
 </section>
 
 <div class="container">
     <main>
-        <h2 style="margin-bottom:20px">أحدث التحقيقات</h2>
-        <article class="card article-card">
-    <div style="position: relative; width: 100%; height: 180px; overflow: hidden; border-radius: 10px; margin-bottom: 15px;">
-        <img src="images/vip-djbet-scam.jpg" alt="vip-djbet scam" style="width: 100%; height: 100%; object-fit: cover;">
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(239, 68, 68, 0.2); display: flex; align-items: center; justify-content: center; color: #ef4444; font-size: 4rem; font-weight: 900; pointer-events: none; border: 4px solid #ef4444; box-sizing: border-box;">
-            X
-        </div>
-    </div>
+        <div class="section-title">أحدث التحقيقات</div>
+        
+        <div class="grid-posts">
+            
+            <article class="card">
+                <img src="images/starlink-thumb.jpg" alt="ستارلينك المغرب" class="card-img">
+                <div class="card-body">
+                    <span class="tag tag-blue">تكنولوجيا</span>
+                    <h3>ستارلينك المغرب 2026: هل بدأت الخدمة رسمياً؟</h3>
+                    <p>دليلك الشامل حول إنترنت الأقمار الصناعية لإيلون ماسك، الأسعار المتوقعة، وحقيقة تراخيص ANRT.</p>
+                    <a href="articles/starlink-morocco.html" class="btn-read">اقرأ التحقيق الكامل ←</a>
+                </div>
+            </article>
 
-    <div class="card-content">
-        <span class="tag" style="background: #fee2e2; color: #ef4444; padding: 2px 8px; border-radius: 4px;">تحذير أمني</span>
-        <h3 style="margin-top: 10px;">حقيقة منصة vip-djbet: انتحال طيران الإمارات ومخطط بونزي</h3>
-        <p style="font-size: 0.9rem; color: #64748b; margin: 10px 0;">تحقيق تقني يكشف كيف يتم استخدام الـ USDT لاستدراج الضحايا عبر واجهات استثمار وهمية مرتبطة بالويب المظلم.</p>
-        <a href="articles/djbet-scam-report.html" class="btn" style="width: 100%; text-align: center; margin-top: 10px;">اقرأ التحقيق الكامل ←</a>
-    </div>
-</article>
-        <article class="card">
-            <span class="tag">تحقيق حصري</span>
-            <h2>حقيقة منصة PromoTV: هل هي استثمار أم فخ؟</h2>
-            <p>فحص تقني شامل لمصداقية المنصة وتحليل لآلية عملها البرمجية...</p>
-            <a href="" class="btn">قريباً!</a>
-        </article>
+            <article class="card" style="border-right: 4px solid var(--danger);">
+                <img src="images/vip-djbet-scam.jpg" alt="تحقيق vip-djbet" class="card-img">
+                <div class="card-body">
+                    <span class="tag tag-red">تحذير أمني</span>
+                    <h3>حقيقة منصة vip-djbet: انتحال طيران الإمارات ومخطط بونزي</h3>
+                    <p>كشفنا برمجياً كيف يتم استدراج الضحايا عبر واجهات استثمار وهمية مرتبطة بالويب المظلم.</p>
+                    <a href="articles/djbet-scam-report.html" class="btn-read" style="background: var(--danger);">شاهد الدليل التقني ←</a>
+                </div>
+            </article>
+
+        </div>
     </main>
 
     <aside class="sidebar">
         <div class="widget">
             <div class="widget-h">من نحن</div>
-            <p style="font-size:0.85rem">منصة BROKER SMM يديرها خبراء تقنيون لرفع الوعي الرقمي العربي.</p>
+            <p style="font-size: 0.9rem; color: #94a3b8;">منصة <strong>broker smm</strong> يديرها مبرمجون لتحليل المنصات الرقمية ورفع مستوى الوعي التقني العربي.</p>
         </div>
-        <div class="widget">
-            <div class="widget-h">تحذير عاجل</div>
-            <p style="color:var(--danger); font-size:0.85rem; font-weight:bold">تجنب مشاركة كلمات مرورك مع بوتات زيادة المتابعين.</p>
+        
+        
+            <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
         </div>
     </aside>
 </div>
 
-<footer>
-    <div class="footer-grid">
-        <div>
-            <div class="logo" style="margin-bottom:15px"><span class="b">BROKER</span><span class="s">SMM</span></div>
-            <p style="color:#94a3b8; font-size:0.85rem">منصة توعوية تقنية.</p>
-        </div>
-        <div>
-            <h4 style="margin-bottom:15px">قانوني</h4>
-            <ul class="footer-links">
-                <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
-                <li><a href="about.html">من نحن</a></li>
-                <li><a href="contact.html">اتصل بنا</a></li>
-            </ul>
-        </div>
+<footer style="text-align:center; padding:50px; border-top:1px solid #1e293b; color:#64748b; font-size:0.9rem;">
+    <p>&copy; 2026 broker smm | جميع الحقوق محفوظة</p>
+    <div style="margin-top:10px;">
+        <a href="privacy-policy.html" style="color:#94a3b8; text-decoration:none;">سياسة الخصوصية</a> | 
+        <a href="about.html" style="color:#94a3b8; text-decoration:none; margin:0 10px;">من نحن</a>
     </div>
-    <div style="text-align:center; padding-top:30px; color:#64748b; font-size:0.8rem">&copy; 2026 BROKER SMM.</div>
 </footer>
 
 </body>
