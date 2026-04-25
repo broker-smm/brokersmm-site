@@ -2,14 +2,15 @@ User-agent: *
 Allow: /
 Allow: /articles/
 Allow: /images/
-# منع أرشفة ملفات المستودع التقنية لزيادة جودة الأرشفة
+
+# منع الملفات التقنية غير الضرورية
 Disallow: /README.md
 Disallow: /CNAME
 Disallow: /.github/
 
-# توجيه محركات البحث لملف الخريطة المحدث
+# رابط الخريطة الجديد
 Sitemap: https://brokersmm.com/sitemap.xml
 
-# تعليمات خاصة لزاحف إعلانات جوجل لزيادة سعر النقرة
+# تحسين الوصول لإعلانات جوجل لرفع سعر النقرة
 User-agent: Mediapartners-Google
 Allow: /
