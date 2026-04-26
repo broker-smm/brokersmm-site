@@ -153,21 +153,57 @@
 <div class="container">
     <main>
         <div class="section-title">أحدث التحقيقات</div>
-        <div class="card reveal">
-    <div class="card-header" style="background: linear-gradient(135deg, #3b82f6, #10b981);">
+   <div class="card reveal">
+    <div class="card-header">
+        <img src="images/ofppt-cmc-thumbnail.jpg" alt="دليل التسجيل في OFPPT و CMC 2026" class="card-img">
         <span class="category-tag">توجيه وتكوين</span>
     </div>
     <div class="card-body">
         <h3>دليل التسجيل في OFPPT و CMC 2026</h3>
         <p>كل ما تحتاج معرفته عن طريقة اختيار الشعب، الوثائق المطلوبة، وحلول تقنية شاملة لمشاكل موقع التسجيل الرسمي.</p>
         <div class="card-footer">
-            <a href="inscription-ofppt-2026.html" class="read-more">اقرأ التفاصيل ←</a>
+            <a href="articles/inscription-ofppt-2026.html" class="read-more">اقرأ التفاصيل ←</a>
         </div>
     </div>
 </div>
 
 <style>
-    /* تحسينات إضافية لتناسب التصميم الحالي */
+    /* التعديلات المطلوبة لإظهار الصورة بشكل احترافي */
+    .card-header {
+        height: 180px; /* زيادة الطول لتناسب أبعاد الصورة */
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* لضمان ملء الصورة للمساحة دون تشويه */
+        transition: transform 0.5s ease;
+    }
+
+    .card:hover .card-img {
+        transform: scale(1.1); /* تأثير زووم خفيف عند التحريك فوق البطاقة */
+    }
+
+    .category-tag {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: rgba(16, 185, 129, 0.9); /* استخدام لون الأخضر الخاص بـ brokersmm */
+        color: #fff;
+        padding: 5px 12px;
+        border-radius: 8px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        z-index: 2;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    /* باقي التنسيقات السابقة */
     .card {
         background: #0f172a;
         border-radius: 15px;
@@ -180,24 +216,9 @@
         transform: translateY(-5px);
         border-color: #10b981;
     }
-    .card-header {
-        height: 100px;
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .category-tag {
-        background: rgba(0,0,0,0.5);
-        color: #fff;
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        backdrop-filter: blur(5px);
-    }
     .card-body { padding: 20px; }
     .card-body h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.2rem; }
-    .card-body p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+    .card-body p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; line-height: 1.6; }
     .read-more {
         color: #10b981;
         text-decoration: none;
