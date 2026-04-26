@@ -1,16 +1,17 @@
 User-agent: *
 Allow: /
-Allow: /articles/
+# السماح بجميع الملفات في المجلد الرئيسي
+Allow: /*.html
 Allow: /images/
 
-# منع الملفات التقنية غير الضرورية
+# منع الملفات التقنية والسرية
 Disallow: /README.md
 Disallow: /CNAME
 Disallow: /.github/
 
-# رابط الخريطة الجديد
-Sitemap: https://brokersmm.com/sitemap.xml
-
-# تحسين الوصول لإعلانات جوجل لرفع سعر النقرة
+# تحسين الوصول لإعلانات جوجل لرفع سعر النقرة (CPC)
 User-agent: Mediapartners-Google
 Allow: /
+
+# رابط خريطة الموقع الصحيح
+Sitemap: https://brokersmm.com/sitemap.xml
