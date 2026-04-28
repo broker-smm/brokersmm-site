@@ -3,6 +3,7 @@ Allow: /
 # السماح بجميع الملفات في المجلد الرئيسي
 Allow: /*.html
 Allow: /images/
+Allow: /articles/
 
 # منع الملفات التقنية والسرية
 Disallow: /README.md

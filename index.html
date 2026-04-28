@@ -153,6 +153,80 @@
 <div class="container">
     <main>
         <div class="section-title">أحدث التحقيقات</div>
+  <div class="card reveal">
+    <div class="card-header">
+        <img src="images/jobs-morocco-thumbnail.jpg" alt="مباريات التوظيف بالمغرب 2026" class="card-img">
+        <span class="category-tag" style="background: var(--secondary);">فرص شغل</span>
+    </div>
+    <div class="card-body">
+        <h3>دليل مباريات التوظيف بالمغرب 2026</h3>
+        <p>تجميعة شاملة لأحدث مباريات القطاع العام والخاص، مع روابط التسجيل المباشرة وشرح السلالم والرواتب بالتفصيل.</p>
+        <div class="card-footer">
+            <a href="jobs-morocco-2026.html" class="read-more">تصفح الفرص الآن ←</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* التنسيق الموحد لبطاقات الصفحة الرئيسية */
+    .card {
+        background: #0f172a;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid #1e293b;
+        transition: transform 0.3s ease, border-color 0.3s ease;
+        margin-bottom: 25px;
+    }
+    
+    .card:hover {
+        transform: translateY(-8px);
+        border-color: var(--secondary);
+    }
+
+    .card-header {
+        height: 190px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .card:hover .card-img {
+        transform: scale(1.15);
+    }
+
+    .category-tag {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 8px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        z-index: 2;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .card-body { padding: 22px; }
+    .card-body h3 { margin: 0 0 12px 0; color: #fff; font-size: 1.25rem; line-height: 1.4; }
+    .card-body p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 20px; line-height: 1.6; }
+    
+    .read-more {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+</style>
    <div class="card reveal">
     <div class="card-header">
         <img src="images/ofppt-cmc-thumbnail.jpg" alt="دليل التسجيل في OFPPT و CMC 2026" class="card-img">
