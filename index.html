@@ -153,6 +153,62 @@
 <div class="container">
     <main>
         <div class="section-title">أحدث التحقيقات</div>
+ <div class="card reveal">
+    <div class="card-header">
+        <img src="images/video-thumb.jpg" alt="فيديو واقعة 3000 درهم" class="card-img">
+        <span class="category-tag" style="background: #ef4444;">ترند عاجل</span>
+    </div>
+    <div class="card-body">
+        <h3>فيديو صادم: لحظة استيلاء سيدة على مبلغ 3000 درهم</h3>
+        <p>شاهد المقطع الذي أثار ضجة كبيرة على مواقع التواصل؛ كيف سقط المبلغ من جيب مواطن واستولت عليه سيدة بدم بارد.</p>
+        <div class="card-footer">
+            <a href="articles/video-trending-3000dh.html" class="read-more" style="color: #ef4444;">شاهد المقطع الكامل ←</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* التنسيق لضمان التجانس مع باقي المقالات */
+    .card {
+        background: #0f172a;
+        border-radius: 15px;
+        overflow: hidden;
+        border: 1px solid #1e293b;
+        transition: transform 0.3s ease;
+        margin-bottom: 25px;
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        border-color: #ef4444; /* تغيير اللون للأحمر عند التحريك لجذب الانتباه */
+    }
+    .card-header {
+        height: 180px;
+        position: relative;
+        overflow: hidden;
+    }
+    .card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .card:hover .card-img {
+        transform: scale(1.1);
+    }
+    .category-tag {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        color: #fff;
+        padding: 5px 12px;
+        border-radius: 8px;
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    .card-body { padding: 20px; }
+    .card-body h3 { margin: 0 0 10px 0; color: #fff; font-size: 1.15rem; line-height: 1.4; }
+    .card-body p { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+</style>
   <div class="card reveal">
     <div class="card-header">
         <img src="images/jobs-morocco.jpg" alt="مباريات التوظيف بالمغرب 2026" class="card-img">
