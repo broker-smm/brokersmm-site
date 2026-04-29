@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فيديو صادم: سيدة تستولي على 3000 درهم سقطت من رجل | brokersmm</title>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1544823206346151" crossorigin="anonymous"></script>
+
+    <style>
+        :root { --primary: #ef4444; --bg-dark: #05070a; --card-bg: #0f172a; --text: #e2e8f0; }
+        body { background-color: var(--bg-dark); color: var(--text); margin: 0; font-family: 'Tajawal', sans-serif; line-height: 1.8; }
+        .container { max-width: 700px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; padding: 30px 0; }
+        .logo { font-size: 2rem; font-weight: bold; color: #fff; text-decoration: none; }
+        .logo span { color: #10b981; }
+        
+        /* ضبط إطار الفيديو ليكون مربعاً 1:1 */
+        .video-container { 
+            position: relative; 
+            width: 100%; 
+            max-width: 500px; /* حجم مثالي للموبايل */
+            margin: 20px auto; 
+            background: #000; 
+            border-radius: 20px; 
+            overflow: hidden; 
+            border: 2px solid #1e293b;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        video { 
+            width: 100%; 
+            display: block; 
+            aspect-ratio: 1 / 1; /* فرض أبعاد المربع */
+            object-fit: cover; 
+        }
+        
+        article { background: var(--card-bg); padding: 30px; border-radius: 24px; border: 1px solid #1e293b; }
+        h1 { color: #fff; font-size: 1.6rem; text-align: center; margin-bottom: 20px; line-height: 1.4; }
+        
+        .analysis-box { background: rgba(239, 68, 68, 0.1); border-right: 4px solid var(--primary); padding: 20px; border-radius: 12px; margin: 25px 0; }
+        
+        .btn-share { 
+            background: #25d366; 
+            color: white; 
+            padding: 15px 30px; 
+            border-radius: 12px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 10px; 
+            width: 100%; 
+            font-size: 1.1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .reveal { opacity: 0; transform: translateY(20px); transition: 0.6s all ease; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header><a href="index.html" class="logo">broker<span>smm</span></a></header>
+
+    <article class="reveal">
+        <h1>فيديو اللحظة: كيف استولت سيدة على مبلغ 3000 درهم سقطت من مواطن؟</h1>
+        
+        <div class="video-container">
+            <video controls poster="images/video-placeholder.jpg">
+                <source src="./images/video.mp4" type="video/mp4">
+                متصفحك لا يدعم تشغيل الفيديو.
+            </video>
+        </div>
+
+        <div class="analysis-box">
+            <p><strong>توضيح العملية:</strong> يظهر المقطع كيف سقطت رزمة مالية (3000 درهم) من جيب أحد الأشخاص، لتستغل سيدة كانت خلفه الموقف وتأخذ المبلغ بدم بارد دون تنبيه صاحب المال.</p>
+        </div>
+
+        <p>هذا النوع من السلوكيات يطرح تساؤلات حول الأمانة في مجتمعنا. شاركنا رأيك في التعليقات عبر مشاركة المقطع مع أصدقائك.</p>
+
+        <button class="btn-share" onclick="shareToWhatsApp()">📲 شارك الفيديو على واتساب</button>
+        <a href="./index.html" style="display:block; text-align:center; margin-top:20px; color:#94a3b8; text-decoration:none;">← العودة للرئيسية</a>
+    </article>
+</div>
+
+<script>
+    function shareToWhatsApp() {
+        const text = "شاهد لقطة صادمة لسيدة أخذت 3000 درهم سقطت من رجل.. الأمانة مابقاتش! 😱🎥";
+        const url = window.location.href;
+        window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text + " " + url)}`);
+    }
+
+    window.addEventListener("scroll", () => {
+        document.querySelectorAll(".reveal").forEach(el => {
+            if(el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add("active");
+        });
+    });
+    window.dispatchEvent(new Event('scroll'));
+</script>
+
+</body>
+</html>
