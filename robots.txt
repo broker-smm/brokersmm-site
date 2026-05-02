@@ -1,18 +1,15 @@
+# Robots.txt for brokersmm.com
+# تم الإعداد لتحسين الفهرسة وتسريع وصول العناكب للمقالات
+
 User-agent: *
 Allow: /
-# السماح بجميع الملفات في المجلد الرئيسي
-Allow: /*.html
-Allow: /images/
 Allow: /articles/
+Allow: /images/
 
-# منع الملفات التقنية والسرية
+# منع العناكب من أرشفة ملفات برمجية أو إدارية لا تهم الزائر
 Disallow: /README.md
 Disallow: /CNAME
-Disallow: /.github/
+Disallow: /ads.txt
 
-# تحسين الوصول لإعلانات جوجل لرفع سعر النقرة (CPC)
-User-agent: Mediapartners-Google
-Allow: /
-
-# رابط خريطة الموقع الصحيح
+# توجيه مباشر لمحرك البحث لمكان خريطة الموقع
 Sitemap: https://brokersmm.com/sitemap.xml

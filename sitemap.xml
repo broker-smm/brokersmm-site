@@ -1,38 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   
-   <url>
-      <loc>https://brokersmm.com/</loc>
-      <lastmod>2026-04-28</lastmod>
-      <priority>1.00</priority>
-   </url>
 
-   <url>
-      <loc>https://brokersmm.com/articles/jobs-morocco-2026.html</loc>
-      <lastmod>2026-04-28</lastmod>
-      <priority>0.95</priority>
-   </url>
+  <!-- الصفحات الأساسية -->
+  <url>
+    <loc>https://brokersmm.com/index.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-   <url>
-      <loc>https://brokersmm.com/articles/inscription-ofppt-2026.html</loc>
-      <lastmod>2026-04-26</lastmod>
-      <priority>0.95</priority>
-   </url>
+  <url>
+    <loc>https://brokersmm.com/about.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-   <url>
-      <loc>https://brokersmm.com/articles/permis-maroc-2026.html</loc>
-      <lastmod>2026-04-26</lastmod>
-      <priority>0.90</priority>
-   </url>
+  <url>
+    <loc>https://brokersmm.com/contact.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-   <url>
-      <loc>https://brokersmm.com/articles/starlink-morocco.html</loc>
-      <lastmod>2026-04-22</lastmod>
-      <priority>0.80</priority>
-   </url>
+  <url>
+    <loc>https://brokersmm.com/privacy-policy.html</loc>
+    <lastmod>2026-04-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
-   <url><loc>https://brokersmm.com/about.html</loc><priority>0.50</priority></url>
-   <url><loc>https://brokersmm.com/contact.html</loc><priority>0.50</priority></url>
-   <url><loc>https://brokersmm.com/privacy-policy.html</loc><priority>0.50</priority></url>
+  <!-- المقالات (Articles) -->
+  <url>
+    <loc>https://brokersmm.com/articles/permis-maroc-2026.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- المقال الجديد (الجزء الثاني) -->
+  <url>
+    <loc>https://brokersmm.com/articles/permis-maroc-2026-part2.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://brokersmm.com/articles/jobs-moroc-2026.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://brokersmm.com/articles/video-trending-3000dh.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brokersmm.com/articles/inscription-ofppt-2026.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://brokersmm.com/articles/starlink-morocco.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://brokersmm.com/articles/djbet-scam-report.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 
 </urlset>
