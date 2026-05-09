@@ -5,11 +5,11 @@ User-agent: *
 Allow: /
 Allow: /articles/
 Allow: /images/
+Allow: /ads.txt
 
 # منع العناكب من أرشفة ملفات برمجية أو إدارية لا تهم الزائر
 Disallow: /README.md
 Disallow: /CNAME
-Disallow: /ads.txt
 
 # توجيه مباشر لمحرك البحث لمكان خريطة الموقع
 Sitemap: https://brokersmm.com/sitemap.xml
