@@ -6,7 +6,8 @@ Allow: /
 Allow: /articles/
 Allow: /images/
 Allow: /ads.txt
-
+Allow: /pirmi/index.html
+Allow: /pirmi/images
 # منع العناكب من أرشفة ملفات برمجية أو إدارية لا تهم الزائر
 Disallow: /README.md
 Disallow: /CNAME
