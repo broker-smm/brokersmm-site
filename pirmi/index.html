@@ -9,7 +9,7 @@
     <meta name="description" content="✅ اجتز امتحان السياقة 2026 بنجاح. تدرب على أسئلة البيرمي، الامتحان النظري والامتحان التطبيقي وفق معايير نارسا Narsa. محاكي العمراوي وبوجيدة المطور مجاناً.">
     <meta name="keywords" content="امتحان السياقة 2026, كود السياقة المغرب, البيرمي، العمراوي، بوجيدة، الامتحان النظري، الامتحان التطبيقي، نارسا، Narsa, تعليم السياقة بالمغرب, Code de la route 2026, code siya9a, السيارة الذكية">
     
-    <link rel="canonical" href="https://brokersmm.com.com/">
+    <link rel="canonical" href="https://brokersmm.com/">
     
     <meta property="og:title" content="🚦 محاكي امتحان السياقة 2026 | البيرمي ونارسا Narsa">
     <meta property="og:description" content="أفضل محاكي لأسئلة الامتحان النظري والامتحان التطبيقي وفق معايير نارسا الجديدة.">
@@ -97,19 +97,29 @@
             align-items: center; padding: 5px 15px 140px 15px;
             display: none;
         }
-        .image-wrapper { position: relative; width: 100%; max-width: 450px; margin-bottom: 10px; }
-        .quiz-image {
-            width: 100%; height: auto; max-height: 38vh; border-radius: 12px;
-            border: 1px solid #2d3748; display: block; object-fit: cover;
+        /* حل مشكلة CLS عبر حجز مساحة للصورة */
+        .image-wrapper { 
+            position: relative; 
+            width: 100%; 
+            max-width: 450px; 
+            margin-bottom: 10px;
+            aspect-ratio: 450 / 300;
             background: #161e2d;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .quiz-image {
+            width: 100%; height: 100%; border-radius: 12px;
+            border: 1px solid #2d3748; display: block; object-fit: cover;
         }
         .timer-circle {
             position: absolute; top: 10px; left: 10px; width: 40px; height: 40px;
             background: rgba(0, 0, 0, 0.6); border: 2px solid var(--primary);
             border-radius: 50%; display: flex; justify-content: center;
             align-items: center; font-weight: bold; backdrop-filter: blur(4px);
+            z-index: 10;
         }
-        .question-text { font-size: 1.1rem; margin: 5px 0 12px 0; text-align: center; line-height: 1.3; font-weight: 600; }
+        .question-text { min-height: 1.4em; font-size: 1.1rem; margin: 5px 0 12px 0; text-align: center; line-height: 1.3; font-weight: 600; }
         .options-container {
             width: 100%; max-width: 450px; display: grid;
             grid-template-columns: 1fr 1fr; gap: 8px;
@@ -152,7 +162,7 @@
         #result-page {
             display: none; padding: 15px; background: var(--bg); min-height: 100vh;
         }
-        .result-img-large { width: 100%; height: auto; border-radius: 10px; margin: 10px 0; display: block; }
+        .result-img-large { width: 100%; height: auto; border-radius: 10px; margin: 10px 0; display: block; aspect-ratio: 400/260; background: #161e2d; }
         .review-card { background: var(--card-bg); padding: 15px; border-radius: 12px; margin-bottom: 15px; border-right: 4px solid var(--danger); }
         .review-card.correct-ans { border-right-color: var(--primary); }
 
@@ -254,9 +264,9 @@
 <footer style="text-align:center; padding:40px; border-top:1px solid #1e293b; color:#64748b; font-size:0.8rem;">
     <p>&copy; 2026 broker smm | جميع الحقوق محفوظة</p>
     <nav style="margin-top:5px;">
-        <a href="../privacy-policy.html" style="color:#94a3b8; text-decoration:none;">سياسة الخصوصية</a> | 
-        <a href="../about.html" style="color:#94a3b8; text-decoration:none; margin:0 10px;">من نحن</a>
-          <a href="../contact.html" style="color:#94a3b8; text-decoration:none; margin:0 10px;">اتصل بنا</a>
+        <a href="./privacy-policy.html" style="color:#94a3b8; text-decoration:none;">سياسة الخصوصية</a> | 
+        <a href="./about.html" style="color:#94a3b8; text-decoration:none; margin:0 10px;">من نحن</a>
+          <a href="./contact.html" style="color:#94a3b8; text-decoration:none; margin:0 10px;">اتصل بنا</a>
     </nav>
 </footer>
 
@@ -264,7 +274,10 @@
     <script>
         let currentQ = 0, selectedOptions = [], userAnswers = [], timer, timeLeft = 30;
 
+        // دالة تهيئة محسنة
         function initApp() {
+            if (typeof quizData === 'undefined' || quizData.length === 0) return;
+            
             const firstImg = new Image();
             firstImg.src = quizData[0].image;
             firstImg.onload = firstImg.onerror = () => {
@@ -288,8 +301,10 @@
             qImgElement.src = q.image;
             qImgElement.alt = q.altText || "سؤال امتحان السياقة المغرب 2026";
             
+            // التحميل المسبق للصورة التالية لتحسين السرعة
             if (currentQ + 1 < quizData.length) {
-                new Image().src = quizData[currentQ + 1].image;
+                const nextImg = new Image();
+                nextImg.src = quizData[currentQ + 1].image;
             }
 
             document.getElementById('q-text').innerText = q.question;
@@ -298,7 +313,7 @@
             selectedOptions = [];
             const fragment = document.createDocumentFragment();
             
-            if (q.subQuestions?.length > 0) {
+            if (q.subQuestions && q.subQuestions.length > 0) {
                 q.subQuestions.forEach((sub, subIdx) => {
                     const title = document.createElement('div');
                     title.className = 'sub-question-title';
@@ -314,8 +329,12 @@
             optCont.appendChild(fragment);
 
             timer = setInterval(() => {
-                if (--timeLeft <= 0) confirmAnswer();
-                document.getElementById('question-timer').innerText = timeLeft;
+                timeLeft--;
+                if (timeLeft <= 0) {
+                    confirmAnswer();
+                } else {
+                    document.getElementById('question-timer').innerText = timeLeft;
+                }
             }, 1000);
         }
 
@@ -339,18 +358,18 @@
 
         function confirmAnswer() {
             userAnswers.push([...selectedOptions]);
-            if (++currentQ < quizData.length) {
+            currentQ++;
+            if (currentQ < quizData.length) {
                 loadQuestion();
                 window.scrollTo(0,0);
-            }
-            else {
+            } else {
+                clearInterval(timer);
                 document.getElementById('progress-bar').style.width = '100%';
                 showResults();
             }
         }
 
         function showResults() {
-            clearInterval(timer);
             document.getElementById('quiz-ui').style.display = 'none';
             document.querySelector('.controls').style.display = 'none';
             document.getElementById('result-page').style.display = 'block';
@@ -359,9 +378,8 @@
             let score = 0;
             let resultHTML = '';
             
-            // كود الإعلان المخصص لإدراجه في النتائج
             const adCode = `
-                <div style="margin: 20px 0;">
+                <div style="margin: 20px 0; min-height:100px;">
                     <ins class="adsbygoogle"
                          style="display:block"
                          data-ad-client="ca-pub-1544823206346151"
@@ -372,7 +390,10 @@
                 </div>`;
 
             quizData.forEach((q, i) => {
-                const isCorrect = JSON.stringify(q.correct.sort()) === JSON.stringify(userAnswers[i].sort());
+                const userAns = userAnswers[i] ? [...userAnswers[i]].sort() : [];
+                const correctAns = [...q.correct].sort();
+                const isCorrect = JSON.stringify(correctAns) === JSON.stringify(userAns);
+                
                 if(isCorrect) score++;
                 
                 resultHTML += `
@@ -382,7 +403,6 @@
                         <p style="font-size:0.95rem; background:#1e293b; padding:10px; border-radius:5px;">${q.rule}</p>
                     </div>`;
                 
-                // إضافة إعلان بعد كل 3 أسئلة
                 if ((i + 1) % 3 === 0 && (i + 1) < quizData.length) {
                     resultHTML += adCode;
                 }
