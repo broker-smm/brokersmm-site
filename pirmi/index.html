@@ -202,15 +202,6 @@
         <div id="q-text" class="question-text"></div>
         <div id="options" class="options-container"></div>
 
-        <div class="ad-container-quiz">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-1544823206346151"
-                 data-ad-slot="3283211441"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
 
         <div class="controls">
             <div class="btn-group">
@@ -378,15 +369,7 @@
             let resultHTML = '';
             
             const adCode = `
-                <div style="margin: 20px 0; min-height:100px;">
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-1544823206346151"
-                         data-ad-slot="3283211441"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>
-                </div>`;
+            
 
             quizData.forEach((q, i) => {
                 const userAns = userAnswers[i] ? [...userAnswers[i]].sort() : [];
